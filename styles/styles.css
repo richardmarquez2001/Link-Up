@@ -1,0 +1,12 @@
+.container {
+  font: Arial;
+}
+
+.container .title {
+  color: #abc32a;
+}
+
+.container .text {
+  color: blue;
+}
+/*# sourceMappingURL=styles.css.map */
