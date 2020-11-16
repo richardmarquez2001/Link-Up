@@ -4,7 +4,16 @@
     </head>
 
     <body>
-        contact
-        <br>Note! Make sure to add styling on your corresponding scss file.
+        <h2>Contact Us!</h2>
+        <form class="msg-form">
+            <label>Full Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            <label for="msg">Your Message</label><br>
+            <textarea id="msg" name="message" placeholder="Feel free to inquire us about anything."></textarea><br><br>
+            <button id="send-btn" type="button">Send</button>
+        </form>
     </body>
 </html>
