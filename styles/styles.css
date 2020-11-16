@@ -9,4 +9,43 @@
 .container .text {
   color: blue;
 }
+
+.deandra {
+  background-color: aliceblue;
+}
+
+.deandra .title {
+  font-size: 20px;
+}
+
+.deandra .text {
+  padding: 20px;
+  -webkit-box-shadow: 0, 2px 2px #000000;
+          box-shadow: 0, 2px 2px #000000;
+}
+
+.richard .title {
+  color: red;
+}
+
+.richard .text {
+  color: blue;
+}
+
+.van .title {
+  color: green;
+  font-size: 20px;
+}
+
+.van .text {
+  color: hotpink;
+}
+
+.yk .welcome {
+  font-size: 20px;
+}
+
+.yk .about {
+  color: lightcoral;
+}
 /*# sourceMappingURL=styles.css.map */
