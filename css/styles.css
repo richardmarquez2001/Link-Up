@@ -15,16 +15,19 @@
 
 .navBar {
   background-color: #F2CD5D;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   margin: 0;
   padding: 0;
   width: 100%;
   right: 0;
 }
 
+.navLinks {
+  list-style: none;
+  margin: auto;
+}
+
 .link {
+  display: inline;
   font-family: "Quicksand", sans-serif;
   text-align: center;
   text-decoration: none;
@@ -32,6 +35,7 @@
   font-weight: bold;
   padding: 10px;
   margin: 0;
+  text-align: left;
 }
 
 .bubblesContainer {
