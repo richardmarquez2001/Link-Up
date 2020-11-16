@@ -1,0 +1,125 @@
+.content {
+    font-size: $navBartext-fontsize;
+    background-color: $magnoliaWhite-color;
+}
+
+.title {
+    text-align: center;
+    padding: 0;
+
+}
+
+.navBar {
+    background-color: $orangeYellowCrayola-color;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    right: 0;
+}
+
+.link {
+    font-family: $quicksand-font;
+    text-align: center;
+    text-decoration: none;
+    color: $jet-color;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+
+.bubbleContainer {
+    margin: 20px;
+    padding: 20px;
+    font-family: $raleway-font;
+    font-size: 2em;
+}
+
+.bubble {
+    display: inline-block;
+    font-size: 1.1em;
+    padding: 50px 50px;
+    border-radius: 50%;
+    font-weight: bolder;
+    color: #FFFAFF;
+    margin: 80px 10px;
+
+}
+
+.line {
+    border-left: 10px solid $jet-color;
+    border-right: 10px solid $jet-color;
+    background-color: $jet-color;
+    position: absolute;
+    opacity: .3;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@keyframes bounce-1 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1, .9) translateY(0px);
+    }
+
+    30% {
+        transform: scale(.9, 1) translateY(-90px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+.p1:hover,
+.p2:hover,
+.p3:hover,
+.p4:hover,
+.p5:hover,
+.p6:hover,
+.p7:hover {
+    border: solid 2px $jet-color;
+    animation: bounce-1;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+
+}
+
+.b1 {
+    background-color: $magicMint-color;
+}
+
+.b2 {
+    background-color: $fieryRose-color;
+}
+
+.b3 {
+    background-color: $maximumBluePurple-color;
+}
+
+.b4 {
+    background-color: $blueJean-color;
+}
+
+.infoContainer{
+    background-color: $platinum-color;
+    border-radius: 20px;
+    width:70%;
+    margin:auto;
+    padding:30px;
+}
+.infoTitle{
+    background-color: $magicMint-color;
+    width:50%;
+    padding:10px 40px;
+    margin:20px;
+    color:$magnoliaWhite-color;
+    border-radius: 20px;
+    text-align: left;
+    font-weight: bold;
+}
