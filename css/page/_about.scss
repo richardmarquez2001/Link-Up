@@ -1,12 +1,15 @@
 .content {
     font-size: $navBartext-fontsize;
     background-color: $magnoliaWhite-color;
+    font-family:$quicksand-font;
 }
 
 .title {
     text-align: center;
     padding: 0;
-
+    font-size: 3.5em;
+    margin:0;
+    padding: 60px 20px;
 }
 
 .navBar {
@@ -30,32 +33,29 @@
     margin: 0;
 }
 
-.bubbleContainer {
-    margin: 20px;
+.bubblesContainer {
+    text-align: center;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     font-family: $raleway-font;
-    font-size: 2em;
+    font-size: 1.1em;
+    
 }
 
 .bubble {
+    text-align: center;
     display: inline-block;
-    font-size: 1.1em;
-    padding: 50px 50px;
+    font-size: 0.9em;
+    padding: 40px;
     border-radius: 50%;
     font-weight: bolder;
-    color: #FFFAFF;
-    margin: 80px 10px;
-
-}
-
-.line {
-    border-left: 10px solid $jet-color;
-    border-right: 10px solid $jet-color;
-    background-color: $jet-color;
-    position: absolute;
-    opacity: .3;
-    padding: 10px;
-    border-radius: 50%;
+    color: $magnoliaWhite-color;
+    margin: 10px;
+    border: solid 3px $magnoliaWhite-color;
+    transition: border 2s;
+    box-shadow: -1px 2px 2px #000000;
 }
 
 @keyframes bounce-1 {
@@ -83,7 +83,7 @@
 .p5:hover,
 .p6:hover,
 .p7:hover {
-    border: solid 2px $jet-color;
+    border: solid 3px $platinum-color;
     animation: bounce-1;
     animation-duration: 4s;
     animation-iteration-count: 2;
@@ -110,12 +110,14 @@
     background-color: $platinum-color;
     border-radius: 20px;
     width:70%;
-    margin:auto;
+    margin-top:30px;
+    margin: 50px auto 0 auto;
     padding:30px;
 }
 .infoTitle{
-    background-color: $magicMint-color;
-    width:50%;
+    word-wrap: break-word;
+    background-color: $maximumBluePurple-color;
+    width:fit-content;
     padding:10px 40px;
     margin:20px;
     color:$magnoliaWhite-color;
