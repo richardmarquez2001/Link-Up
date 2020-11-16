@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "styles.scss",
+        "other/_fonts.scss",
+        "other/_variables.scss",
+        "page/_about.scss",
+        "page/_contact.scss",
+        "page/_features.scss",
+        "page/_home.scss",
+        "page/_login.scss",
+        "page/_matcher.scss",
+        "page/_profile.scss",
+        "page/_question.scss",
+        "page/_result.scss",
+        "page/_search.scss",
+        "page/_settings.scss",
+        "page/_signup.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
