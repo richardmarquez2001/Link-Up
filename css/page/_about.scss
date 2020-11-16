@@ -7,7 +7,7 @@
 .title {
     text-align: center;
     padding: 0;
-    font-size: 3.5em;
+    font-size: 3em;
     margin:0;
     padding: 60px 20px;
 }
@@ -42,20 +42,43 @@
     font-family: $raleway-font;
     font-size: 1.1em;
     
+    .p1{
+        padding:50px 45px;
+    }
+    .p2{
+        padding:50px 35px;
+    }
+    .p3{
+         padding:50px 35px;
+    }
+    .p4{
+        padding:50px 40px;
+    }
+    .p5{
+        padding:50px 45px;
+    }
+    .p6{
+        padding:50px 45px;
+    }
+    .p7{
+        padding:50px 30px;
+    }
+    
 }
 
 .bubble {
     text-align: center;
     display: inline-block;
     font-size: 0.9em;
-    padding: 40px;
     border-radius: 50%;
     font-weight: bolder;
     color: $magnoliaWhite-color;
-    margin: 10px;
+    margin: 5px;
     border: solid 3px $magnoliaWhite-color;
     transition: border 2s;
-    box-shadow: -1px 2px 2px #000000;
+
+
+    // box-shadow: -1px 2px 2px #000000;
 }
 
 @keyframes bounce-1 {
@@ -106,13 +129,18 @@
     background-color: $blueJean-color;
 }
 
-.infoContainer{
+.infoContents{
     background-color: $platinum-color;
     border-radius: 20px;
     width:70%;
     margin-top:30px;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 50px auto;
     padding:30px;
+}
+.infoContainer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
 }
 .infoTitle{
     word-wrap: break-word;
@@ -124,4 +152,43 @@
     border-radius: 20px;
     text-align: left;
     font-weight: bold;
+}
+
+.item{
+    padding:10px;
+    margin:5px;
+}
+
+.infoText{
+    width:50%;
+}
+
+.infoImage{
+    width:50%;
+}
+.aboutImages{
+    width:100%;
+    background-color: red;
+
+}
+
+.buttonAbout{
+    background-color: $platinum-color;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 1s;
+    box-shadow: 0 2px 2px;
+
+
+}
+
+.buttonImage{
+    transform: scale(0.8,0.8);
+
+}
+
+.buttonAbout:hover{
+    background-color: $magnoliaWhite-color;
+    border-radius: 50%;
+    transition: 1s;
 }
