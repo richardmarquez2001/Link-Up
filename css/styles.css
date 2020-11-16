@@ -415,6 +415,117 @@ h2 {
   height: 180%;
 }
 
+.matcher-html {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.matcher-container {
+  background-color: white;
+  width: 80%;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 15%;
+  margin-right: auto;
+  border-radius: 30px;
+}
+
+.matcher-container .matcher-card {
+  background-color: #F2CD5D;
+  width: 30%;
+  height: 300px;
+  border-radius: 30px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.matcher-container .matcher-card .profile-pic {
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 20px;
+}
+
+.matcher-container .matcher-info {
+  padding: 20px;
+  padding-left: 40%;
+  text-align: left;
+}
+
+.matcher-container .matcher-info .matcher-name {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.matcher-container .matcher-info h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.matcher-container .matcher-info .request-btn {
+  float: right;
+  margin-top: 80px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  border-radius: 20px;
+  border: none;
+  background-color: #F2CD5D;
+}
+
+.matcher-container2 {
+  width: 80%;
+  height: 300px;
+  margin-top: 100px;
+  margin-left: 15%;
+  margin-right: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.matcher-container2 .matcher-favs {
+  width: 50%;
+  height: 300px;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.matcher-container2 .matcher-favs h3 {
+  margin-bottom: 70px;
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.matcher-container2 .matcher-links {
+  margin-left: 50%;
+  position: absolute;
+}
+
+.matcher-container2 .matcher-links .link-title {
+  background-color: white;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.matcher-container2 .matcher-links .links {
+  background-color: #B4A0E5;
+  height: 40px;
+  width: 280px;
+  font-size: 25px;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 3px;
+  margin-bottom: 30px;
+  color: white;
+}
+
 .question-html {
   text-align: center;
   font-family: "Quicksand", sans-serif;
