@@ -1,0 +1,122 @@
+.question-html {
+    text-align: center;
+    font-family: $quicksand-font;
+}
+
+.question-body {
+    h2 {
+        color: white;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+
+    .question-st {
+        margin: 0 0 20px 0;
+        color: white;
+        font-size: 35px;
+    }
+
+    .question2-back-btn, .question2-btn {
+        height: 40px;
+        font-size: 20px;
+        border-radius: 30px;
+        border: none;
+        margin: 10px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .question2-back-btn {
+        width: 150px;
+
+    }
+    .question2-btn {
+        width: 300px;
+        background-color: $orangeYellowCrayola-color;
+    }
+}
+
+.question-container {
+    background-color: lightgrey;
+    width: 70%;
+    height: 400px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 50px;
+    overflow: scroll;
+
+    .question-text {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .question-sm-text {
+        font-size: 25px;
+        margin-bottom: 70px;
+    }
+
+    .question-back-btn, .question-btn {
+        height: 40px;
+        font-size: 20px;
+        border-radius: 30px;
+        border: none;
+    }
+    .question-back-btn {
+        width: 150px;
+
+    }
+    .question-btn {
+        width: 300px;
+        background-color: $orangeYellowCrayola-color;
+    }
+}
+
+.question2-container{
+    background-color: lightgrey;
+    width: 70%;
+    height: 30%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+
+    .question2-text {
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .question2-sm-text {
+        font-size: 25px;
+        margin-bottom: 70px;
+        text-align: left;
+    }
+
+    .option-btn {
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 30px;
+        border: none;
+        margin: 20px;
+    }
+
+    .question-form {
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 20px;
+
+        label {
+            font-size: 25px;
+        }
+
+        input {
+            margin: 20px;
+        }
+    }
+
+}

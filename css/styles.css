@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap");
-* {
+.contact-html {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .msg-form {
@@ -18,6 +18,8 @@
   text-align: left;
   padding-left: 10px;
   border-radius: 10px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 .msg-form #email {
@@ -28,7 +30,6 @@
   padding-left: 10px;
   font-weight: 500;
   color: white;
-  margin-top: 40px;
 }
 
 .msg-form #msg {
@@ -37,6 +38,7 @@
   height: 200px;
   text-align: left;
   padding-top: 10px;
+  resize: none;
 }
 
 .msg-form #send-btn {
@@ -45,9 +47,10 @@
   display: block;
   margin: 0 auto;
   border-radius: 20px;
+  border: none;
 }
 
-body h2 {
+.contact-body h2 {
   color: white;
   margin-top: 100px;
   margin-bottom: 50px;
@@ -176,5 +179,126 @@ h2 {
 .btn1:hover::before,
 .btn2:hover::before {
   height: 180%;
+}
+
+.question-html {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.question-body h2 {
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.question-body .question-st {
+  margin: 0 0 20px 0;
+  color: white;
+  font-size: 35px;
+}
+
+.question-body .question2-back-btn, .question-body .question2-btn {
+  height: 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  margin: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.question-body .question2-back-btn {
+  width: 150px;
+}
+
+.question-body .question2-btn {
+  width: 300px;
+  background-color: #F2CD5D;
+}
+
+.question-container {
+  background-color: lightgrey;
+  width: 70%;
+  height: 400px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 50px;
+  overflow: scroll;
+}
+
+.question-container .question-text {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.question-container .question-sm-text {
+  font-size: 25px;
+  margin-bottom: 70px;
+}
+
+.question-container .question-back-btn, .question-container .question-btn {
+  height: 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+}
+
+.question-container .question-back-btn {
+  width: 150px;
+}
+
+.question-container .question-btn {
+  width: 300px;
+  background-color: #F2CD5D;
+}
+
+.question2-container {
+  background-color: lightgrey;
+  width: 70%;
+  height: 30%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.question2-container .question2-text {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.question2-container .question2-sm-text {
+  font-size: 25px;
+  margin-bottom: 70px;
+  text-align: left;
+}
+
+.question2-container .option-btn {
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  margin: 20px;
+}
+
+.question2-container .question-form {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.question2-container .question-form label {
+  font-size: 25px;
+}
+
+.question2-container .question-form input {
+  margin: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
