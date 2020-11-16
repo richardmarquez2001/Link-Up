@@ -1,4 +1,161 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap");
+.content {
+  font-size: 20px;
+  background-color: #FFFAFF;
+  font-family: "Quicksand", sans-serif;
+}
+
+.title {
+  text-align: center;
+  padding: 0;
+  font-size: 3.5em;
+  margin: 0;
+  padding: 60px 20px;
+}
+
+.navBar {
+  background-color: #F2CD5D;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  right: 0;
+}
+
+.link {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #302B27;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+}
+
+.bubblesContainer {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+}
+
+.bubble {
+  text-align: center;
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 40px;
+  border-radius: 50%;
+  font-weight: bolder;
+  color: #FFFAFF;
+  margin: 10px;
+  border: solid 3px #FFFAFF;
+  -webkit-transition: border 2s;
+  transition: border 2s;
+  -webkit-box-shadow: -1px 2px 2px #000000;
+          box-shadow: -1px 2px 2px #000000;
+}
+
+@-webkit-keyframes bounce-1 {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1, 0.9) translateY(0px);
+            transform: scale(1, 0.9) translateY(0px);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1) translateY(-90px);
+            transform: scale(0.9, 1) translateY(-90px);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes bounce-1 {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1, 0.9) translateY(0px);
+            transform: scale(1, 0.9) translateY(0px);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1) translateY(-90px);
+            transform: scale(0.9, 1) translateY(-90px);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+
+.p1:hover,
+.p2:hover,
+.p3:hover,
+.p4:hover,
+.p5:hover,
+.p6:hover,
+.p7:hover {
+  border: solid 3px #EAEAEA;
+  -webkit-animation: bounce-1;
+          animation: bounce-1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+.b1 {
+  background-color: #8AE9C1;
+}
+
+.b2 {
+  background-color: #FC6471;
+}
+
+.b3 {
+  background-color: #B4A0E5;
+}
+
+.b4 {
+  background-color: #55ACEE;
+}
+
+.infoContainer {
+  background-color: #EAEAEA;
+  border-radius: 20px;
+  width: 70%;
+  margin-top: 30px;
+  margin: 50px auto 0 auto;
+  padding: 30px;
+}
+
+.infoTitle {
+  word-wrap: break-word;
+  background-color: #B4A0E5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 40px;
+  margin: 20px;
+  color: #FFFAFF;
+  border-radius: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+
 .contact-html {
   text-align: center;
   font-family: "Quicksand", sans-serif;
