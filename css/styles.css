@@ -15,7 +15,7 @@ html {
 }
 
 .logo {
-  width: 5%;
+  width: 10%;
 }
 
 nav {
@@ -129,79 +129,5 @@ input.submit {
   border-radius: 18px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 20px;
-}
-
-.about {
-  height: 100px;
-  margin-top: 100px;
-  font-family: 'Poiret One', cursive;
-  margin-left: 30px;
-}
-
-.test {
-  height: 100px;
-  margin-top: 100px;
-  font-family: 'Poiret One', cursive;
-  margin-left: 30px;
-}
-
-.about h1 {
-  font-size: 150px;
-  z-index: 0;
-  opacity: .2;
-  color: white;
-}
-
-.test h1 {
-  font-size: 150px;
-  z-index: 0;
-  opacity: .2;
-  color: white;
-}
-
-.about-me-info {
-  max-width: 900px;
-  background-color: #fdcfd7;
-  -webkit-box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
-  padding: 50px;
-  position: relative;
-  top: -70px;
-  left: 50%;
-  right: 50%;
-  -webkit-transform: translateX -50%;
-          transform: translateX -50%;
-  z-index: 1;
-}
-
-.test-me-info {
-  max-width: 900px;
-  background-color: #fdcfd7;
-  -webkit-box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
-  padding: 50px;
-  position: relative;
-  top: -70px;
-  left: 50%;
-  right: 50%;
-  -webkit-transform: translateX -50%;
-          transform: translateX -50%;
-  z-index: 1;
-}
-
-.about-me-info p,
-.test-me-info p {
-  font-size: 1.3rem;
-  color: black;
-}
-
-a.about-me-info p:nth-child(2),
-a.about-me-info p:last-child {
-  margin-top: 30px;
-}
-
-a.test-me-info p:nth-child(2),
-a.test-me-info p:last-child {
-  margin-top: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
