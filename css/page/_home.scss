@@ -1,0 +1,187 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Poiret One', cursive; */
+}
+
+body {
+    background-color: #7ea9a4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #7ea9a4;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.welcome {
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    border: 1px solid white;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1,
+.btn2 {
+    color: white;
+}
+
+.btn1:hover,
+.btn2:hover {
+    color: black;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before,
+.btn2::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before,
+.btn2:hover::before {
+    height: 180%;
+}
+
+input.submit {
+    margin-top: 40px;
+    width: 75px;
+    height: 30px;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 20px;
+}
+
+.about {
+    height: 100px;
+    margin-top: 100px;
+    font-family: 'Poiret One', cursive;
+    margin-left: 30px;
+}
+
+.test {
+    height: 100px;
+    margin-top: 100px;
+    font-family: 'Poiret One', cursive;
+    margin-left: 30px;
+}
+
+.about h1 {
+    font-size: 150px;
+    z-index: 0;
+    opacity: .2;
+    color: white;
+}
+
+.test h1 {
+    font-size: 150px;
+    z-index: 0;
+    opacity: .2;
+    color: white;
+}
+
+.about-me-info {
+    max-width: 900px;
+    background-color: #fdcfd7;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    left: 50%;
+    right: 50%;
+    transform: translateX (-50%);
+    z-index: 1;
+}
+
+.test-me-info {
+    max-width: 900px;
+    background-color: #fdcfd7;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    left: 50%;
+    right: 50%;
+    transform: translateX (-50%);
+    z-index: 1;
+}
+
+.about-me-info p,
+.test-me-info p {
+    font-size: 1.3rem;
+    color: black;
+}
+
+a.about-me-info p:nth-child(2),
+a.about-me-info p:last-child {
+    margin-top: 30px;
+}
+
+a.test-me-info p:nth-child(2),
+a.test-me-info p:last-child {
+    margin-top: 30px;
+}
