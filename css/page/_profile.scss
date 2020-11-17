@@ -101,6 +101,31 @@ svg {
     height: 2.5em;
 }
 
-.linkContent {
-    background-color: green;
+.linksContent {
+
+    .linkTitle{
+        background-color: $platinum-color;
+        text-align:left;
+        padding:2px 5px;
+        border-radius:20px;
+        p{
+            font-family:$quicksand-font;
+            font-weight:bold;
+        }
+    }
+    .mostRecentThree{
+    margin:30px;
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+    padding:20px;
+     justify-content:space-around;
+    overflow-x:scroll;
+    background-color: aqua;
+    }
+    .item{
+        background-color: red;
+        width:40%;
+        padding:20px;
+    }
 }

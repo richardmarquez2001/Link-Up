@@ -725,8 +725,40 @@ svg {
   height: 2.5em;
 }
 
-.linkContent {
-  background-color: green;
+.linksContent .linkTitle {
+  background-color: #EAEAEA;
+  text-align: left;
+  padding: 2px 5px;
+  border-radius: 20px;
+}
+
+.linksContent .linkTitle p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.linksContent .mostRecentThree {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow-x: scroll;
+  background-color: aqua;
+}
+
+.linksContent .item {
+  background-color: red;
+  width: 40%;
+  padding: 20px;
 }
 
 .question-html {
