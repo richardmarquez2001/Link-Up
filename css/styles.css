@@ -734,8 +734,12 @@ svg {
   font-family: "Quicksand", sans-serif;
 }
 
+.question-body {
+  background-color: white;
+}
+
 .question-body h2 {
-  color: white;
+  color: #70a288;
   margin-top: 100px;
   margin-bottom: 50px;
   font-size: 40px;
@@ -743,7 +747,7 @@ svg {
 
 .question-body .question-st {
   margin: 0 0 20px 0;
-  color: white;
+  color: #70a288;
   font-size: 35px;
 }
 
@@ -767,7 +771,7 @@ svg {
 }
 
 .question-container {
-  background-color: lightgrey;
+  background-color: #70a288;
   width: 70%;
   height: 400px;
   display: inline-block;
@@ -781,11 +785,13 @@ svg {
 .question-container .question-text {
   font-size: 35px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .question-container .question-sm-text {
   font-size: 25px;
   margin-bottom: 70px;
+  color: white;
 }
 
 .question-container .question-back-btn, .question-container .question-btn {
@@ -805,7 +811,7 @@ svg {
 }
 
 .question2-container {
-  background-color: lightgrey;
+  background-color: #70a288;
   width: 70%;
   height: 30%;
   display: inline-block;
@@ -819,6 +825,7 @@ svg {
   font-size: 30px;
   margin-bottom: 15px;
   margin-top: 10px;
+  color: white;
 }
 
 .question2-container .question2-sm-text {
@@ -844,9 +851,70 @@ svg {
 
 .question2-container .question-form label {
   font-size: 25px;
+  color: white;
 }
 
 .question2-container .question-form input {
   margin: 20px;
+}
+
+.question-submit-html {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.question-submit-body {
+  background-color: white;
+}
+
+.question-submit-body h2 {
+  font-size: 40px;
+  color: #70a288;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.question-submit-body .progress {
+  width: 80%;
+  background-color: white;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question-submit-body #progress-bar {
+  width: 5%;
+  height: 40px;
+  background-color: #F2CD5D;
+  font-weight: 800;
+}
+
+.result-container {
+  width: 80%;
+  height: 200px;
+  background-color: #70a288;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding-top: 40px;
+}
+
+#result-btn {
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 40px;
+}
+
+#result-btn2 {
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */

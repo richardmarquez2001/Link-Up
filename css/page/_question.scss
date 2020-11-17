@@ -1,11 +1,13 @@
 .question-html {
     text-align: center;
     font-family: $quicksand-font;
+
 }
 
 .question-body {
+    background-color: white;
     h2 {
-        color: white;
+        color: $polishedPine-color;
         margin-top: 100px;
         margin-bottom: 50px;
         font-size: 40px;
@@ -13,7 +15,7 @@
 
     .question-st {
         margin: 0 0 20px 0;
-        color: white;
+        color: $polishedPine-color;
         font-size: 35px;
     }
 
@@ -37,7 +39,7 @@
 }
 
 .question-container {
-    background-color: lightgrey;
+    background-color: $polishedPine-color;
     width: 70%;
     height: 400px;
     display: inline-block;
@@ -50,11 +52,13 @@
     .question-text {
         font-size: 35px;
         margin-bottom: 20px;
+        color: white;
     }
 
     .question-sm-text {
         font-size: 25px;
         margin-bottom: 70px;
+        color: white;
     }
 
     .question-back-btn, .question-btn {
@@ -74,7 +78,7 @@
 }
 
 .question2-container{
-    background-color: lightgrey;
+    background-color: $polishedPine-color;
     width: 70%;
     height: 30%;
     display: inline-block;
@@ -88,6 +92,7 @@
         font-size: 30px;
         margin-bottom: 15px;
         margin-top: 10px;
+        color: white;
     }
 
     .question2-sm-text {
@@ -112,6 +117,7 @@
 
         label {
             font-size: 25px;
+            color: white;
         }
 
         input {
@@ -120,4 +126,69 @@
         }
     }
 
+}
+
+.question-submit-html {
+    text-align: center;
+    font-family: $quicksand-font;
+}
+
+.question-submit-body {
+    background-color: white;
+
+    h2 {
+        font-size: 40px;
+        color: $polishedPine-color;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+  
+
+    .progress {
+        width: 80%;
+        background-color: white;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+
+
+      }
+      
+      #progress-bar {
+        width: 5%;
+        height: 40px;
+        background-color: $orangeYellowCrayola-color;
+        font-weight: 800;
+
+      }
+    
+}
+
+.result-container {
+    width: 80%;
+    height: 200px;
+    background-color: $polishedPine-color;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding-top: 40px;
+}
+
+#result-btn {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 40px;
+}
+
+#result-btn2 {
+    background-color: white;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
 }
