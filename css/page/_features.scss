@@ -5,8 +5,6 @@
     width: 70%;
     background-color: $magnoliaWhite-color;
     box-shadow: 0 5px 8px $jet-color;
-    animation-name: FadeIn;
-    animation-duration: 2s;
 }
 
 @keyframes FadeIn {
@@ -60,7 +58,10 @@
     margin: 10px auto;
 
 }
-
+.animateFadein{
+    animation-name: FadeIn;
+    animation-duration: 2s;
+}
 .featureInfo {
     padding: 20px;
     width: 50%;

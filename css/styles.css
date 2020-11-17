@@ -204,18 +204,10 @@
 
 .infoText {
   width: 50%;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 .infoImage {
   width: 50%;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 .aboutImages {
@@ -315,10 +307,6 @@
   background-color: #FFFAFF;
   -webkit-box-shadow: 0 5px 8px #302B27;
           box-shadow: 0 5px 8px #302B27;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
 @-webkit-keyframes FadeIn {
@@ -381,6 +369,13 @@
   margin: 10px auto;
 }
 
+.animateFadein {
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 .featureInfo {
   padding: 20px;
   width: 50%;
@@ -394,15 +389,11 @@
   text-align: center;
 }
 
-* {
+body {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* font-family: 'Poiret One', cursive; */
-}
-
-body {
   background-color: #7ea9a4;
 }
 
@@ -627,6 +618,106 @@ h2 {
   padding-top: 3px;
   margin-bottom: 30px;
   color: white;
+}
+
+.sideNavBar {
+  width: 60px;
+  background-color: #F2CD5D;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.profileContent {
+  margin-left: 60px;
+  padding: 0px 10px;
+  text-align: center;
+  height: 270px;
+}
+
+.profileInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.profileImage {
+  width: 20%;
+}
+
+.pfp {
+  border-radius: 20%;
+  width: 200px;
+  border: solid #EAEAEA;
+}
+
+.aboutMe {
+  padding: 0 0 0 60px;
+  word-wrap: break;
+  width: 60%;
+  background-color: white;
+  word-wrap: break-word;
+  text-align: left;
+  -webkit-box-shadow: 0 2px 8px;
+          box-shadow: 0 2px 8px;
+}
+
+.aboutMe h1 {
+  padding: 0;
+  margin: 5px;
+  font-size: 2.0em;
+}
+
+.aboutMe h3 {
+  padding: 0;
+  margin: 5px;
+}
+
+.aboutMe span {
+  font-weight: lighter;
+}
+
+.profileButtons {
+  background-color: #F2CD5D;
+  border: none;
+  margin: auto;
+}
+
+.pbBottom {
+  position: fixed;
+  bottom: 0;
+  padding: 13px;
+  left: 0px;
+  border-radius: 5px 50px 0 5px;
+}
+
+.navLinksProfile {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-but, .home-but, .settings-but, .matches-but, .instruction-but {
+  background-color: #F2CD5D;
+  padding: 20px 0;
+}
+
+.settings-but {
+  display: block;
+  background-color: #F2CD5D;
+  bottom: 0;
+  top: 0;
+}
+
+svg {
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .question-html {
