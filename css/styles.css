@@ -204,15 +204,22 @@
 
 .infoText {
   width: 50%;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .infoImage {
   width: 50%;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .aboutImages {
   width: 100%;
-  background-color: red;
 }
 
 .buttonAbout {
@@ -293,6 +300,98 @@
   margin-top: 100px;
   margin-bottom: 50px;
   font-size: 30px;
+}
+
+.featureContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 50px auto;
+  width: 70%;
+  background-color: #FFFAFF;
+  -webkit-box-shadow: 0 5px 8px #302B27;
+          box-shadow: 0 5px 8px #302B27;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.item {
+  margin: 10px;
+  padding: 20px;
+  width: 50%;
+}
+
+.buttonContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.featureButton {
+  padding: 15px;
+  margin: auto 30px;
+  background-color: #EAEAEA;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.featureButton:hover {
+  opacity: 0.5;
+  background-color: #302B27;
+}
+
+.featureTitle {
+  background-color: #8AE9C1;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+.featureInfo {
+  padding: 20px;
+  width: 50%;
+}
+
+.featureImage {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
 }
 
 * {

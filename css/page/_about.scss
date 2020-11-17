@@ -1,29 +1,31 @@
 .content {
     font-size: $navBartext-fontsize;
     background-color: $magnoliaWhite-color;
-    font-family:$quicksand-font;
+    font-family: $quicksand-font;
 }
 
 .title {
     text-align: center;
     padding: 0;
     font-size: 3em;
-    margin:0;
+    margin: 0;
     padding: 60px 20px;
 }
 
 .navBar {
-    background-color: $orangeYellowCrayola-color;  
+    background-color: $orangeYellowCrayola-color;
     margin: 0;
     padding: 0;
     width: 100%;
     right: 0;
 }
-.navLinks{
+
+.navLinks {
     list-style: none;
     margin: auto;
 
 }
+
 .link {
     display: inline;
     font-family: $quicksand-font;
@@ -44,29 +46,35 @@
     padding: 20px;
     font-family: $raleway-font;
     font-size: 1.1em;
-    
-    .p1{
-        padding:50px 45px;
+
+    .p1 {
+        padding: 50px 45px;
     }
-    .p2{
-        padding:50px 35px;
+
+    .p2 {
+        padding: 50px 35px;
     }
-    .p3{
-         padding:50px 35px;
+
+    .p3 {
+        padding: 50px 35px;
     }
-    .p4{
-        padding:50px 40px;
+
+    .p4 {
+        padding: 50px 40px;
     }
-    .p5{
-        padding:50px 45px;
+
+    .p5 {
+        padding: 50px 45px;
     }
-    .p6{
-        padding:50px 45px;
+
+    .p6 {
+        padding: 50px 45px;
     }
-    .p7{
-        padding:50px 30px;
+
+    .p7 {
+        padding: 50px 30px;
     }
-    
+
 }
 
 .bubble {
@@ -132,50 +140,55 @@
     background-color: $blueJean-color;
 }
 
-.infoContents{
+.infoContents {
     background-color: $platinum-color;
     border-radius: 20px;
-    width:70%;
-    margin-top:30px;
+    width: 70%;
+    margin-top: 30px;
     margin: 50px auto 50px auto;
-    padding:30px;
+    padding: 30px;
 }
-.infoContainer{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-.infoTitle{
+
+.infoTitle {
     word-wrap: break-word;
     background-color: $maximumBluePurple-color;
-    width:fit-content;
-    padding:10px 40px;
-    margin:20px;
-    color:$magnoliaWhite-color;
+    width: fit-content;
+    padding: 10px 40px;
+    margin: 20px;
+    color: $magnoliaWhite-color;
     border-radius: 20px;
     text-align: left;
     font-weight: bold;
 }
 
-.item{
-    padding:10px;
-    margin:5px;
+.item {
+    padding: 10px;
+    margin: 5px;
 }
 
-.infoText{
-    width:50%;
+.infoText {
+    width: 50%;
+    animation-name:FadeIn;
+    animation-duration: 2s;
 }
 
-.infoImage{
-    width:50%;
-}
-.aboutImages{
-    width:100%;
-    background-color: red;
-
+.infoImage {
+    width: 50%;
+    animation-name:FadeIn;
+    animation-duration: 2s;
 }
 
-.buttonAbout{
+.aboutImages {
+    width: 100%;
+}
+
+.buttonAbout {
     background-color: $platinum-color;
     border-radius: 50%;
     border: none;
@@ -185,12 +198,12 @@
 
 }
 
-.buttonImage{
-    transform: scale(0.8,0.8);
+.buttonImage {
+    transform: scale(0.8, 0.8);
 
 }
 
-.buttonAbout:hover{
+.buttonAbout:hover {
     background-color: $magnoliaWhite-color;
     border-radius: 50%;
     transition: 1s;
