@@ -7,8 +7,6 @@
     height: 100%;
     margin: 0;
     padding: 0;
-
-
 }
 
 .profileContent {
@@ -55,7 +53,7 @@
     margin:20px;
     word-wrap:break;
     width:60%;
-    background-color: white;
+    background-color: red;
     word-wrap: break-word;
     text-align: left;
     box-shadow: 0 2px 8px $jet-black;
@@ -104,5 +102,5 @@ svg {
 }
 
 .linkContent{
-    background-color:pink;
+    background-color:green;
 }
