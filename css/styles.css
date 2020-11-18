@@ -725,19 +725,35 @@ svg {
   height: 2.5em;
 }
 
-.linksContent .linkTitle {
-  background-color: #EAEAEA;
-  text-align: left;
-  padding: 2px 5px;
-  border-radius: 20px;
+.contentContainer .Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.linksContent .linkTitle p {
+.contentContainer .Title p {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
+  background-color: #EAEAEA;
+  padding: 10px 60px 10px 30px;
+  border-radius: 20px;
+  text-align: left;
+  position: absolute;
+  left: 130px;
 }
 
-.linksContent .mostRecentThree {
+.contentContainer .Title .item {
+  background-color: #EAEAEA;
+  border-radius: 50%;
+}
+
+.contentContainer .Title .titleIcon {
+  display: inline;
+  margin: 0;
+  width: 40px;
+}
+
+.contentContainer .mostRecentThree {
   margin: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,10 +771,62 @@ svg {
   background-color: aqua;
 }
 
-.linksContent .item {
+.contentContainer .item {
   background-color: red;
   width: 40%;
   padding: 20px;
+}
+
+.BottomContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.BottomContainer .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.BottomContainer .contentContainer .Title p {
+  position: absolute;
+  left: 140px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.BottomContainer .contentContainer .Title .placement {
+  position: inherit;
+  float: right;
+}
+
+.BottomContainer .contentContainer .Title .item {
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+}
+
+.BottomContainer .contentContainer .Title .titleIcon {
+  padding: 20px;
+  margin: 0;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.BottomContainer .itemB {
+  width: 50%;
+  margin: 10px;
+  padding: 20px;
+  background-color: blue;
 }
 
 .question-html {

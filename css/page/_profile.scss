@@ -101,17 +101,33 @@ svg {
     height: 2.5em;
 }
 
-.linksContent {
+.contentContainer {
 
-    .linkTitle{
-        background-color: $platinum-color;
-        text-align:left;
-        padding:2px 5px;
-        border-radius:20px;
+    .Title{
+        display:flex;        
         p{
             font-family:$quicksand-font;
             font-weight:bold;
+            background-color: $platinum-color;
+            padding:10px 60px 10px 30px;
+            border-radius:20px;
+            text-align:left;
+            position:absolute;
+            left:130px;
+
         }
+        .item{
+            background-color: $platinum-color;
+            border-radius:50%;
+            
+        }
+        .titleIcon{
+                display:inline;
+                margin:0;
+                width:40px;
+        }
+            
+        
     }
     .mostRecentThree{
     margin:30px;
@@ -123,9 +139,52 @@ svg {
     overflow-x:scroll;
     background-color: aqua;
     }
+
+  
     .item{
         background-color: red;
         width:40%;
         padding:20px;
     }
+}
+
+.BottomContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    .contentContainer{
+        display:flex;
+        flex-wrap: wrap;
+        
+    
+        .Title{
+            p{
+            position:absolute;
+            left:140px;
+            width:fit-content;
+            }
+              .placement{
+                  position: inherit;
+                  float:right;
+             }
+            .item{
+                border-radius:20px;
+                padding:10px 30px 10px 30px;
+
+            }
+            .titleIcon{
+                padding:20px;
+                margin:0;
+                width:40px;
+                border-radius:50%;
+            }
+        }
+    }
+    .itemB{
+        width:50%;
+        margin:10px;
+        padding:20px;
+        background-color: blue;
+    }
+    
 }
