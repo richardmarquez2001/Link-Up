@@ -1,6 +1,11 @@
 <html>
     <head>
-        <link rel = "stylesheet" href = "../css/styles.css">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <title>Login</title>
+      </head>
     </head>
 
     <body>
@@ -13,7 +18,19 @@
               <li class="link"><a href="./contact.html" class="link">Contact</a></li>
             </ul>
           </nav>
-        login
-        <br>Note! Make sure to add styling on your corresponding scss file.
+        
+        <div class = "login-body">
+          <img class = "login-body__image" src = "../images/logoG2.png" alt = "Link-Up logo small format.">
+          <form action="action_page.php" method="post">
+          
+              <input class = "login-body__info" type="text" placeholder="Enter Username" name="uname" required>
+              <br>
+          
+              <input class = "login-body__info" type="password" placeholder="Enter Password" name="psw" required>
+              <br>
+              <button class = "btn btn1" type="submit">Login</button>
+              <button class = "btn btn1" type="submit">Register</button>
+          </form>
+      </div>
     </body>
 </html>
