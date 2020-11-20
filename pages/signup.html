@@ -1,10 +1,72 @@
-<html>
-    <head>
-        <link rel = "stylesheet" href = "../css/styles.css">
-    </head>
+<!DOCTYPE html>
 
-    <body>
-        signup
-        <br>Note! Make sure to add styling on your corresponding scss file.
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Up: Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href=" https://fonts.googleapis.com/css2?family=Poiret+One&display=swap " rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    signup
+    <br>Note! Make sure to add styling on your corresponding scss file.
+
+    <nav class="navBar">
+        <ul class="navLinks">
+            <li class="link"><a href="./home.html" class="link">Home</a></li>
+            <li class="link"><a href="./about.html" class="link">About</a></li>
+            <li class="link"><a href="./login.html" class="link">Login</a></li>
+            <li class="link"><a href="./features.html" class="link">Features</a></li>
+            <li class="link"><a href="./contact.html" class="link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function validatePassword(password, confirmed_password) {
+
+            if (password.value != confirm_password.value) {
+                alert("Passwords did not match.");
+                return false;
+            } else {
+                alert("Passwords match.");
+                // return true;
+            }
+            alert("Every fillable section is verified. Taking you to the profile page.");
+        }
+    </script>
+
+    <div class="register">
+        <img class="login-body__image" src="../images/logoG2.png" alt="Link-Up logo small format.">
+        <form onsubmit="return validatePassword(document.getElementById('password'), document.getElementById('confirmed_password'))" action="register.php" method="post">
+            <label>Full Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            <br>
+
+            <label for="email ">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Email" required><br>
+
+            <label for="username ">Username</label><br>
+            <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{5,}" placeholder="Username" required>
+            <p>Letters and numbers only. No special characters. (Min. 5 characters)</p>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="Password" required>
+            <input type="password" id="confirm_password" name="confirmed_password" placeholder="Confirm Password" required>
+            <p>Letters and numbers only. No special characters. (Min. 8 characters)</p>
+            <br>
+
+            <input type="submit" class="submit" value="Register"><br>
+
+
+            <button class="btn btn1 " type="submit ">Login</button>
+            <button class="btn btn1 " type="submit ">Register</button>
+        </form>
+
+    </div>
+</body>
+
+
 </html>
