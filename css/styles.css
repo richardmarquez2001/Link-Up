@@ -560,7 +560,7 @@ h2 {
 
 .matcher-container .matcher-info .request-btn {
   float: right;
-  margin-top: 80px;
+  margin-top: 70px;
   width: 200px;
   height: 50px;
   font-size: 17px;
@@ -727,6 +727,10 @@ svg {
 
 .linkContent {
   background-color: green;
+}
+
+button {
+  outline: none;
 }
 
 .question-html {

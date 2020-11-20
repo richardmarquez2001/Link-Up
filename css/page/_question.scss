@@ -1,3 +1,7 @@
+button {
+    outline: none;
+}
+
 .question-html {
     text-align: center;
     font-family: $quicksand-font;
@@ -182,6 +186,7 @@
     border-radius: 30px;
     border: none;
     margin-top: 40px;
+    
 }
 
 #result-btn2 {
