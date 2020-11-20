@@ -14,6 +14,7 @@
 }
 
 .navBar {
+  font-size: 20px;
   background-color: #F2CD5D;
   margin: 0;
   padding: 0;
@@ -507,6 +508,51 @@ h2 {
 .btn1:hover::before,
 .btn2:hover::before {
   height: 180%;
+}
+
+.login-body {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.login-body__button {
+  font-family: "Quicksand", sans-serif;
+  background-color: white;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  margin: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.login-body__image {
+  margin: 1em;
+  width: 10%;
+}
+
+.login-body h1 {
+  padding-bottom: 30px;
+}
+
+.login-body__prompt, .login-body__text {
+  font-size: 20px;
+}
+
+.login-body__info {
+  font-family: "Quicksand", sans-serif;
+  background-color: white;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .matcher-html {
