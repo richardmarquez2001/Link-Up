@@ -800,7 +800,7 @@ svg {
 }
 
 .contentContainer .mostRecentThree {
-  margin: 30px;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,17 +810,43 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 20px;
+  padding: 10px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  overflow-x: scroll;
-  background-color: aqua;
+}
+
+.contentContainer .mostRecentThree .item {
+  padding: 0;
+  border: solid 10px #8AE9C1;
+  border-radius: 20px;
+  background-color: #FFFAFF;
 }
 
 .contentContainer .item {
-  background-color: red;
   width: 40%;
   padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .contentContainer .mostRecentThree {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer .mostRecentThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contentContainer .mostRecentThree .item {
+    width: 100%;
+  }
 }
 
 .BottomContainer {
@@ -835,44 +861,80 @@ svg {
       justify-content: space-around;
 }
 
-.BottomContainer .contentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.BottomContainer img, .BottomContainer p {
+  display: inline-block;
 }
 
-.BottomContainer .contentContainer .Title p {
-  position: absolute;
-  left: 140px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.BottomContainer img {
+  width: 60px;
+  height: 60px;
+  float: left;
 }
 
-.BottomContainer .contentContainer .Title .placement {
-  position: inherit;
-  float: right;
-}
-
-.BottomContainer .contentContainer .Title .item {
+.BottomContainer p {
+  background-color: #EAEAEA;
   border-radius: 20px;
-  padding: 10px 30px 10px 30px;
-}
-
-.BottomContainer .contentContainer .Title .titleIcon {
-  padding: 20px;
-  margin: 0;
-  width: 40px;
-  border-radius: 50%;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: center;
 }
 
 .BottomContainer .itemB {
   width: 50%;
   margin: 10px;
   padding: 20px;
-  background-color: blue;
+}
+
+.BottomContainer .itemB .placement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.BottomContainer .questionaireContainer, .BottomContainer .socialMediaContainer {
+  -webkit-box-shadow: 0 2px 2px #EAEAEA;
+          box-shadow: 0 2px 2px #EAEAEA;
+  width: 80%;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+}
+
+.BottomContainer .media {
+  border-radius: 20px;
+  background-color: #B4A0E5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 800px) {
+  .BottomContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .BottomContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+  .BottomContainer .questionaireContainer, .BottomContainer .socialMediaContainer {
+    width: 100%;
+    padding: 40px;
+  }
+  .BottomContainer p {
+    width: 100%;
+  }
 }
 
 .question-html {
