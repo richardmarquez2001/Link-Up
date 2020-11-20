@@ -1,3 +1,4 @@
+
 .sideNavBar {
     width: 60px;
     background-color: $orangeYellowCrayola-color;
@@ -103,88 +104,143 @@ svg {
 
 .contentContainer {
 
-    .Title{
-        display:flex;        
-        p{
-            font-family:$quicksand-font;
-            font-weight:bold;
+    .Title {
+        display: flex;
+
+        p {
+            font-family: $quicksand-font;
+            font-weight: bold;
             background-color: $platinum-color;
-            padding:10px 60px 10px 30px;
-            border-radius:20px;
-            text-align:left;
-            position:absolute;
-            left:130px;
+            padding: 10px 60px 10px 30px;
+            border-radius: 20px;
+            text-align: left;
+            position: absolute;
+            left: 130px;
 
         }
-        .item{
+
+        .item {
             background-color: $platinum-color;
-            border-radius:50%;
-            
+            border-radius: 50%;
+
         }
-        .titleIcon{
-                display:inline;
-                margin:0;
-                width:40px;
+
+        .titleIcon {
+            display: inline;
+            margin: 0;
+            width: 40px;
         }
-            
-        
-    }
-    .mostRecentThree{
-    margin:30px;
-    display:flex;
-    flex-wrap:nowrap;
-    flex-direction:row;
-    padding:20px;
-     justify-content:space-around;
-    overflow-x:scroll;
-    background-color: aqua;
+
+
     }
 
-  
-    .item{
-        background-color: red;
-        width:40%;
-        padding:20px;
+    .mostRecentThree {
+        margin: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-around;
+        // background-color: aqua;
+       
+        .item {
+            padding:0;
+            border:solid 10px $magicMint-color;
+            border-radius: 20px;
+            background-color:$magnoliaWhite-color
+        }
+    
+    }
+     .item {
+        width: 40%;
+        padding: 20px;
+    }
+    @media screen and (max-width: 800px){
+        .mostRecentThree {
+           flex-direction: row;
+        }
+    
+    }
+    @media screen and (max-width: 600px){
+        .mostRecentThree {
+            flex-direction: column;
+            text-align: center;
+            .item{
+                width:100%;
+            }
+    
+        }
     }
 }
+  
 
-.BottomContainer{
-    display:flex;
-    flex-direction:row;
+.BottomContainer {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    .contentContainer{
-        display:flex;
-        flex-wrap: wrap;
+    img,p{
+        display:inline-block;
+    }
+   
+    img{
+        width:60px;
+        height:60px;
+        float: left;
+    }
+    p{
+        background-color: $platinum-color;
+        border-radius: 20px;
+        padding:10px 15px;
+        width: 100%;
+        text-align: center;
         
-    
-        .Title{
-            p{
-            position:absolute;
-            left:140px;
-            width:fit-content;
-            }
-              .placement{
-                  position: inherit;
-                  float:right;
-             }
-            .item{
-                border-radius:20px;
-                padding:10px 30px 10px 30px;
-
-            }
-            .titleIcon{
-                padding:20px;
-                margin:0;
-                width:40px;
-                border-radius:50%;
-            }
-        }
     }
-    .itemB{
-        width:50%;
-        margin:10px;
+    .itemB {
+        width: 50%;
+        margin: 10px;
+        padding: 20px;
+        // background-color: pink;
+        .placement{display: flex;}
+    }
+    .questionaireContainer,.socialMediaContainer{
+        box-shadow: 0 2px 2px $platinum-color;
+        width: 80%;
+        // background-color: rgb(138, 158, 138);
+        display:inline-block;
+        margin:20px;
         padding:20px;
-        background-color: blue;
     }
-    
+    .media{
+        border-radius:20px;
+        background-color:$maximumBluePurple-color;
+        width:fit-content;
+        padding:5px 20px;
+        margin:10px auto;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .BottomContainer {
+       flex-direction: row;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .BottomContainer {
+
+        flex-direction: column;
+        margin-left:30px;
+        margin-right:auto;
+        .questionaireContainer,.socialMediaContainer{
+        width:100%;
+        padding:40px;
+        }
+        p{
+            width: 100%;
+        }
+
+
+    }
+
 }
