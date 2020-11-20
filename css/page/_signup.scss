@@ -1,0 +1,36 @@
+.register-body {
+    text-align: center;
+    color: white;
+    font-family: $quicksand-font;
+}
+
+input {
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+label.headings {
+    font-weight: bold;
+}
+
+label.desc {
+    font-size: 15px;
+}
+
+input.submit {
+    text-align: center;
+}
+
+#email {
+    width: 435px;
+}
+
+#username {
+    width: 435px;
+}

@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    signup
-    <br>Note! Make sure to add styling on your corresponding scss file.
-
     <nav class="navBar">
         <ul class="navLinks">
             <li class="link"><a href="./home.html" class="link">Home</a></li>
@@ -37,32 +34,28 @@
         }
     </script>
 
-    <div class="register">
+    <div class="register-body">
         <img class="login-body__image" src="../images/logoG2.png" alt="Link-Up logo small format.">
-        <form onsubmit="return validatePassword(document.getElementById('password'), document.getElementById('confirmed_password'))" action="register.php" method="post">
-            <label>Full Name</label><br>
+        <form class="register-form" onsubmit="return validatePassword(document.getElementById('password'), document.getElementById('confirmed_password'))" action="register.php" method="post">
+            <label class="headings">Full Name</label><br>
             <input type="text" id="fname" name="fname" placeholder="First Name" required>
             <input type="text" id="lname" name="lname" placeholder="Last Name" required>
             <br>
 
-            <label for="email ">Email</label><br>
+            <label class="headings" for="email">Email</label><br>
             <input type="text" id="email" name="email" placeholder="Email" required><br>
 
-            <label for="username ">Username</label><br>
-            <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{5,}" placeholder="Username" required>
-            <p>Letters and numbers only. No special characters. (Min. 5 characters)</p>
+            <label class="headings" for="username">Username</label><br>
+            <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{5,}" placeholder="Username" required><br>
+            <label class="desc">Letters and numbers only. No special characters. (Min. 5 characters)</label><br><br>
 
-            <label for="password">Password</label><br>
+            <label class="headings" for="password">Password</label><br>
             <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="Password" required>
-            <input type="password" id="confirm_password" name="confirmed_password" placeholder="Confirm Password" required>
-            <p>Letters and numbers only. No special characters. (Min. 8 characters)</p>
-            <br>
+            <input type="password" id="confirm_password" name="confirmed_password" placeholder="Confirm Password" required><br>
+            <label class="desc">Letters and numbers only. No special characters. (Min. 8 characters)</label><br><br>
 
-            <input type="submit" class="submit" value="Register"><br>
+            <button class="btn btn1" type="submit">Register</button>
 
-
-            <button class="btn btn1 " type="submit ">Login</button>
-            <button class="btn btn1 " type="submit ">Register</button>
         </form>
 
     </div>
