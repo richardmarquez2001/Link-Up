@@ -237,6 +237,107 @@
   transition: 1s;
 }
 
+.MobileViewAbout {
+  display: None;
+}
+
+.MobileViewAbout .infoTitle {
+  background-color: #EAEAEA;
+  color: #302B27;
+}
+
+.MobileViewAbout .item {
+  background-color: #FFFAFF;
+  border-radius: 20px;
+}
+
+.MobileViewAbout .b3 {
+  background-color: #B4A0E5;
+}
+
+.MobileViewAbout .b1 {
+  background-color: #8AE9C1;
+}
+
+.MobileViewAbout .b2 {
+  background-color: #FC6471;
+}
+
+.MobileViewAbout .b4 {
+  background-color: #274690;
+}
+
+.mitem {
+  margin: 40px auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .infoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .title {
+    font-size: 40px;
+    margin: 10px;
+  }
+  .MobileViewAbout {
+    display: block;
+  }
+  .MobileViewAbout .infoContents {
+    width: 90%;
+    padding: 5px;
+  }
+  .MobileViewAbout .item {
+    width: 95%;
+    padding: 10px;
+  }
+  .MobileViewAbout img {
+    border-radius: 5px;
+  }
+  .bubblesContainer, .main {
+    display: None;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .infoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .title {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .MobileViewAbout {
+    display: block;
+  }
+  .MobileViewAbout .infoContents {
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+  }
+  .MobileViewAbout .item {
+    width: 95%;
+    padding: 10px;
+  }
+  .MobileViewAbout img {
+    border-radius: 5px;
+  }
+  .bubblesContainer, .main {
+    display: None;
+  }
+}
+
 .contact-html {
   text-align: center;
   font-family: "Quicksand", sans-serif;

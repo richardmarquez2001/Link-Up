@@ -41,7 +41,6 @@
 
 .bubblesContainer {
     text-align: center;
-    // display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -205,3 +204,96 @@
     border-radius: 50%;
     transition: 1s;
 }
+
+.MobileViewAbout{
+    display:None;
+    .infoTitle{
+        background-color: $platinum-color;
+        color: $jet-color;
+    }
+    .item{
+        background-color: $magnoliaWhite-color;
+        border-radius: 20px;;
+
+    }
+    .b3{
+        background-color: $maximumBluePurple-color;
+    }
+    .b1{
+        background-color: $magicMint-color;
+    }
+    .b2{
+        background-color: $fieryRose-color;
+    }
+    .b4{
+        background-color: $darkCornflowerBlue-color;
+    }
+}
+.mitem{
+    margin:40px auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .infoContainer{    
+        flex-direction: column;
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    .title{
+        font-size:40px;
+        margin:10px;
+    }
+    .MobileViewAbout{
+        display: block;
+
+        .infoContents{
+            width:90%;
+            padding:5px;
+        }
+        .item{
+            width:95%;
+            padding:10px;
+        
+        }
+        img{
+            border-radius:5px;
+        }
+    }
+    .bubblesContainer,.main{
+        display:None;
+    }
+}
+@media screen and (max-width: 600px) {
+    .infoContainer{    
+        flex-direction: column;
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    .title{
+        font-size:30px;
+        margin:10px;
+    }
+    .MobileViewAbout{
+        display: block;
+
+        .infoContents{
+            width:90%;
+            margin:10px;
+            padding:5px;
+        }
+        .item{
+            width:95%;
+            padding:10px;
+        
+        }
+        img{
+            border-radius:5px;
+        }
+    }
+    .bubblesContainer,.main{
+        display:None;
+    }
+}
+
