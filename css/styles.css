@@ -20,6 +20,7 @@
   padding: 0;
   width: 100%;
   right: 0;
+  left: 0;
 }
 
 .navLinks {
@@ -407,8 +408,9 @@
   margin: 50px auto;
   width: 70%;
   background-color: #FFFAFF;
-  -webkit-box-shadow: 0 5px 8px #302B27;
-          box-shadow: 0 5px 8px #302B27;
+  -webkit-box-shadow: 0 3px 5px #302B27;
+          box-shadow: 0 3px 5px #302B27;
+  border-radius: 20px;
 }
 
 .MobileView {
@@ -489,6 +491,7 @@
 
 .featureImage {
   width: 100%;
+  border-radius: 20px;
 }
 
 .title {
