@@ -14,6 +14,7 @@
 }
 
 .navBar {
+  font-size: 20px;
   background-color: #F2CD5D;
   margin: 0;
   padding: 0;
@@ -509,6 +510,51 @@ h2 {
   height: 180%;
 }
 
+.login-body {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.login-body__button {
+  font-family: "Quicksand", sans-serif;
+  background-color: white;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  margin: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.login-body__image {
+  margin: 1em;
+  width: 10%;
+}
+
+.login-body h1 {
+  padding-bottom: 30px;
+}
+
+.login-body__prompt, .login-body__text {
+  font-size: 20px;
+}
+
+.login-body__info {
+  font-family: "Quicksand", sans-serif;
+  background-color: white;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .matcher-html {
   text-align: center;
   font-family: "Quicksand", sans-serif;
@@ -725,8 +771,170 @@ svg {
   height: 2.5em;
 }
 
-.linkContent {
-  background-color: green;
+.contentContainer .Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentContainer .Title p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  background-color: #EAEAEA;
+  padding: 10px 60px 10px 30px;
+  border-radius: 20px;
+  text-align: left;
+  position: absolute;
+  left: 130px;
+}
+
+.contentContainer .Title .item {
+  background-color: #EAEAEA;
+  border-radius: 50%;
+}
+
+.contentContainer .Title .titleIcon {
+  display: inline;
+  margin: 0;
+  width: 40px;
+}
+
+.contentContainer .mostRecentThree {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contentContainer .mostRecentThree .item {
+  padding: 0;
+  border: solid 10px #8AE9C1;
+  border-radius: 20px;
+  background-color: #FFFAFF;
+}
+
+.contentContainer .item {
+  width: 40%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .contentContainer .mostRecentThree {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer .mostRecentThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contentContainer .mostRecentThree .item {
+    width: 100%;
+  }
+}
+
+.BottomContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.BottomContainer img, .BottomContainer p {
+  display: inline-block;
+}
+
+.BottomContainer img {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.BottomContainer p {
+  background-color: #EAEAEA;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.BottomContainer .itemB {
+  width: 50%;
+  margin: 10px;
+  padding: 20px;
+}
+
+.BottomContainer .itemB .placement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.BottomContainer .questionaireContainer, .BottomContainer .socialMediaContainer {
+  -webkit-box-shadow: 0 2px 2px #EAEAEA;
+          box-shadow: 0 2px 2px #EAEAEA;
+  width: 80%;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+}
+
+.BottomContainer .media {
+  border-radius: 20px;
+  background-color: #B4A0E5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 800px) {
+  .BottomContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .BottomContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+  .BottomContainer .questionaireContainer, .BottomContainer .socialMediaContainer {
+    width: 100%;
+    padding: 40px;
+  }
+  .BottomContainer p {
+    width: 100%;
+  }
 }
 
 button {

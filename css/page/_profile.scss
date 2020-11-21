@@ -1,3 +1,4 @@
+
 .sideNavBar {
     width: 60px;
     background-color: $orangeYellowCrayola-color;
@@ -101,6 +102,145 @@ svg {
     height: 2.5em;
 }
 
-.linkContent {
-    background-color: green;
+.contentContainer {
+
+    .Title {
+        display: flex;
+
+        p {
+            font-family: $quicksand-font;
+            font-weight: bold;
+            background-color: $platinum-color;
+            padding: 10px 60px 10px 30px;
+            border-radius: 20px;
+            text-align: left;
+            position: absolute;
+            left: 130px;
+
+        }
+
+        .item {
+            background-color: $platinum-color;
+            border-radius: 50%;
+
+        }
+
+        .titleIcon {
+            display: inline;
+            margin: 0;
+            width: 40px;
+        }
+
+
+    }
+
+    .mostRecentThree {
+        margin: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-around;
+        // background-color: aqua;
+       
+        .item {
+            padding:0;
+            border:solid 10px $magicMint-color;
+            border-radius: 20px;
+            background-color:$magnoliaWhite-color
+        }
+    
+    }
+     .item {
+        width: 40%;
+        padding: 20px;
+    }
+    @media screen and (max-width: 800px){
+        .mostRecentThree {
+           flex-direction: row;
+        }
+    
+    }
+    @media screen and (max-width: 600px){
+        .mostRecentThree {
+            flex-direction: column;
+            text-align: center;
+            .item{
+                width:100%;
+            }
+    
+        }
+    }
+}
+  
+
+.BottomContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    img,p{
+        display:inline-block;
+    }
+   
+    img{
+        width:60px;
+        height:60px;
+        float: left;
+    }
+    p{
+        background-color: $platinum-color;
+        border-radius: 20px;
+        padding:10px 15px;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .itemB {
+        width: 50%;
+        margin: 10px;
+        padding: 20px;
+        // background-color: pink;
+        .placement{display: flex;}
+    }
+    .questionaireContainer,.socialMediaContainer{
+        box-shadow: 0 2px 2px $platinum-color;
+        width: 80%;
+        // background-color: rgb(138, 158, 138);
+        display:inline-block;
+        margin:20px;
+        padding:20px;
+    }
+    .media{
+        border-radius:20px;
+        background-color:$maximumBluePurple-color;
+        width:fit-content;
+        padding:5px 20px;
+        margin:10px auto;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .BottomContainer {
+       flex-direction: row;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .BottomContainer {
+
+        flex-direction: column;
+        margin-left:30px;
+        margin-right:auto;
+        .questionaireContainer,.socialMediaContainer{
+        width:100%;
+        padding:40px;
+        }
+        p{
+            width: 100%;
+        }
+
+
+    }
+
 }

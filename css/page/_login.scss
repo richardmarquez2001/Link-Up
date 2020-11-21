@@ -1,0 +1,44 @@
+.login-body{
+    font-size: 3em;
+    text-align: center;
+    font-family: $quicksand-font;
+    color: white;
+
+    &__button{
+        font-family: $quicksand-font;
+        background-color: white;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 30px;
+        border: none;
+        margin: 20px;
+        width: fit-content;
+    }
+
+    &__image{
+        margin: 1em;
+
+        width: 10%;
+    }
+    h1{
+        padding-bottom: 30px;
+    }
+
+    &__prompt, &__text{
+        font-size: $navBartext-fontsize;
+    }
+
+    &__info{
+        font-family: $quicksand-font;
+        background-color: white;
+        height: 40px;
+        font-size: $navBartext-fontsize;
+        border-radius: 10px;
+        border: none;
+        margin: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+}
