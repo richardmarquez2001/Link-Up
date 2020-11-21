@@ -11,78 +11,106 @@
 
 <body class="question-body">
     <h2>Friendship Questionnaire</h2>
-    <form action = "../scripts/submit.php" method = "POST">
-    <h2 class="question-st">Multiple Choice</h2>
-    <div class="question2-container">
-
-        <p class="question2-text">If you could live anywhere, where would you live?</p>
-        <div class="question-form">
-            <input type="radio" id="q1-1" name="city" value="q1-1">
-            <label for="q1-1">New York</label><br>
-            <input type="radio" id="q1-2" name="city" value="q1-2">
-            <label for="q1-2">Los Angeles</label><br>
-            <input type="radio" id="q1-3" name="city" value="q1-3">
-            <label for="q1-3">Paris</label><br>
-            <input type="radio" id="q1-4" name="city" value="q1-4">
-            <label for="q1-4">Tokyo</label><br>
+    <form action="../scripts/submit.php" method="POST">
+        <h2 class="question-st">This or That</h2>
+        <div class="question2-container">
+            <p class="question2-text">Question 1</p>
+            <button class="option-btn">Sunrise</button>
+            <button class="option-btn">Sunset</button>
         </div>
-    </div>
-
-    <div class="question2-container">
-        <p class="question2-text">What’s your decision-making style?</p>
-        <div class="question-form">
-            <input type="radio" id="q2-1" name="decision" value="q2-1">
-            <label for="q2-1">I often put off making decisions</label><br>
-            <input type="radio" id="q2-2" name="decision" value="q2-2">
-            <label for="q2-2">I spend a lot of time writing pros and cons before making a decision</label><br>
-            <input type="radio" id="q2-3" name="decision" value="q2-3">
-            <label for="q2-3">I trust myself to make decisions quickly and easily </label><br>
+        <div class="question2-container">
+            <p class="question2-text">Question 2</p>
+            <button class="option-btn">Early Bird</button>
+            <button class="option-btn">Night Owl</button>
         </div>
-    </div>
-
-    <div class="question2-container">
-        <p class="question2-text">Which best describes your fashion style?</p>
-        <div class="question-form">
-            <input type="radio" id="q3-1" name="fashion" value="q3-1">
-            <label for="q3-1">Bold</label><br>
-            <input type="radio" id="q3-2" name="fashion" value="q3-2">
-            <label for="q3-2">Casual/Comfy</label><br>
-            <input type="radio" id="q3-3" name="fashion" value="q3-3">
-            <label for="q3-3">Minimal</label><br>
-            <input type="radio" id="q3-4" name="fashion" value="q3-4">
-            <label for="q3-4">Trendy</label><br>
-        </div>
-    </div>
-
-    <div class="question2-container">
-        <p class="question2-text">What is your favorite social media?</p>
-        <div class="question-form">
-            <input type="radio" id="q4-1" name="socialmedia" value="q4-1">
-            <label for="q4-1">Tiktok</label><br>
-            <input type="radio" id="q4-2" name="socialmedia" value="q4-2">
-            <label for="q4-2">Instagram</label><br>
-            <input type="radio" id="q4-3" name="socialmedia" value="q4-3">
-            <label for="q4-3">Twitter</label><br>
-            <input type="radio" id="q4-4" name="socialmedia" value="q4-4">
-            <label for="q4-4">Linkedin</label><br>
-        </div>
-    </div>
-
-    <div class="question2-container">
-        <p class="question2-text">What's your favourite music genre?</p>
-        <div class="question-form">
-            <input type="radio" id="q5-1" name="music" value="q5-1">
-            <label for="q5-1">Pop</label><br>
-            <input type="radio" id="q5-2" name="music" value="q5-2">
-            <label for="q5-2">Rap/R&B</label><br>
-            <input type="radio" id="q5-3" name="music" value="q5-3">
-            <label for="q5-3">Indie</label><br>
-            <input type="radio" id="q5-4" name="music" value="q5-4">
-            <label for="q5-4">EDM/Electronic</label><br>
+        <div class="question2-container">
+            <p class="question2-text">Question 3</p>
+            <button class="option-btn">Netflix</button>
+            <button class="option-btn">Youtube</button>
         </div>
 
+        <div class="question2-container">
+            <p class="question2-text">Question 4</p>
+            <button class="option-btn">Introvert</button>
+            <button class="option-btn">Extrovert</button>
+        </div>
 
-    </div>
+        <div class="question2-container">
+            <p class="question2-text">Question 5</p>
+            <button class="option-btn">City</button>
+            <button class="option-btn">Nature</button>
+        </div>
+        <br>
+        <h2 class="question-st">Multiple Choice</h2>
+        <div class="question2-container">
+
+            <p class="question2-text">If you could live anywhere, where would you live?</p>
+            <div class="question-form">
+                <input type="radio" id="q1-1" name="q1" value="A">
+                <label for="q1-1">New York</label><br>
+                <input type="radio" id="q1-2" name="q1" value="B">
+                <label for="q1-2">Los Angeles</label><br>
+                <input type="radio" id="q1-3" name="q1" value="C">
+                <label for="q1-3">Paris</label><br>
+                <input type="radio" id="q1-4" name="q1" value="D">
+                <label for="q1-4">Tokyo</label><br>
+            </div>
+        </div>
+
+        <div class="question2-container">
+            <p class="question2-text">What’s your decision-making style?</p>
+            <div class="question-form">
+                <input type="radio" id="q2-1" name="q2" value="A">
+                <label for="q2-1">I often put off making decisions</label><br>
+                <input type="radio" id="q2-2" name="q2" value="B">
+                <label for="q2-2">I spend a lot of time writing pros and cons before making a decision</label><br>
+                <input type="radio" id="q2-3" name="q2" value="C">
+                <label for="q2-3">I trust myself to make decisions quickly and easily </label><br>
+            </div>
+        </div>
+
+        <div class="question2-container">
+            <p class="question2-text">Which best describes your fashion style?</p>
+            <div class="question-form">
+                <input type="radio" id="q3-1" name="q3" value="A">
+                <label for="q3-1">Bold</label><br>
+                <input type="radio" id="q3-2" name="q3" value="B">
+                <label for="q3-2">Casual/Comfy</label><br>
+                <input type="radio" id="q3-3" name="q3" value="C">
+                <label for="q3-3">Minimal</label><br>
+                <input type="radio" id="q3-4" name="q3" value="D">
+                <label for="q3-4">Trendy</label><br>
+            </div>
+        </div>
+
+        <div class="question2-container">
+            <p class="question2-text">What is your favorite social media?</p>
+            <div class="question-form">
+                <input type="radio" id="q4-1" name="q4" value="A">
+                <label for="q4-1">Tiktok</label><br>
+                <input type="radio" id="q4-2" name="q4" value="B">
+                <label for="q4-2">Instagram</label><br>
+                <input type="radio" id="q4-3" name="q4" value="C">
+                <label for="q4-3">Twitter</label><br>
+                <input type="radio" id="q4-4" name="q4" value="D">
+                <label for="q4-4">Linkedin</label><br>
+            </div>
+        </div>
+
+        <div class="question2-container">
+            <p class="question2-text">What's your favourite music genre?</p>
+            <div class="question-form">
+                <input type="radio" id="q5-1" name="q5" value="A">
+                <label for="q5-1">Pop</label><br>
+                <input type="radio" id="q5-2" name="q5" value="B">
+                <label for="q5-2">Rap/R&B</label><br>
+                <input type="radio" id="q5-3" name="q5" value="C">
+                <label for="q5-3">Indie</label><br>
+                <input type="radio" id="q5-4" name="q5" value="D">
+                <label for="q5-4">EDM/Electronic</label><br>
+            </div>
+
+        </div>
         <br>
         <a href="question-2.html"><button class="question2-back-btn">Back</button></a>
         <a href="question-submit.html"><input type="submit" button class="question2-btn"></button></a>
