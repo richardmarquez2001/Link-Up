@@ -10,7 +10,7 @@ button {
 
 .question-body {
     background-color: white;
-    h2 {
+    h2{
         color: $polishedPine-color;
         margin-top: 100px;
         margin-bottom: 50px;
@@ -139,12 +139,14 @@ button {
 
 .question-submit-body {
     background-color: white;
+    
 
     h2 {
         font-size: 40px;
         color: $polishedPine-color;
         margin-top: 100px;
         margin-bottom: 50px;
+
     }
   
 
@@ -156,16 +158,21 @@ button {
         margin-right: auto;
 
 
-      }
+    }
       
-      #progress-bar {
+    #progress-bar {
         width: 5%;
         height: 40px;
         background-color: $orangeYellowCrayola-color;
         font-weight: 800;
 
-      }
-    
+    }
+
+    #generate-text {
+        margin-top: 40px;
+    }
+
+
 }
 
 .result-container {
@@ -186,6 +193,8 @@ button {
     border-radius: 30px;
     border: none;
     margin-top: 40px;
+    font-family: $quicksand-font;
+    font-weight: 600;
     
 }
 
@@ -196,4 +205,6 @@ button {
     font-size: 20px;
     border-radius: 30px;
     border: none;
+    font-family: $quicksand-font;
+    font-weight: 600;
 }

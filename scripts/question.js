@@ -5,7 +5,7 @@ function move() {
     i = 1;
     var elem = document.getElementById("progress-bar");
     var width = 1;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, 40);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
@@ -26,6 +26,7 @@ function move() {
   else {
     document.getElementById("generate-text").innerHTML = "One moment while we find you some matches...";
     document.getElementById("result-btn2").innerHTML = "Click to View Results.";
+    
     // document.getElementById("result-btn").
   }
   
