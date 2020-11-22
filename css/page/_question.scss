@@ -1,3 +1,7 @@
+button {
+    outline: none;
+}
+
 .question-html {
     text-align: center;
     font-family: $quicksand-font;
@@ -6,7 +10,7 @@
 
 .question-body {
     background-color: white;
-    h2 {
+    h2{
         color: $polishedPine-color;
         margin-top: 100px;
         margin-bottom: 50px;
@@ -135,12 +139,14 @@
 
 .question-submit-body {
     background-color: white;
+    
 
     h2 {
         font-size: 40px;
         color: $polishedPine-color;
         margin-top: 100px;
         margin-bottom: 50px;
+
     }
   
 
@@ -152,16 +158,21 @@
         margin-right: auto;
 
 
-      }
+    }
       
-      #progress-bar {
+    #progress-bar {
         width: 5%;
         height: 40px;
         background-color: $orangeYellowCrayola-color;
         font-weight: 800;
 
-      }
-    
+    }
+
+    #generate-text {
+        margin-top: 40px;
+    }
+
+
 }
 
 .result-container {
@@ -182,6 +193,9 @@
     border-radius: 30px;
     border: none;
     margin-top: 40px;
+    font-family: $quicksand-font;
+    font-weight: 600;
+    
 }
 
 #result-btn2 {
@@ -191,4 +205,6 @@
     font-size: 20px;
     border-radius: 30px;
     border: none;
+    font-family: $quicksand-font;
+    font-weight: 600;
 }
