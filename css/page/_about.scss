@@ -40,6 +40,25 @@
     text-align: left;
 }
 
+@keyframes bounce_1 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1, .9) translateY(0px);
+    }
+
+    30% {
+        transform: scale(.9, 1) translateY(-90px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+
 .bubblesContainer {
     text-align: center;
     justify-content: center;
@@ -69,7 +88,8 @@
     }
 
     .p6 {
-        padding: 50px 45px;
+        padding: 50px 45px;        
+    
     }
 
     .p7 {
@@ -77,6 +97,8 @@
     }
 
 }
+
+
 
 .bubble {
     text-align: center;
@@ -88,28 +110,14 @@
     margin: 5px;
     border: solid 3px $magnoliaWhite-color;
     transition: border 2s;
-
-
-    // box-shadow: -1px 2px 2px #000000;
+}
+.animate{
+    animation-name: bounce_1;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 
-@keyframes bounce-1 {
-    0% {
-        transform: scale(1, 1) translateY(0);
-    }
-
-    10% {
-        transform: scale(1, .9) translateY(0px);
-    }
-
-    30% {
-        transform: scale(.9, 1) translateY(-90px);
-    }
-
-    100% {
-        transform: scale(1, 1) translateY(0);
-    }
-}
 
 .p1:hover,
 .p2:hover,
@@ -119,11 +127,12 @@
 .p6:hover,
 .p7:hover {
     border: solid 3px $platinum-color;
-    animation: bounce-1;
+    animation-name: bounce_1;
     animation-duration: 4s;
     animation-iteration-count: 2;
 
 }
+
 
 .b1 {
     background-color: $magicMint-color;
