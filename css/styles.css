@@ -431,6 +431,7 @@
   -webkit-box-shadow: 0 3px 5px #302B27;
           box-shadow: 0 3px 5px #302B27;
   border-radius: 20px;
+  height: 300px;
 }
 
 .MobileView {
@@ -516,6 +517,12 @@
   .MobileView {
     display: block;
   }
+  .item {
+    width: 90%;
+    padding: 0;
+    margin: 10px auto;
+    text-align: center;
+  }
   .title {
     margin: 40px;
     padding: 20px;
@@ -540,7 +547,17 @@
 }
 
 @media screen and (max-width: 600px) {
+  .main {
+    display: none;
+  }
+  .item {
+    width: 90%;
+    padding: 0;
+    margin: 10px auto;
+    text-align: center;
+  }
   .MobileView {
+    margin: 10px;
     display: block;
   }
   .title {
@@ -558,12 +575,12 @@
             box-shadow: none;
   }
   .featureContainer .featureInfo {
-    width: 70%;
+    width: 100%;
     margin: 0;
   }
   .featureContainer .item {
+    width: 100%;
     margin: 0;
-    width: 95%;
     padding: 10px;
   }
   .buttonContainer {
