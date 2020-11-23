@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  right: 0;
+  top: 0;
   left: 0;
 }
 
@@ -99,10 +99,6 @@
   padding: 50px 35px;
 }
 
-.bubblesContainer .p3 {
-  padding: 50px 35px;
-}
-
 .bubblesContainer .p4 {
   padding: 50px 40px;
 }
@@ -113,10 +109,6 @@
 
 .bubblesContainer .p6 {
   padding: 50px 45px;
-}
-
-.bubblesContainer .p7 {
-  padding: 50px 30px;
 }
 
 .bubble {
@@ -171,10 +163,6 @@
   background-color: #B4A0E5;
 }
 
-.b4 {
-  background-color: #55ACEE;
-}
-
 .infoContents {
   background-color: #EAEAEA;
   border-radius: 20px;
@@ -212,11 +200,11 @@
 
 .item {
   padding: 10px;
-  margin: 5px;
 }
 
 .infoText {
   width: 50%;
+  height: 250px;
 }
 
 .infoImage {
@@ -283,15 +271,15 @@
   margin: 40px auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   .infoContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: auto;
   }
   .title {
     font-size: 40px;
@@ -300,16 +288,27 @@
   .MobileViewAbout {
     display: block;
   }
+  .MobileViewAbout .infoTitle {
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+  }
   .MobileViewAbout .infoContents {
     width: 90%;
     padding: 5px;
   }
-  .MobileViewAbout .item {
-    width: 95%;
-    padding: 10px;
+  .MobileViewAbout .infoText, .MobileViewAbout .infoImage {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 90%;
+    padding: 5px;
+    text-align: center;
   }
-  .MobileViewAbout img {
-    border-radius: 5px;
+  .MobileViewAbout .aboutImages {
+    border-radius: 20px;
+    width: 95%;
+    padding: 5px;
   }
   .bubblesContainer, .main {
     display: None;
@@ -333,17 +332,27 @@
   .MobileViewAbout {
     display: block;
   }
+  .MobileViewAbout .infoTitle {
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+  }
   .MobileViewAbout .infoContents {
     width: 90%;
-    margin: 10px;
     padding: 5px;
   }
-  .MobileViewAbout .item {
-    width: 95%;
-    padding: 10px;
+  .MobileViewAbout .infoText, .MobileViewAbout .infoImage {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 90%;
+    padding: 5px;
+    text-align: center;
   }
-  .MobileViewAbout img {
-    border-radius: 5px;
+  .MobileViewAbout .aboutImages {
+    border-radius: 20px;
+    width: 95%;
+    padding: 5px;
   }
   .bubblesContainer, .main {
     display: None;
