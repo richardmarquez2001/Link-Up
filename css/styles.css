@@ -374,12 +374,15 @@
 .msg-form input, .msg-form textarea {
   margin: 10px;
   width: 200px;
-  height: 30px;
+  height: 40px;
   text-align: left;
   padding-left: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
   border: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .msg-form #email {
@@ -390,6 +393,7 @@
   padding-left: 10px;
   font-weight: 500;
   color: white;
+  font-size: 20px;
 }
 
 .msg-form #msg {
@@ -402,19 +406,21 @@
 }
 
 .msg-form #send-btn {
-  width: 120px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   display: block;
   margin: 0 auto;
   border-radius: 20px;
   border: none;
+  background-color: #F2CD5D;
+  font-size: 18px;
 }
 
 .contact-body h2 {
   color: white;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  font-size: 30px;
+  margin-top: 5%;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
 .featureContainer {
