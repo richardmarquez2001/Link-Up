@@ -1,12 +1,11 @@
 
+.content-container {
+    margin-left: 60px;
+}
 .matcher-body {
     background-color: white;
     font-family: $quicksand-font;
     overflow-x: hidden;
-
-    .content-container {
-        margin-left: 60px;
-    }
 
     .matcher-container {
         display: flex;
