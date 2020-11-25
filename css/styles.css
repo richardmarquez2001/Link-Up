@@ -676,7 +676,7 @@ h2 {
 }
 
 .btn {
-  border: 1px solid white;
+  border: 1px solid black;
   background: none;
   padding: 10px 20px;
   font-size: 20px;
@@ -691,12 +691,12 @@ h2 {
 
 .btn1,
 .btn2 {
-  color: white;
+  color: black;
 }
 
 .btn1:hover,
 .btn2:hover {
-  color: black;
+  color: white;
 }
 
 .btn::before {
@@ -705,7 +705,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 0%;
-  background: white;
+  background: black;
   z-index: -1;
   -webkit-transition: 0.8s;
   transition: 0.8s;
