@@ -8,7 +8,7 @@ input {
     margin: 10px;
     width: 200px;
     height: 30px;
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -25,6 +25,23 @@ label.desc {
 
 input.submit {
     text-align: center;
+}
+
+#gender {
+    border-radius: 10px;
+    height: 30px;
+}
+
+#age {
+    width: 55px;
+}
+
+#date {
+    width: 435px;
+}
+
+#location {
+    width: 435px;
 }
 
 #email {
