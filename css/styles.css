@@ -1776,7 +1776,7 @@ p {
   font-family: "Quicksand", sans-serif;
 }
 
-input {
+.register-form input {
   margin: 10px;
   width: 200px;
   height: 30px;
@@ -1788,40 +1788,40 @@ input {
   font-family: "Quicksand", sans-serif;
 }
 
-label.headings {
+.register-form label.headings {
   font-weight: bold;
 }
 
-label.desc {
+.register-form label.desc {
   font-size: 15px;
 }
 
-input.submit {
+.register-form input.submit {
   text-align: center;
 }
 
-#gender {
+.register-form #gender {
   border-radius: 10px;
   height: 30px;
 }
 
-#age {
+.register-form #age {
   width: 125px;
 }
 
-#date {
+.register-form #date {
   width: 435px;
 }
 
-#location {
+.register-form #location {
   width: 435px;
 }
 
-#email {
+.register-form #email {
   width: 435px;
 }
 
-#username {
+.register-form #username {
   width: 435px;
 }
 /*# sourceMappingURL=styles.css.map */

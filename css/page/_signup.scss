@@ -4,51 +4,44 @@
     font-family: $quicksand-font;
 }
 
-input {
-    margin: 10px;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    padding-left: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: none;
-    font-family: $quicksand-font;
-}
-
-label.headings {
-    font-weight: bold;
-}
-
-label.desc {
-    font-size: 15px;
-}
-
-input.submit {
-    text-align: center;
-}
-
-#gender {
-    border-radius: 10px;
-    height: 30px;
-}
-
-#age {
-    width: 125px;
-}
-
-#date {
-    width: 435px;
-}
-
-#location {
-    width: 435px;
-}
-
-#email {
-    width: 435px;
-}
-
-#username {
-    width: 435px;
+.register-form {
+    input {
+        margin: 10px;
+        width: 200px;
+        height: 30px;
+        text-align: center;
+        padding-left: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: none;
+        font-family: $quicksand-font;
+    }
+    label.headings {
+        font-weight: bold;
+    }
+    label.desc {
+        font-size: 15px;
+    }
+    input.submit {
+        text-align: center;
+    }
+    #gender {
+        border-radius: 10px;
+        height: 30px;
+    }
+    #age {
+        width: 125px;
+    }
+    #date {
+        width: 435px;
+    }
+    #location {
+        width: 435px;
+    }
+    #email {
+        width: 435px;
+    }
+    #username {
+        width: 435px;
+    }
 }
