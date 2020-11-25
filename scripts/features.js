@@ -106,6 +106,11 @@ $("#f6").click(function () {
   $("#featureTitle").fadeOut(800);
   $("#featureImage").fadeOut(800);
 
+  //hide
+  $("#featureText").hide();
+  $("#featureTitle").hide();
+  $("#featureImage").hide();
+
   //Change html
   $("#featureTitle").html("Feature 6");
   $("#featureText").html("Feature 6:ANSWER");
