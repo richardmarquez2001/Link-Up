@@ -393,7 +393,7 @@
 .msg-form label {
   padding-left: 10px;
   font-weight: 500;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -418,7 +418,7 @@
 }
 
 .contact-body h2 {
-  color: white;
+  color: black;
   margin-top: 5%;
   margin-bottom: 40px;
   font-size: 40px;
@@ -1844,10 +1844,6 @@ button {
   font-weight: 600;
 }
 
-<<<<<<< HEAD
-.settings-iframe {
-  border-style: dotted;
-=======
 .result-body {
   text-align: center;
   font-family: "Quicksand", sans-serif;
@@ -1915,12 +1911,15 @@ p {
   color: black;
   font-weight: bold;
   margin-top: -50px;
->>>>>>> 9b4e76efdf0f53259c794efb4eeb6e7dfbc90cba
+}
+
+.settings-iframe {
+  border-style: dotted;
 }
 
 .register-body {
   text-align: center;
-  color: white;
+  color: black;
   font-family: "Quicksand", sans-serif;
 }
 
