@@ -1,72 +1,119 @@
-//buttons
-const ONE = document.getElementById("f1");
-const TWO = document.getElementById("f2");
-const THREE = document.getElementById("f3");
-const FOUR = document.getElementById("f4");
-const FIVE = document.getElementById("f5");
-const SIX = document.getElementById("f6");
+$("#f1").click(function () {
+  //fadeOut
+  $("#featureText").fadeOut(800);
+  $("#featureTitle").fadeOut(800);
+  $("#featureImage").fadeOut(800);
+  //hide
+  $("#featureText").hide();
+  $("#featureTitle").hide();
+  $("#featureImage").hide();
+  //Change html
+  $("#featureTitle").html("Feature 1");
+  $("#featureText").html("Feature 1: ANSWER");
+  $("#featureImage").attr("src", "../images/featuresp1.jpg");
 
-//text
-let title = document.getElementById("featureTitle");
-let text = document.getElementById("featureText");
-let image = document.getElementById("featureImage");
+  //Upload
+  $("#featureImage").delay(200).fadeIn(2000);
+  $("#featureTitle").delay(200).fadeIn(2000);
+  $("#featureText").delay(200).fadeIn(2000);
+});
 
-//info
+$("#f2").click(function () {
+  //fadeOut
+  $("#featureText").fadeOut(800);
+  $("#featureTitle").fadeOut(800);
+  $("#featureImage").fadeOut(800);
+  //hide
+  $("#featureText").hide();
+  $("#featureTitle").hide();
+  $("#featureImage").hide();
+  //Change html
+  $("#featureTitle").html("Feature 2");
+  $("#featureText").html("Feature 2:ANSWER");
+  $("#featureImage").attr("src", "../images/featuresp2.jpg");
 
-info_title = [
-  "Feature 1",
-  "Feature 2",
-  "Feature 3",
-  "Feature 4",
-  "Feature 5",
-  "Feature 6",
-];
+  //Upload
+  $("#featureImage").delay(200).fadeIn(2000);
+  $("#featureTitle").delay(200).fadeIn(2000);
+  $("#featureText").delay(200).fadeIn(2000);
+});
 
-info_text = [
-  "Feature 1: text",
-  "Feature 2: text",
-  "Feature 3: text",
-  "Feature 4: text",
-  "Feature 5: text",
-  "Feature 6: text",
-];
+$("#f3").click(function () {
+  //fadeOut
+  $("#featureText").fadeOut(800);
+  $("#featureTitle").fadeOut(800);
+  $("#featureImage").fadeOut(800);
+  //hide
+  $("#featureText").hide();
+  $("#featureTitle").hide();
+  $("#featureImage").hide();
+  //Change html
+  $("#featureTitle").html("Feature 3");
+  $("#featureText").html("Feature 3: ANSWER");
+  $("#featureImage").attr("src", "../images/featuresp3.jpg");
 
-src_images=[
-"../images/featuresp1.jpg",
-"../images/featuresp2.jpg",
-"../images/featuresp3.jpg",
-"../images/featuresp4.jpg",
-"../images/featuresp5.jpg",
-"../images/featuresp6.jpg",
-]
+  //Upload
+  $("#featureImage").delay(200).fadeIn(2000);
+  $("#featureTitle").delay(200).fadeIn(2000);
+  $("#featureText").delay(200).fadeIn(2000);
+});
 
-ONE.addEventListener('click',function(){
-    title.innerHTML=info_title[0];
-    text.innerHTML=info_text[0];
-    image.setAttribute("src",src_images[0]);
+$("#f4").click(function () {
+  //fadeOut
+  $("#featureText").fadeOut(800);
+  $("#featureTitle").fadeOut(800);
+  $("#featureImage").fadeOut(800);
+  //hide
+  $("#featureText").hide();
+  $("#featureTitle").hide();
+  $("#featureImage").hide();
+
+  //Change html
+  $("#featureTitle").html("Feature 4");
+  $("#featureText").html("Feature 4:ANSWER");
+  $("#featureImage").attr("src", "../images/featuresp4.jpg");
+
+  //Upload
+  $("#featureImage").delay(200).fadeIn(2000);
+  $("#featureTitle").delay(200).fadeIn(2000);
+  $("#featureText").delay(200).fadeIn(2000);
 });
-TWO.addEventListener('click',function(){
-    title.innerHTML=info_title[1];
-    text.innerHTML=info_text[1];
-    image.setAttribute("src",src_images[1]);
+
+$("#f5").click(function () {
+  //fadeOut
+  $("#featureText").fadeOut(800);
+  $("#featureTitle").fadeOut(800);
+  $("#featureImage").fadeOut(800);
+  //hide
+  $("#featureText").hide();
+  $("#featureTitle").hide();
+  $("#featureImage").hide();
+  //Change html
+  $("#featureTitle").html("Feature 5");
+  $("#featureText").html("Feature 5: ANSWER");
+  $("#featureImage").attr("src", "../images/featuresp5.jpg");
+
+  //Upload
+  $("#featureImage").delay(200).fadeIn(2000);
+  $("#featureTitle").delay(200).fadeIn(2000);
+  $("#featureText").delay(200).fadeIn(2000);
 });
-THREE.addEventListener('click',function(){
-    title.innerHTML=info_title[2];
-    text.innerHTML=info_text[2];
-    image.setAttribute("src",src_images[2]);
+
+$("#f6").click(function () {
+    
+  //fadeOut
+  $("#featureText").fadeOut(800);
+  $("#featureTitle").fadeOut(800);
+  $("#featureImage").fadeOut(800);
+
+  //Change html
+  $("#featureTitle").html("Feature 6");
+  $("#featureText").html("Feature 6:ANSWER");
+  $("#featureImage").attr("src", "../images/featuresp6.jpg");
+
+  //Upload
+  $("#featureImage").delay(200).fadeIn(2000);
+  $("#featureTitle").delay(200).fadeIn(2000);
+  $("#featureText").delay(200).fadeIn(2000);
 });
-FOUR.addEventListener('click',function(){
-    title.innerHTML=info_title[3];
-    text.innerHTML=info_text[3];
-    image.setAttribute("src",src_images[3]);
-});
-FIVE.addEventListener('click',function(){
-    title.innerHTML=info_title[4];
-    text.innerHTML=info_text[4];
-    image.setAttribute("src",src_images[4]);
-});
-SIX.addEventListener('click',function(){
-    title.innerHTML=info_title[5];
-    text.innerHTML=info_text[5];
-    image.setAttribute("src",src_images[5]);
-});
+
