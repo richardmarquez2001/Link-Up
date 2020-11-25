@@ -1935,11 +1935,11 @@ button {
   font-family: "Quicksand", sans-serif;
 }
 
-.register-form label.headings {
+.register-form label.register-body-headings {
   font-weight: bold;
 }
 
-.register-form label.desc {
+.register-form label.register-body-desc {
   font-size: 15px;
 }
 
@@ -1947,28 +1947,28 @@ button {
   text-align: center;
 }
 
-.register-form #gender {
+.register-form #register-body-gender {
   border-radius: 10px;
   height: 30px;
 }
 
-.register-form #age {
+.register-form #register-body-age {
   width: 125px;
 }
 
-.register-form #date {
+.register-form #register-body-date {
   width: 435px;
 }
 
-.register-form #location {
+.register-form #register-body-location {
   width: 435px;
 }
 
-.register-form #email {
+.register-form #register-body-email {
   width: 435px;
 }
 
-.register-form #username {
+.register-form #register-body-username {
   width: 435px;
 }
 /*# sourceMappingURL=styles.css.map */
