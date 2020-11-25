@@ -1700,6 +1700,10 @@ button {
   font-weight: 600;
 }
 
+.settings-iframe {
+  border-style: dotted;
+}
+
 .register-body {
   text-align: center;
   color: white;
