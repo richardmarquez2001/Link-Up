@@ -1,6 +1,6 @@
 .register-body {
     text-align: center;
-    color: white;
+    color: black;
     font-family: $quicksand-font;
 }
 
@@ -13,7 +13,7 @@
         padding-left: 10px;
         border-radius: 10px;
         margin-bottom: 20px;
-        border: none;
+        border: 1px solid black;
         font-family: $quicksand-font;
     }
     label.headings {
