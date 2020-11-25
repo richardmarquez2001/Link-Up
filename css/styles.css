@@ -1785,6 +1785,7 @@ input {
   border-radius: 10px;
   margin-bottom: 20px;
   border: none;
+  font-family: "Quicksand", sans-serif;
 }
 
 label.headings {
