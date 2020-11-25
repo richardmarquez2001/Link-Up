@@ -1,21 +1,23 @@
+.main{position: absolute;}
 .featureContainer {
     display: flex;
     flex-direction: row;
     margin: 50px auto;
     width: 70%;
     background-color: $magnoliaWhite-color;
-    box-shadow: 0 5px 8px $jet-color;
+    box-shadow: 0 3px 5px $jet-color;
+    border-radius: 20px;
+    height:300px;
+}
+.MobileView{
+    display:None;
 }
 
 @keyframes FadeIn {
     0% {
         opacity: 0;
     }
-
-    50% {
-        opacity: 0.5;
-    }
-
+   
     100% {
         opacity: 1;
     }
@@ -58,10 +60,12 @@
     margin: 10px auto;
 
 }
-.animateFadein{
+
+.animateFadein {
     animation-name: FadeIn;
     animation-duration: 2s;
 }
+
 .featureInfo {
     padding: 20px;
     width: 50%;
@@ -69,8 +73,78 @@
 
 .featureImage {
     width: 100%;
+    border-radius: 20px;
 }
 
 .title {
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .MobileView{display:block}
+    .item{
+        width:90%;
+        padding:0;
+        margin:10px auto;
+        text-align: center;
+    }
+    .title{
+        margin:40px;
+        padding:20px;
+    }
+    .featureContainer {
+        flex-direction: column;
+        width:90%;
+        margin:20px auto;
+        .featureInfo {
+            width: 90%;
+        }
+        .item{
+            width:90%;
+        }
+    }
+
+    .buttonContainer{
+        display:None;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        display:none;
+    }
+   
+    .item{
+        width:90%;
+        padding:0;
+        margin:10px auto;
+        text-align: center;
+    }
+    .MobileView{
+        margin:10px;
+        display:block}
+    .title{
+        padding:10px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .featureContainer {
+        flex-direction: column;
+        width:90%;
+        box-shadow: none;
+        .featureInfo {
+            width: 100%;
+            margin:0;
+        }
+        .item{
+            width:100%;
+            margin:0;
+            padding:10px;
+        }
+    }
+
+    .buttonContainer{
+       display: none;
+    }
 }

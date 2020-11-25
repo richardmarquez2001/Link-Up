@@ -8,26 +8,32 @@
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+
     
     input, textarea {
         margin: 10px;
         width: 200px;
-        height: 30px;
+        height: 40px;
         text-align: left;
         padding-left: 10px;
         border-radius: 10px;
         margin-bottom: 20px;
         border: none;
+        font-family: $quicksand-font;
+        font-weight: 600;
+        font-size: 15px;
     }
 
     #email{
         width: 425px;
+ 
     }
 
     label {
         padding-left: 10px;
         font-weight: 500;
         color: white;
+        font-size: 20px;
     }
 
     #msg {
@@ -37,15 +43,18 @@
         text-align: left;
         padding-top: 10px;
         resize: none;
+
     }
 
     #send-btn {
-        width: 120px;
-        height: 30px;
+        width: 150px;
+        height: 40px;
         display: block;
         margin: 0 auto;
         border-radius: 20px;
         border: none;
+        background-color: $orangeYellowCrayola-color;
+        font-size: 18px;
 
     }
 }
@@ -53,8 +62,8 @@
 .contact-body {
     h2 {
         color: white;
-        margin-top: 100px;
-        margin-bottom: 50px;
-        font-size: 30px;
+        margin-top: 5%;
+        margin-bottom: 40px;
+        font-size: 40px;
     }
 }
