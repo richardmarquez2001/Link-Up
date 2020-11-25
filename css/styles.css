@@ -423,6 +423,10 @@
   font-size: 40px;
 }
 
+.main {
+  position: absolute;
+}
+
 .featureContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,7 +603,7 @@ body {
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #7ea9a4;
+  background-color: #70a288;
 }
 
 html {
@@ -761,6 +765,15 @@ h2 {
   margin: 10px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.login-body__link {
+  text-decoration: none;
+  color: white;
+}
+
+.login-body__link:hover {
+  color: black;
 }
 
 .content-container {
