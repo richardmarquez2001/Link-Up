@@ -371,7 +371,8 @@
   text-align: left;
 }
 
-.msg-form input, .msg-form textarea {
+.msg-form input,
+.msg-form textarea {
   margin: 10px;
   width: 200px;
   height: 40px;
@@ -1698,6 +1699,75 @@ button {
   border: none;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
+}
+
+.result-body {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.results-container {
+  height: 420px;
+  background-color: #F2CD5D;
+  border-radius: 20px;
+  margin-right: 40px;
+  margin-left: 100px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: auto;
+  color: black;
+  height: 20px;
+}
+
+.container {
+  max-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.container .profile {
+  min-width: 300px;
+  height: 300px;
+  line-height: 120px;
+  text-align: center;
+  background-color: gray;
+  margin-right: 2px;
+  padding: 20px;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.profile-pic {
+  margin-top: 30px;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  margin-top: -50px;
 }
 
 .register-body {
