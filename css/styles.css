@@ -610,6 +610,10 @@ html {
   width: 10%;
 }
 
+.welcome-description {
+  font-size: 1.5em;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
