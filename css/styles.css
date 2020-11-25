@@ -1849,12 +1849,12 @@ button {
   font-family: "Quicksand", sans-serif;
 }
 
-h1 {
+.result-body h1 {
   color: black;
   text-align: center;
 }
 
-.results-container {
+.result-body .results-container {
   height: 420px;
   background-color: #F2CD5D;
   border-radius: 20px;
@@ -1862,14 +1862,14 @@ h1 {
   margin-left: 100px;
 }
 
-h2 {
+.result-body h2 {
   font-size: 30px;
   margin: auto;
   color: black;
   height: 20px;
 }
 
-.container {
+.result-body .container {
   max-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1879,7 +1879,7 @@ h2 {
   margin-right: 40px;
 }
 
-.container .profile {
+.result-body .container .profile {
   min-width: 300px;
   height: 300px;
   line-height: 120px;
@@ -1897,7 +1897,7 @@ h2 {
   font-size: 18px;
 }
 
-.profile-pic {
+.result-body .profile-pic {
   margin-top: 30px;
   height: 120px;
   width: 120px;
@@ -1906,7 +1906,7 @@ h2 {
   display: inline-block;
 }
 
-p {
+.result-body p {
   font-size: 20px;
   color: black;
   font-weight: bold;
@@ -1931,7 +1931,7 @@ p {
   padding-left: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
-  border: none;
+  border: 1px solid black;
   font-family: "Quicksand", sans-serif;
 }
 
