@@ -93,7 +93,7 @@ $("#lClick").click(function () {
 
 $("#rClick").click(function () {
    //fadeOut
-   $("#infoTitle").fadeOut(1000).delay(200).hide()
+  $("#infoTitle").fadeOut(1000).delay(200).hide();
   $("#infoText").fadeOut(1000).delay(200).hide();
   $("#infoImage").fadeOut(1000).delay(200).hide();
     //Get position
