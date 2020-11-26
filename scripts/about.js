@@ -1,20 +1,3 @@
-//Button
-let left = document.getElementById("lClick");
-let right = document.getElementById("rClick");
-
-//Bubbles
-let b1 = document.getElementById("p1");
-let b2 = document.getElementById("p2");
-let b4 = document.getElementById("p4");
-let b5 = document.getElementById("p5");
-let b6 = document.getElementById("p6");
-
-//Information to change
-let text = document.getElementById("infoText");
-let title = document.getElementById("infoTitle");
-let image = document.getElementById("infoImage");
-
-
 let position = 0;
 let info_title = [
   "It's Free!",
@@ -35,54 +18,99 @@ let src_images = [
   "/Link-Up/images/aboutp4.jpg",
   "/Link-Up/images/aboutp2.jpg",
   "/Link-Up/images/aboutp3.jpeg",
-  "/Link-Up/images/aboutp5.jpg"
+  "/Link-Up/images/aboutp5.jpg",
 ];
 
-function slideLeft() {
-  console.log("left");
+function changeColor(position) {
+  switch (position) {
+    case 0:
+      $("#infoTitle").css("background-color", "#B4A0E5");
+      $("#p1").animate({ opacity:'0.5' },1000);
+      $("#p5").animate({ opacity:'0.5' },1000);
+      $("#p2").animate({ opacity:'0.5' },1000);
+      $("#p4").animate({ opacity:'0.5' },1000);
+      $("#p6").animate({ opacity:'1' },1000);
+      break;
+    case 1:
+      $("#infoTitle").css("background-color", "#8AE9C1");
+      $("#p6").animate({ opacity:'0.5' },1000);
+      $("#p5").animate({ opacity:'0.5' },1000);
+      $("#p2").animate({ opacity:'0.5' },1000);
+      $("#p4").animate({ opacity:'0.5' },1000);
+      $("#p1").animate({ opacity:'1' },1000);
+
+      break;
+    case 2:
+      $("#infoTitle").css("background-color", "#FC6471");
+      $("#p6").animate({ opacity:'0.5' },1000);
+      $("#p1").animate({ opacity:'0.5' },1000);
+      $("#p2").animate({ opacity:'0.5' },1000);
+      $("#p4").animate({ opacity:'0.5' },1000);
+      $("#p5").animate({ opacity:'1' },1000);
+
+      break;
+    case 3:
+      $("#infoTitle").css("background-color", "#8AE9C1");
+      $("#p1").animate({ opacity:'0.5' },1000);
+      $("#p5").animate({ opacity:'0.5' },1000);
+      $("#p6").animate({ opacity:'0.5' },1000);
+      $("#p4").animate({ opacity:'0.5' },1000);
+      $("#p2").animate({ opacity:'1' },1000);
+      break;
+    case 4:
+      $("#infoTitle").css("background-color", "#B4A0E5");
+      $("#p1").animate({ opacity:'0.5' },1000);
+      $("#p5").animate({ opacity:'0.5' },1000);
+      $("#p6").animate({ opacity:'0.5' },1000);
+      $("#p2").animate({ opacity:'0.5' },1000);
+      $("#p4").animate({ opacity:'1' },1000);
+
+      break;
+  }
+}
+
+$("#lClick").click(function () {
+  //fadeOut
+  $("#infoTitle").delay(200).fadeOut(1000).delay(200).hide();
+  $("#infoText").delay(200).fadeOut(1000).delay(200).hide();
+  $("#infoImage").delay(200).fadeOut(1000).delay(200).hide();
+
+  //Get position
   position -= 1;
   if (position == -1) {
     position = 4;
   }
   changeColor(position);
-  text.innerHTML = info_text[position];
-  title.innerHTML = info_title[position];
-  image.setAttribute("src",src_images[position])
-}
+  //Change HTML
+  $("#infoTitle").html(info_title[position]);
+  $("#infoText").html(info_text[position]);
+  $("#infoImage").attr("src", src_images[position]);
+  //Fade In
+  $("#infoTitle").delay(200).fadeIn(1000);
+  $("#infoText").delay(200).fadeIn(1000);
+  $("#infoImage").delay(200).fadeIn(1000);
+});
 
-function slideRight() {
-  console.log("right");
-
+$("#rClick").click(function () {
+   //fadeOut
+   $("#infoTitle").fadeOut(1000).delay(200).hide()
+  $("#infoText").fadeOut(1000).delay(200).hide();
+  $("#infoImage").fadeOut(1000).delay(200).hide();
+    //Get position
   position += 1;
   if (position == 5) {
     position = 0;
   }
   changeColor(position);
-  text.innerHTML = info_text[position];
-  title.innerHTML = info_title[position];
-  image.setAttribute("src",src_images[position])
-
-}
-
-function changeColor(position) {
-  switch (position) {
-    case 0:
-      title.setAttribute("style","background-color:#B4A0E5;");
-      break;
-    case 1:
-      title.setAttribute("style","background-color:#8AE9C1;");
-      break;
-    case 2:
-      title.setAttribute("style","background-color:#FC6471;");
-      break;
-    case 3:
-      title.setAttribute("style","background-color:#8AE9C1;");
-      break;
-    case 4:
-      title.setAttribute("style","background-color:#B4A0E5;");
-      break;
-  }
-}
-
-left.addEventListener("click", slideLeft);
-right.addEventListener("click", slideRight);
+  $("#infoTitle").html(info_title[position]);
+  $("#infoText").html(info_text[position]);
+  $("#infoImage").attr("src", src_images[position]);
+  //Change HTML
+  $("#infoTitle").html(info_title[position]);
+  $("#infoText").html(info_text[position]);
+  $("#infoImage").attr("src", src_images[position]);
+  //Fade In
+  $("#infoTitle").delay(200).fadeIn(1000);
+  $("#infoText").delay(200).fadeIn(1000);
+  $("#infoImage").delay(200).fadeIn(1000);
+});

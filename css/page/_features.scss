@@ -1,4 +1,7 @@
-.main{display: block;}
+.main{
+    display: block;
+}
+
 .featureContainer {
     display: flex;
     flex-direction: row;
@@ -9,6 +12,7 @@
     border-radius: 20px;
     height:400px;
 }
+
 .MobileView{
     display:None;
 }
@@ -74,13 +78,19 @@
 .featureImage {
     width: 100%;
     border-radius: 20px;
+    padding:20px;
 }
 
 .title {
     text-align: center;
 }
 
+// @media screen and (max-width: 800px) {
+
 @media screen and (max-width: 800px) {
+    .main{
+        display:none;
+    }
     .MobileView{display:block}
     .item{
         width:90%;
