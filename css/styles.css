@@ -3,6 +3,7 @@
   font-size: 20px;
   background-color: #FFFAFF;
   font-family: "Quicksand", sans-serif;
+  font-size: 16px;
 }
 
 .title {
@@ -88,7 +89,7 @@
           align-items: center;
   padding: 20px;
   font-family: "Raleway", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 .bubblesContainer .p1 {
@@ -109,6 +110,34 @@
 
 .bubblesContainer .p6 {
   padding: 50px 45px;
+}
+
+.bubblesContainer .p1:hover,
+.bubblesContainer .p2:hover,
+.bubblesContainer .p3:hover,
+.bubblesContainer .p4:hover,
+.bubblesContainer .p5:hover,
+.bubblesContainer .p6:hover,
+.bubblesContainer .p7:hover {
+  border: solid 3px #EAEAEA;
+  -webkit-animation-name: bounce_1;
+          animation-name: bounce_1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+.bubblesContainer .b1 {
+  background-color: #8AE9C1;
+}
+
+.bubblesContainer .b2 {
+  background-color: #FC6471;
+}
+
+.bubblesContainer .b3 {
+  background-color: #B4A0E5;
 }
 
 .bubble {
@@ -135,32 +164,8 @@
           animation-iteration-count: 1;
 }
 
-.p1:hover,
-.p2:hover,
-.p3:hover,
-.p4:hover,
-.p5:hover,
-.p6:hover,
-.p7:hover {
-  border: solid 3px #EAEAEA;
-  -webkit-animation-name: bounce_1;
-          animation-name: bounce_1;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
-}
-
-.b1 {
-  background-color: #8AE9C1;
-}
-
-.b2 {
-  background-color: #FC6471;
-}
-
-.b3 {
-  background-color: #B4A0E5;
+.mainA {
+  margin: auto 20px;
 }
 
 .infoContents {
@@ -172,7 +177,7 @@
   padding: 30px;
 }
 
-.infoContainer {
+.infoContents .infoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +189,7 @@
       justify-content: space-around;
 }
 
-.infoTitle {
+.infoContents .infoTitle {
   word-wrap: break-word;
   background-color: #B4A0E5;
   width: -webkit-fit-content;
@@ -198,24 +203,25 @@
   font-weight: bold;
 }
 
-.item {
+.infoContents .item {
   padding: 10px;
 }
 
-.infoText {
+.infoContents .infoText {
   width: 50%;
-  height: 250px;
+  height: 270px;
+  font-size: 1.2em;
 }
 
-.infoImage {
+.infoContents .infoImage {
   width: 50%;
 }
 
-.aboutImages {
+.infoContents .aboutImages {
   width: 100%;
 }
 
-.buttonAbout {
+.buttonsLR .buttonAbout {
   background-color: #EAEAEA;
   border-radius: 50%;
   border: none;
@@ -225,12 +231,12 @@
           box-shadow: 0 2px 2px;
 }
 
-.buttonImage {
-  -webkit-transform: scale(0.8, 0.8);
-          transform: scale(0.8, 0.8);
+.buttonsLR .buttonImage {
+  -webkit-transform: scale(0.7, 0.7);
+          transform: scale(0.7, 0.7);
 }
 
-.buttonAbout:hover {
+.buttonsLR .buttonAbout:hover {
   background-color: #FFFAFF;
   border-radius: 50%;
   -webkit-transition: 1s;
@@ -272,7 +278,14 @@
 }
 
 @media screen and (max-width: 800px) {
-  .infoContainer {
+  .title {
+    font-size: 40px;
+    margin: 10px;
+  }
+  .MobileViewAbout {
+    display: block;
+  }
+  .MobileViewAbout .infoContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -281,13 +294,6 @@
     padding: 10px;
     margin: auto;
   }
-  .title {
-    font-size: 40px;
-    margin: 10px;
-  }
-  .MobileViewAbout {
-    display: block;
-  }
   .MobileViewAbout .infoTitle {
     padding: 10px;
     text-align: center;
@@ -297,7 +303,8 @@
     width: 90%;
     padding: 5px;
   }
-  .MobileViewAbout .infoText, .MobileViewAbout .infoImage {
+  .MobileViewAbout .infoText,
+  .MobileViewAbout .infoImage {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -310,13 +317,21 @@
     width: 95%;
     padding: 5px;
   }
-  .bubblesContainer, .mainA {
+  .bubblesContainer,
+  .mainA {
     display: None;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .infoContainer {
+  .title {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .MobileViewAbout {
+    display: block;
+  }
+  .MobileViewAbout .infoContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -325,13 +340,6 @@
     padding: 0;
     margin: 0;
   }
-  .title {
-    font-size: 30px;
-    margin: 10px;
-  }
-  .MobileViewAbout {
-    display: block;
-  }
   .MobileViewAbout .infoTitle {
     padding: 10px;
     text-align: center;
@@ -341,7 +349,8 @@
     width: 90%;
     padding: 5px;
   }
-  .MobileViewAbout .infoText, .MobileViewAbout .infoImage {
+  .MobileViewAbout .infoText,
+  .MobileViewAbout .infoImage {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -354,7 +363,8 @@
     width: 95%;
     padding: 5px;
   }
-  .bubblesContainer, .mainA {
+  .bubblesContainer,
+  .mainA {
     display: None;
   }
 }
@@ -425,7 +435,63 @@
 }
 
 .main {
-  display: block;
+  display: inline;
+}
+
+.featureContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featureContents p {
+  position: absolute;
+  margin-bottom: 170px;
+  margin-left: 150px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.featureContents .item {
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 450px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #302B27;
+  text-align: center;
+}
+
+.featureContents .item img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 2px 5px #302B27;
+          box-shadow: 0 2px 5px #302B27;
+}
+
+.featureContents .item .ft {
+  top: 200px;
+  left: -50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #EAEAEA;
+  border-radius: 20px;
+}
+
+.featureContents .item:hover {
+  -webkit-box-shadow: 2px 2px 10px #302B27;
+          box-shadow: 2px 2px 10px #302B27;
 }
 
 .featureContainer {
@@ -437,12 +503,12 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 50px auto;
-  width: 65%;
+  padding: 20px;
+  width: 70%;
   background-color: #FFFAFF;
   -webkit-box-shadow: 0 3px 5px #302B27;
           box-shadow: 0 3px 5px #302B27;
   border-radius: 20px;
-  height: 400px;
 }
 
 .MobileView {
@@ -498,7 +564,7 @@
 
 .featureTitle {
   background-color: #8AE9C1;
-  padding: 10px;
+  padding: 10px 40px;
   border-radius: 20px;
   margin: 10px auto;
 }
@@ -525,6 +591,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .main {
+    display: none;
+  }
   .MobileView {
     display: block;
   }
