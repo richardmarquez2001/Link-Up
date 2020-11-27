@@ -1247,6 +1247,28 @@ h2 {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  height: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border: 2px solid #9ca1a3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #302B27;
+}
+
 .sideNavBar {
   width: 60px;
   background-color: #F2CD5D;
@@ -1470,6 +1492,7 @@ svg {
   background-color: #FFFAFF;
   -webkit-box-shadow: 0 2px 4px #EAEAEA;
           box-shadow: 0 2px 4px #EAEAEA;
+  font-size: 1.2em;
 }
 
 .contentContainer .mostRecentThree .item p {
@@ -1520,6 +1543,7 @@ svg {
 .BottomContainer img,
 .BottomContainer p {
   display: inline-block;
+  width: 90%;
 }
 
 .BottomContainer img {
@@ -1528,11 +1552,11 @@ svg {
   float: left;
 }
 
-.BottomContainer p {
+.BottomContainer .qTitles {
   background-color: #EAEAEA;
   border-radius: 20px;
   padding: 10px 15px;
-  width: 100%;
+  width: 90%;
   text-align: center;
 }
 
@@ -1557,13 +1581,26 @@ svg {
   padding: 5px;
 }
 
+.BottomContainer .questionaireContainer {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 500px;
+}
+
+.BottomContainer .questionaireContainer p {
+  border: 4px solid #55ACEE;
+  border-radius: 20px;
+  width: 90%;
+  padding: 10px 5px;
+}
+
 .BottomContainer .media {
   border-radius: 20px;
   background-color: #B4A0E5;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 5px 20px;
+  padding: 0 20px;
   margin: 10px auto;
 }
 
@@ -1590,7 +1627,7 @@ svg {
   .BottomContainer .hideQuestionaire {
     display: none;
   }
-  .BottomContainer p {
+  .BottomContainer .qTitles {
     width: 100%;
   }
   .BottomContainer .itemB {
