@@ -1,36 +1,41 @@
 <html>
-    <head>
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/styles.css" />
-        <title>Login</title>
-      </head>
-    </head>
 
-    <body>
-        <nav class="navBar">
-            <ul class="navLinks">
-              <li class="link"><a href="./home.html" class="link">Home</a></li>
-              <li class="link"><a href="./about.html" class="link">About</a></li>
-              <li class="link"><a href="./login.html" class="link">Login</a></li>
-              <li class="link"><a href="./features.html" class="link">Features</a></li>
-              <li class="link"><a href="./contact.html" class="link">Contact</a></li>
-            </ul>
-          </nav>
-        
-        <div class = "login-body">
-          <img class = "login-body__image" src = "../images/logoG2.png" alt = "Link-Up logo small format.">
-          <form action="action_page.php" method="post">
-          
-              <input class = "login-body__info" type="text" placeholder="Enter Username" name="uname" required>
-              <br>
-          
-              <input class = "login-body__info" type="password" placeholder="Enter Password" name="psw" required>
-              <br>
-              <button class = "btn btn1" type="submit">Login</button>
-              <button class = "btn btn1" type="submit"><a class = "login-body__link"href ="signup.html">Register</a></button>
-          </form>
-      </div>
-    </body>
+<head>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Login</title>
+  </head>
+</head>
+
+<body>
+  <nav class="navBar">
+    <ul class="navLinks">
+      <li class="link"><a href="./home.html" class="link">Home</a></li>
+      <li class="link"><a href="./about.html" class="link">About</a></li>
+      <li class="link"><a href="./login.html" class="link">Login</a></li>
+      <li class="link"><a href="./features.html" class="link">Features</a></li>
+      <li class="link"><a href="./contact.html" class="link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="login-body">
+    <img class="login-body__image" src="../images/logoG2.png" alt="Link-Up logo small format.">
+    <form action="action_page.php" method="post">
+
+      <input class="login-body__info" type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+
+      <input class="login-body__info" type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <button class="btn btn1" type="submit">Login</button>
+      <button class="btn btn1" type="submit"><a class="login-body__link" href="signup.html">Register</a></button>
+      <p class="login-body__forgot">Forgot password? Click <a class="login-body__forgot-link"
+          href="https://www.youtube.com/watch?v=ydVt0wT5aHg" target="_blank">here</a></p>
+    </form>
+  </div>
+</body>
+
 </html>

@@ -390,7 +390,7 @@
   padding-left: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
-  border: none;
+  border: 1px solid black;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-size: 15px;
@@ -947,8 +947,8 @@ h2 {
   background-color: white;
   height: 40px;
   font-size: 20px;
-  border-radius: 30px;
-  border: none;
+  border-radius: 10px;
+  border: 1px solid black;
   margin: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -974,7 +974,6 @@ h2 {
   height: 40px;
   font-size: 20px;
   border-radius: 10px;
-  border: none;
   margin: 10px;
   margin-bottom: 20px;
   text-align: center;
@@ -982,11 +981,21 @@ h2 {
 
 .login-body__link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .login-body__link:hover {
+  color: white;
+}
+
+.login-body__forgot {
+  font-size: 20px;
   color: black;
+}
+
+.login-body__forgot-link {
+  text-decoration: none;
+  color: #F2CD5D;
 }
 
 .content-container {
