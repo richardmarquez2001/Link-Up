@@ -37,43 +37,43 @@
     <div class="register-body">
         <img class="login-body__image" src="../images/logoG2.png" alt="Link-Up logo small format.">
         <form class="register-form" onsubmit="return validatePassword(document.getElementById('password'), document.getElementById('confirmed_password'))" action="register.php" method="post">
-            <label class="headings">Full Name</label><br>
-            <input type="text" id="fname" name="fname" placeholder="First Name" required>
-            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            <label class="register-body-headings">Full Name</label><br>
+            <input type="text" id="register-body-fname" name="fname" placeholder="First Name" required>
+            <input type="text" id="register-body-lname" name="lname" placeholder="Last Name" required>
             <br>
 
-            <label class="headings" for="gender">Gender</label><br>
-            <select name="gender" id="gender" required>
+            <label class="register-body-headings" for="gender">Gender</label><br>
+            <select name="gender" id="register-body-gender" required>
                 <option value="">Select your gender:</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
             </select><br><br>
 
-            <label class="headings" for="age">Age</label><br>
-            <input type="number" id="age" name="age" min="1" max="200" placeholder="Age" required><br>
+            <label class="register-body-headings" for="age">Age</label><br>
+            <input type="number" id="register-body-age" name="age" min="1" max="200" placeholder="Age" required><br>
 
             <!-- <label class="headings" for="date">Date of Birth</label><br>
             <input type="date" id="date" name="date" placeholder="Date" required><br> -->
 
-            <label class="headings" for="location">Location</label><br>
-            <input type="text" id="location" name="location" placeholder="Location" required><br>
+            <label class="register-body-headings" for="location">Location</label><br>
+            <input type="text" id="register-body-location" name="location" placeholder="Location" required><br>
 
-            <label class="headings" for="school">School/Major</label><br>
-            <input type="text" id="school" name="school" placeholder="School" required>
-            <input type="text" id="major" name="major" placeholder="Major" required><br>
+            <label class="register-body-headings" for="school">School/Major</label><br>
+            <input type="text" id="register-body-school" name="school" placeholder="School" required>
+            <input type="text" id="register-body-major" name="major" placeholder="Major" required><br>
 
-            <label class="headings" for="email">Email</label><br>
-            <input type="text" id="email" name="email" placeholder="Email" required><br>
+            <label class="register-body-headings" for="email">Email</label><br>
+            <input type="text" id="register-body-email" name="email" placeholder="Email" required><br>
 
-            <label class="headings" for="username">Username</label><br>
-            <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{5,}" placeholder="Username" required><br>
-            <label class="desc">Letters and numbers only. No special characters. (Min. 5 characters)</label><br><br>
+            <label class="register-body-headings" for="username">Username</label><br>
+            <input type="text" id="register-body-username" name="username" pattern="[A-Za-z0-9]{5,}" placeholder="Username" required><br>
+            <label class="register-body-desc">Letters and numbers only. No special characters. (Min. 5 characters)</label><br><br>
 
-            <label class="headings" for="password">Password</label><br>
-            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="Password" required>
-            <input type="password" id="confirm_password" name="confirmed_password" placeholder="Confirm Password" required><br>
-            <label class="desc">Letters and numbers only. No special characters. (Min. 8 characters)</label><br><br>
+            <label class="register-body-headings" for="password">Password</label><br>
+            <input type="password" id="register-body-password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="Password" required>
+            <input type="password" id="register-body-confirm_password" name="confirmed_password" placeholder="Confirm Password" required><br>
+            <label class="register-body-desc">Letters and numbers only. No special characters. (Min. 8 characters)</label><br><br>
 
             <button class="btn btn1" type="submit">Register</button>
 
