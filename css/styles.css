@@ -2028,8 +2028,119 @@ button {
   margin-top: -50px;
 }
 
-.settings-iframe {
+.settings {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.settings .settings div {
   border-style: dotted;
+}
+
+.settings-iframe-1 {
+  margin: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.settings-iframe-1__button {
+  margin-bottom: 2em;
+  background-color: #F2CD5D;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+
+.settings-iframe-1__button:hover {
+  background-color: #B4A0E5;
+}
+
+.settings-iframe-2 {
+  margin: 10em;
+}
+
+.settings-iframe-2 iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* mobile - starts at tablet size (1024px) */
+@media (max-width: 1024px) {
+  .settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .settings .settings div {
+    border-style: dotted;
+  }
+  -iframe-1 {
+    margin: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 10em;
+    padding-right: 10em;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+  }
+  -iframe-1__button {
+    margin-bottom: 2em;
+    width: 95%;
+    background-color: #F2CD5D;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+  }
+  -iframe-1__button:hover {
+    background-color: #B4A0E5;
+  }
 }
 
 .register-body {
