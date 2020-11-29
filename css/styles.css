@@ -310,7 +310,7 @@
     width: 95%;
     padding: 5px;
   }
-  .bubblesContainer, .main {
+  .bubblesContainer, .mainA {
     display: None;
   }
 }
@@ -354,7 +354,7 @@
     width: 95%;
     padding: 5px;
   }
-  .bubblesContainer, .main {
+  .bubblesContainer, .mainA {
     display: None;
   }
 }
