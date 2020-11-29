@@ -10,7 +10,13 @@
     padding: 0;
     font-size: 3em;
     margin: 0;
-    padding: 60px 20px;
+    padding:60px 20px 10px 20px;
+}
+.mission{
+    text-align: center;
+    font-size: 1.9em;
+    padding:0px 100px 50px 100px;
+    font-family: $raleway-font;
 }
 
 .navBar {
@@ -154,7 +160,7 @@
     width: 70%;
     margin-top: 30px;
     margin: 50px auto 50px auto;
-    padding: 30px;
+    padding: 20px;
 
     .infoContainer {
         display: flex;
@@ -181,37 +187,48 @@
     .infoText {
         width: 50%;
         height: 270px;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .infoImage {
-        width: 50%;
+        width: 65;
     }
 
     .aboutImages {
         width: 100%;
+        display:block;
+        margin:auto;
     }
 }
 
 .buttonsLR {
+    padding:0;
+    margin:0;
 
     .buttonAbout {
-        background-color: $platinum-color;
+    
+        background-color: $magnoliaWhite-color;
         border-radius: 50%;
         border: none;
         transition: background-color 1s;
         box-shadow: 0 2px 2px;
+        padding:0;
+        margin:0;
 
-
+    }
+    #rClick{
+        float:right;
     }
 
     .buttonImage {
-        transform: scale(0.7, 0.7);
+        margin:0;
+        padding:0;
+        transform: scale(0.5, 0.5);
 
     }
 
     .buttonAbout:hover {
-        background-color: $magnoliaWhite-color;
+        background-color: $platinum-color;
         border-radius: 50%;
         transition: 1s;
     }
@@ -281,6 +298,12 @@
             width: 90%;
             padding: 5px;
         }
+        .infoTitle{
+            font-size:1.4em
+        }
+        .infoText{
+            font-size:1.3em;
+        }
 
         .infoText,
         .infoImage {
@@ -333,6 +356,12 @@
             padding: 5px;
         }
 
+        .infoTitle{
+            font-size:1.2em
+        }
+        .infoText{
+            font-size:1.1em;
+        }
         .infoText,
         .infoImage {
             height: fit-content;
@@ -351,7 +380,7 @@
 
 
     .bubblesContainer,
-    .mainA {
+    .mainA, .mission {
         display: None;
     }
 }
