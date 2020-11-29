@@ -317,12 +317,7 @@
     width: 95%;
     padding: 5px;
   }
-<<<<<<< HEAD
   .bubblesContainer, .mainA {
-=======
-  .bubblesContainer,
-  .mainA {
->>>>>>> 06980521bfd4d7ddd5d71490465969b184799209
     display: None;
   }
 }
