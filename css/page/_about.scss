@@ -3,8 +3,32 @@
     background-color: $magnoliaWhite-color;
     font-family: $quicksand-font;
     font-size: 16px;
+    margin-top:120px;
 }
 
+.headerOther{
+    position:block;
+    padding:0;
+    top:0;
+    .header{
+        left:0;
+        background-color:$orangeYellowCrayola-color;
+        margin:0;
+        top:0;
+        position: absolute;
+        padding:0;
+        ul{
+            background-color:$orangeYellowCrayola-color;
+        }
+        .logo {
+            padding:0;
+            img {
+                width: 120px;
+                padding:0 20px;
+            }
+        }
+    }
+}
 .title {
     text-align: center;
     padding: 0;
@@ -23,7 +47,7 @@
     font-size: $navBartext-fontsize;
     background-color: $orangeYellowCrayola-color;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: 100%;
     top: 0;
     left: 0

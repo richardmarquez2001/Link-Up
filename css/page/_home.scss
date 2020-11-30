@@ -1,6 +1,7 @@
 
 .home-html {
     height: 100vh;
+
 }
 
 .home-body {
@@ -87,6 +88,9 @@
     position: fixed;
     width: 100%;
     z-index: 3;
+    margin-top:5px;
+
+
 }
 
 .header ul {
@@ -104,6 +108,7 @@
     text-decoration: none;
     font-size: 20px;
 }
+
 
 .header .logo {
     display: block;
