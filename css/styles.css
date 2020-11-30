@@ -398,11 +398,7 @@
     padding: 5px;
   }
   .bubblesContainer,
-<<<<<<< HEAD
-  .mainA {
-=======
   .mainA, .mission {
->>>>>>> 73a208ae8ae98a5f4876a24524d3403887cfd93c
     display: None;
   }
 }
