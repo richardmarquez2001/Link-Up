@@ -435,6 +435,7 @@
 .contact-html {
   text-align: center;
   font-family: "Quicksand", sans-serif;
+  background-color: #FFFAFF;
 }
 
 .msg-form {
@@ -744,12 +745,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
-  background-image: url("../images/Group 11.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-attachment: fixed;
-  z-index: -100;
-  height: 100vh;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -757,21 +752,27 @@
   position: relative;
 }
 
-.home-body .text {
-  position: absolute;
-  margin-top: 300px;
-  margin-left: 40px;
+.home-body .home-left {
   color: black;
   font-size: 35px;
+  position: absolute;
+  margin-left: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home-body .text .button {
+.home-body .home-left .text {
   text-align: center;
+}
+
+.home-body .home-left .button {
   margin-top: 30px;
   background: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home-body .text .btn {
+.home-body .home-left .btn {
   border: 1px solid black;
   background: none;
   padding: 10px 20px;
@@ -785,17 +786,17 @@
   overflow: hidden;
 }
 
-.home-body .text .btn1,
-.home-body .text .btn2 {
+.home-body .home-left .btn1,
+.home-body .home-left .btn2 {
   color: black;
 }
 
-.home-body .text .btn1:hover,
-.home-body .text .btn2:hover {
+.home-body .home-left .btn1:hover,
+.home-body .home-left .btn2:hover {
   color: white;
 }
 
-.home-body .text .btn::before {
+.home-body .home-left .btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -807,15 +808,60 @@
   transition: 0.8s;
 }
 
-.home-body .text .btn1::before,
-.home-body .text .btn2::before {
+.home-body .home-left .btn1::before,
+.home-body .home-left .btn2::before {
   top: 0;
   border-radius: 0 0 50% 50%;
 }
 
-.home-body .text .btn1:hover::before,
-.home-body .text .btn2:hover::before {
+.home-body .home-left .btn1:hover::before,
+.home-body .home-left .btn2:hover::before {
   height: 180%;
+}
+
+@media (min-width: 1100px) {
+  .home-body {
+    background-image: url("../images/Group 11.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    z-index: -100;
+    height: 100vh;
+  }
+  .home-left {
+    margin-top: 300px;
+  }
+  .home-left .home-left-logo {
+    display: none;
+  }
+  .home-left .text {
+    margin-left: 50px;
+  }
+  .home-left .button {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home-body {
+    background-color: #FDB9A9;
+    overflow-y: visible;
+  }
+  .home-left {
+    margin-top: 200px;
+  }
+  .home-left .text {
+    text-align: center;
+    width: 100vw;
+  }
+  .home-left .home-left-logo {
+    width: 200px;
+  }
+  .button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .header {
@@ -928,7 +974,7 @@
   top: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 825px) {
   .header li {
     float: left;
   }
@@ -945,7 +991,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 825px) {
   .header .logo {
     display: none;
   }
@@ -953,9 +999,8 @@
     background-color: #FDB9A9;
     background-image: none;
   }
-  .menu {
-    border-top: solid 2px white;
-    border-bottom: solid 2px white;
+  .header ul {
+    background-color: white;
   }
 }
 
@@ -1722,7 +1767,6 @@ button {
   margin-right: auto;
   border-radius: 20px;
   padding: 50px;
-  overflow: hidden;
 }
 
 .question-container .question-text {
@@ -1733,15 +1777,18 @@ button {
 
 .question-container .question-sm-text {
   font-size: 25px;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   color: white;
 }
 
 .question-container .question-back-btn, .question-container .question-btn {
-  height: 40px;
-  font-size: 20px;
+  height: 60px;
+  font-size: 25px;
   border-radius: 30px;
   border: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  margin: 20px;
 }
 
 .question-container .question-back-btn {
@@ -1751,6 +1798,12 @@ button {
 .question-container .question-btn {
   width: 300px;
   background-color: #F2CD5D;
+}
+
+@media (max-width: 800px) {
+  .question-container {
+    height: auto;
+  }
 }
 
 .question2-container {
