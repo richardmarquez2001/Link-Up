@@ -11,7 +11,14 @@
   padding: 0;
   font-size: 3em;
   margin: 0;
-  padding: 60px 20px;
+  padding: 60px 20px 10px 20px;
+}
+
+.mission {
+  text-align: center;
+  font-size: 1.9em;
+  padding: 0px 100px 50px 100px;
+  font-family: "Raleway", sans-serif;
 }
 
 .navBar {
@@ -174,7 +181,7 @@
   width: 70%;
   margin-top: 30px;
   margin: 50px auto 50px auto;
-  padding: 30px;
+  padding: 20px;
 }
 
 .infoContents .infoContainer {
@@ -210,34 +217,49 @@
 .infoContents .infoText {
   width: 50%;
   height: 270px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .infoContents .infoImage {
-  width: 50%;
+  width: 65;
 }
 
 .infoContents .aboutImages {
   width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.buttonsLR {
+  padding: 0;
+  margin: 0;
 }
 
 .buttonsLR .buttonAbout {
-  background-color: #EAEAEA;
+  background-color: #FFFAFF;
   border-radius: 50%;
   border: none;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
   -webkit-box-shadow: 0 2px 2px;
           box-shadow: 0 2px 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.buttonsLR #rClick {
+  float: right;
 }
 
 .buttonsLR .buttonImage {
-  -webkit-transform: scale(0.7, 0.7);
-          transform: scale(0.7, 0.7);
+  margin: 0;
+  padding: 0;
+  -webkit-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5);
 }
 
 .buttonsLR .buttonAbout:hover {
-  background-color: #FFFAFF;
+  background-color: #EAEAEA;
   border-radius: 50%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -303,6 +325,12 @@
     width: 90%;
     padding: 5px;
   }
+  .MobileViewAbout .infoTitle {
+    font-size: 1.4em;
+  }
+  .MobileViewAbout .infoText {
+    font-size: 1.3em;
+  }
   .MobileViewAbout .infoText,
   .MobileViewAbout .infoImage {
     height: -webkit-fit-content;
@@ -349,6 +377,12 @@
     width: 90%;
     padding: 5px;
   }
+  .MobileViewAbout .infoTitle {
+    font-size: 1.2em;
+  }
+  .MobileViewAbout .infoText {
+    font-size: 1.1em;
+  }
   .MobileViewAbout .infoText,
   .MobileViewAbout .infoImage {
     height: -webkit-fit-content;
@@ -364,7 +398,11 @@
     padding: 5px;
   }
   .bubblesContainer,
+<<<<<<< HEAD
   .mainA {
+=======
+  .mainA, .mission {
+>>>>>>> 73a208ae8ae98a5f4876a24524d3403887cfd93c
     display: None;
   }
 }
