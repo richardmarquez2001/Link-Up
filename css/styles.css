@@ -524,14 +524,50 @@
           transform: translate(-50%, -50%);
 }
 
+.featureContents .teamInfoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.featureContents .teamInfoText a {
+  text-decoration: none;
+  color: #302B27;
+  font-style: italic;
+  -webkit-transition: border-bottom 2s;
+  transition: border-bottom 2s;
+}
+
+.featureContents .teamInfoText a:hover {
+  border-bottom: 1px solid;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.featureContents .teamInfoText .itemf1 {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+.featureContents .itemf2 {
+  width: 90%;
+  padding: 20px 0;
+  margin: auto;
+}
+
 .featureContents .item {
   text-align: center;
   position: relative;
   width: 400px;
-  height: 450px;
+  height: 525px;
   margin: 20px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #302B27;
   text-align: center;
 }
@@ -545,12 +581,21 @@
   border: 2px solid;
 }
 
+.featureContents .item .teamIcons {
+  width: 40px;
+  margin: 10px;
+  padding: 0;
+  border: none;
+  display: inline;
+  vertical-align: middle;
+}
+
 .featureContents .item .ft {
-  top: 240px;
+  top: 245px;
   left: 60px;
   font-size: 1.2em;
   font-weight: bold;
-  padding: 10px 10px;
+  padding: 10px;
   background-color: #EAEAEA;
   border-radius: 20px;
   width: 60%;
@@ -657,43 +702,10 @@
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-  .main {
-    display: none;
-  }
-  .MobileView {
-    display: block;
-  }
-  .item {
-    width: 90%;
-    padding: 0;
-    margin: 10px auto;
-    text-align: center;
-  }
-  .title {
-    margin: 40px;
-    padding: 20px;
-  }
-  .featureContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 90%;
-    margin: 20px auto;
-  }
-  .featureContainer .featureInfo {
-    width: 90%;
-  }
-  .featureContainer .item {
-    width: 90%;
-  }
-  .buttonContainer {
-    display: None;
-  }
-}
-
 @media screen and (max-width: 600px) {
+  hr {
+    margin: 40px auto;
+  }
   .main {
     display: none;
   }
@@ -706,6 +718,39 @@
   .MobileView {
     margin: 10px;
     display: block;
+  }
+  .MobileView img {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 5px #302B27;
+            box-shadow: 0 2px 5px #302B27;
+    padding: 8px;
+    border: 2px solid;
+  }
+  .MobileView .ft {
+    position: block;
+    margin: 10px auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #EAEAEA;
+    border-radius: 20px;
+    width: 60%;
+  }
+  .MobileView .teamIcons {
+    display: block;
+    width: 40px;
+    margin: 10px 25px;
+    padding: 10px;
+    border: none;
+    display: inline;
+  }
+  .MobileView .teamIcons:hover {
+    border: solid;
+  }
+  .MobileView .teamInfoText {
+    margin-left: auto;
+    margin-right: auto;
   }
   .title {
     padding: 10px;
