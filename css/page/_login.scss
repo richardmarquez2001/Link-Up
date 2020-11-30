@@ -1,24 +1,43 @@
+.login-html {
+    overflow-x: hidden;
+}
+.login-bg {
+    background-image: url(../images/authentication.png);
+    background-size: 50%;
+    background-position: right center;
+}
+
 .login-body{
     font-size: 3em;
     text-align: center;
     font-family: $quicksand-font;
     color: white;
+    background-color: $polishedPine-color;
+    width: 50%;
+    // margin-left: auto;
+    // margin-right: auto;
+    float: left;
+    height: 70%;
+    border-radius: 20px;
+    margin-top: 150px;
+    margin-left: 40px;
+    padding: 10px;
 
     &__button{
         font-family: $quicksand-font;
-        background-color: white;
+        background-color: $orangeYellowCrayola-color;
         height: 40px;
         font-size: 20px;
-        border-radius: 10px;
-        border: 1px solid black;
-        margin: 20px;
-        width: fit-content;
+        border-radius: 20px;
+        margin: 5px;
+        width: 220px;
+        border: none;
+        margin-bottom: 20px;
     }
 
     &__image{
         margin: 1em;
-
-        width: 10%;
+        width: 120px;
     }
     h1{
         padding-bottom: 30px;
@@ -38,6 +57,7 @@
         margin-bottom: 20px;
         text-align: center;
 
+
     }
 
     &__link{
@@ -53,9 +73,22 @@
         color: black;
         &-link{
             text-decoration: none;
-            color: $orangeYellowCrayola-color;
+            color: white;
         }
     }
 
 
+}
+
+@media(max-width: 800px) {
+    .login-bg {
+        background: none;
+    }
+
+    .login-body {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
+
+    }
 }
