@@ -1689,7 +1689,7 @@ button {
   margin-right: auto;
   border-radius: 20px;
   padding: 50px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .question-container .question-text {
