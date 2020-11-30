@@ -935,12 +935,13 @@
 .header .logo {
   display: block;
   float: left;
-  padding: 10px 40px;
   text-decoration: none;
+  padding: 0;
 }
 
 .header .logo img {
   width: 150px;
+  padding: 0 40px;
 }
 
 /* menu */
@@ -2302,6 +2303,7 @@ button {
   text-align: center;
   color: black;
   font-family: "Quicksand", sans-serif;
+  margin-top: 100px;
 }
 
 .register-form input {

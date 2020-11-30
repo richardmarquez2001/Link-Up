@@ -177,13 +177,19 @@
 .header .logo {
     display: block;
     float: left;
-    padding: 10px 40px;
+    // padding: 10px 40px;
     text-decoration: none;
+    padding:0;
     img {
         width: 150px;
+        padding:0 40px;
     }
+    
 }
 
+.logo {
+
+}
 
 /* menu */
 
