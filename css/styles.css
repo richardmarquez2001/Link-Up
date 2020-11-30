@@ -480,7 +480,7 @@
   resize: none;
 }
 
-.msg-form #send-btn {
+.msg-form .send-btn {
   width: 150px;
   height: 40px;
   display: block;
@@ -898,6 +898,7 @@
   .home-left .text {
     text-align: center;
     width: 100vw;
+    font-size: 20px;
   }
   .home-left .home-left-logo {
     width: 200px;
@@ -1049,29 +1050,46 @@
   }
 }
 
+.login-html {
+  overflow-x: hidden;
+}
+
+.login-bg {
+  background-image: url(../images/authentication.png);
+  background-size: 50%;
+  background-position: right center;
+}
+
 .login-body {
   font-size: 3em;
   text-align: center;
   font-family: "Quicksand", sans-serif;
   color: white;
+  background-color: #70a288;
+  width: 50%;
+  float: left;
+  height: 70%;
+  border-radius: 20px;
+  margin-top: 150px;
+  margin-left: 40px;
+  padding: 10px;
 }
 
 .login-body__button {
   font-family: "Quicksand", sans-serif;
-  background-color: white;
+  background-color: #F2CD5D;
   height: 40px;
   font-size: 20px;
-  border-radius: 10px;
-  border: 1px solid black;
-  margin: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  border-radius: 20px;
+  margin: 5px;
+  width: 220px;
+  border: none;
+  margin-bottom: 20px;
 }
 
 .login-body__image {
   margin: 1em;
-  width: 10%;
+  width: 120px;
 }
 
 .login-body h1 {
@@ -1109,7 +1127,18 @@
 
 .login-body__forgot-link {
   text-decoration: none;
-  color: #F2CD5D;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .login-bg {
+    background: none;
+  }
+  .login-body {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+  }
 }
 
 .content-container {
@@ -2263,6 +2292,10 @@ button {
   -iframe-1__button:hover {
     background-color: #B4A0E5;
   }
+}
+
+.register-html {
+  overflow-x: hidden;
 }
 
 .register-body {
