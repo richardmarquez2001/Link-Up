@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Profile</title>
   </head>
   <body class="content">
@@ -98,7 +99,81 @@
       </ul>
     </nav>
     <section class="profileContent">
-        <div class="profileInfo">
+      <section class= "leftBox">
+      <div class="leftBoxContainer">
+        <div class="item">
+          <img class="pfp" src="../images/profilep1.jpg">
+        </div>
+        <div class="item">
+          <h1>Welcome @<span id="profile-username">toyvan<span>!</span></h1>
+          <hr>
+        </div>
+        <div class="item">
+          <p><b>Name: </b> <span class="profile-name">Vanessa</span></p>
+          <p><b>My Interests: </b> <span class="profile-interests">Fashion, Coding, Design</span></p>
+          <p><b>Bio: </b><span class="profile-bio">Did you know that i’ma design God! </span></p>
+          <section class="Title">
+            <img class="item linksIcon" src="../icons/linkspfp.png"/>
+              <p class="item links"> Links | <span class="numOfLinks">-</span></p>  
+          </section>
+        </div>
+      </div>
+      </section>
+      <section class= "rightBox">
+        <div class="rightBoxContainer">
+          <div class="item linksPosition">
+            <p>Most Reccent Links</p>
+            <section class="mostRecentThree">
+              <div> 
+                <p class="left"><b>Name: </b> <span class="mr31name">Deandra</span></p>
+                  <p><span class="mr31username">@mdesxo</span></p><br>
+              </div>
+              <div> 
+                 <p class="left"><b>Name: </b> <span class="mr32name">Richard</span></p>
+                  <p><span class="mr32bio">@ric</span></b></p><br>
+              </div>
+              <div> 
+                 <p class="left"><b>Name: </b><span class="mr33name">Ethan</span></p> 
+                 <p><span class="mr33bio">@yk</span></p>
+              </div>
+              </section>
+          </div>
+          <div class="item">
+            <div class="personalContainerNav">
+              <div class="itemN" id="qProfile">Questionare</div>
+              <div class="itemN" id="sProfile">Social Media</div>
+            </div>
+            <div class="personalContainer">
+                <div class="questionaireContainer">
+                  <p><b>Sunset or Sunrise: </b><span id="profileQ1a"><br>Question 1 aNSWER</span></p>
+                  <p><b>Early Bird or Night owl: </b><span id="profileQ2a"><br>Question 2 aNSWER</span></p>
+                  <p><b>Netflix or Youtube: </b><span id="profileQ3a"><br>Question 3 aNSWER</span></p>
+                  <p><b>Introvert or Extrovert </b><span id="profileQ4a"><br>Question 4 aNSWER</span></p>
+                  <p><b>City or Nature: </b><span id="profileQ5a"><br>Question 5 aNSWER</span></p>
+                  <p><b>If you could live anywhere, where would you live: </b><span id="profileQ6a"><br>Question 6 aNSWER</span></p>
+                  <p><b>Which best describes your fashion style: </b><span id="profileQ7a"><br>Question 7 aNSWER</span></p>
+                  <p><b>What is your favorite social media: </b><span id="profileQ8a"><br>Question 8 aNSWER</span></p>
+                  <p><b>What's your favourite music genre: </b><span id="profileQ9a"><br>Question 9 aNSWER</span></p>
+                </div>
+                <div class="socialMediaContainer" hidden>
+                  <div class="media">Tiktok</div>
+                  <span class="userTiktok">@tiktok</span>
+                  <div class="media">Twitter</div>
+                  <span class="userTwitter">@tweet</span>
+                  <div class="media">Instgram</div>
+                  <span class="userTiktok">@instagram</span>
+                  <div class="media">Snapchat</div>
+                  <span class="userSnapchat"> @snapchat</span>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+
+
+
+        <!-- <div class="profileInfo">
             <div class="profileImage item">
                 <img class= "pfp" src="../images/profilep1.jpg"/>
             </div>
@@ -146,7 +221,6 @@
             <p class="qTitles">Questionaire Results</p> 
           </div>
           <div class="questionaireContainer">
-            <!-- <img src="../icons/questionResults.png"/><br> -->
             <p><b>Sunset or Sunrise: </b><span id="profileQ1a"><br>Question 1 aNSWER</span></p>
             <p><b>Early Bird or Night owl: </b><span id="profileQ2a"><br>Question 2 aNSWER</span></p>
             <p><b>Netflix or Youtube: </b><span id="profileQ3a"><br>Question 3 aNSWER</span></p>
@@ -168,7 +242,6 @@
           <p class="qTitles">Social Media</p>
           </div>
           <div class="socialMediaContainer">
-            <!-- <img src="../icons/socialMedia.png"/><br> -->
             <div class="media">Tiktok</div>
             <span class="userTiktok">@tiktok</span>
             <div class="media">Twitter</div>
@@ -178,9 +251,11 @@
             <div class="media">Snapchat</div>
             <span class="userSnapchat"> @snapchat</span>
           </div>
-
       </div>
-    </section>
+    </section> -->
   </section>
+  <script src="../scripts/profile.js"/></script>
+
   </body>
+  
 </html>

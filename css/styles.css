@@ -1438,10 +1438,204 @@
 }
 
 .profileContent {
-  margin: 60px;
+  margin-left: 60px;
   padding: 0px 10px;
   text-align: center;
   height: 270px;
+}
+
+.profileContent .leftBox, .profileContent .rightBox {
+  margin: 20px auto;
+}
+
+.profileContent .leftBox {
+  float: left;
+  width: 40%;
+}
+
+.profileContent .leftBox .leftBoxContainer {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profileContent .leftBox .leftBoxContainer .item {
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #FFFAFF;
+  border-radius: 20px;
+}
+
+.profileContent .leftBox .leftBoxContainer .item h1 {
+  padding: 0;
+}
+
+.profileContent .leftBox .leftBoxContainer .item .pfp {
+  width: 150px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 50%;
+  border: solid 1px;
+}
+
+.profileContent .leftBox .leftBoxContainer .item p {
+  text-align: center;
+}
+
+.profileContent .leftBox .leftBoxContainer .item .Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  vertical-align: center;
+}
+
+.profileContent .leftBox .leftBoxContainer .item .Title .item {
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.profileContent .leftBox .leftBoxContainer .item .Title .links {
+  background-color: #EAEAEA;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 30px 0 40px;
+  border-radius: 20px;
+  margin-left: -30px;
+  margin-top: 20px;
+}
+
+.profileContent .leftBox .leftBoxContainer .item .Title .linksIcon {
+  background-color: #EAEAEA;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.profileContent .rightBox {
+  float: right;
+  width: 60%;
+  height: 100vh;
+}
+
+.profileContent .rightBox .rightBoxContainer {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid;
+}
+
+.profileContent .rightBox .rightBoxContainer .linksPosition {
+  height: 245px;
+}
+
+.profileContent .rightBox .rightBoxContainer .mostRecentThree {
+  -webkit-box-flex: display;
+      -ms-flex: display;
+          flex: display;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid;
+}
+
+.profileContent .rightBox .rightBoxContainer .mostRecentThree div {
+  margin: 10px;
+  padding: 10px;
+}
+
+.profileContent .rightBox .rightBoxContainer .mostRecentThree div span,
+.profileContent .rightBox .rightBoxContainer .mostRecentThree div p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.profileContent .rightBox .rightBoxContainer .mostRecentThree div .left {
+  float: left;
+}
+
+.profileContent .rightBox .rightBoxContainer .mostRecentThree div .right {
+  float: right;
+}
+
+.profileContent .rightBox .rightBoxContainer .mostRecentThree div:hover {
+  -webkit-box-shadow: 0 2px 4px #EAEAEA;
+          box-shadow: 0 2px 4px #EAEAEA;
+}
+
+.profileContent .rightBox .rightBoxContainer .personalContainerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  border-bottom: solid 2px;
+}
+
+.profileContent .rightBox .rightBoxContainer .personalContainerNav .itemN {
+  width: 30%;
+  padding: 10px 10px;
+  margin: 0;
+  border-bottom: solid 2px #FFFAFF;
+}
+
+.profileContent .rightBox .rightBoxContainer .personalContainerNav .itemN:hover {
+  border-bottom: solid 2px #302B27;
+}
+
+.profileContent .rightBox .rightBoxContainer .personalContainer .questionaireContainer {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 350px;
+}
+
+.profileContent .rightBox .rightBoxContainer .personalContainer .questionaireContainer p {
+  border: 2px solid #55ACEE;
+  border-radius: 20px;
+  width: 80%;
+  padding: 10px 5px;
+  font-size: 0.8em;
+}
+
+.profileContent .rightBox .rightBoxContainer .personalContainer .media {
+  border-radius: 20px;
+  background-color: #B4A0E5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 20px;
+  margin: 20px auto;
+}
+
+.profileContent .rightBox .rightBoxContainer .item {
+  width: 75%;
+  margin: 5px auto;
+  padding: 10px;
 }
 
 .profileInfo {
@@ -1657,8 +1851,6 @@ svg {
   border: solid 10px #8AE9C1;
   border-radius: 20px;
   background-color: #FFFAFF;
-  -webkit-box-shadow: 0 2px 4px #EAEAEA;
-          box-shadow: 0 2px 4px #EAEAEA;
   font-size: 1.3em;
 }
 
