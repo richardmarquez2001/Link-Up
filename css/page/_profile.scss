@@ -1,3 +1,10 @@
+.contentB{
+    font-size: $navBartext-fontsize;
+    background-color: $magnoliaWhite-color;
+    font-family: $quicksand-font;
+    font-size: 16px;
+    margin-top:120px;
+}
 //SCROLL BAR
 /* width */
 ::-webkit-scrollbar {
@@ -64,8 +71,10 @@
                 h1{
                     padding:0;
                 }
-                // height:185px;
-                // padding:20px;
+                .welcomeTitle{
+                    font-size:1.9em;
+                }
+               
                 .pfp {
                     width: 150px;
                     padding: 10px;
@@ -124,12 +133,51 @@
             display: flex;
             flex-direction: column;
             border-left: 1px solid;
-            
+                   
+        
+            .socialMediaContainer{
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+                width: 80%;
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 100%;
+                  }
+                  
+                  .column {
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: 100%;
+                    flex: 1;
+                    
+                  }
+                .item{
+                    margin: 10px;
+                    background-color:$platinum-color;
+                    width:100px;
+                    border-radius: 20px;
+                
+                }
+                .hideSocial{
+                    opacity:0;
+                    transition: opacity 1s;
+                }
+                .hideSocial:hover{
+                    opacity:1;
+                }
+
+              
+            }
             .linksPosition{
                 height:245px;
-                // margin:20px 0;
+                .linksTitle{
+                    text-align:left;
+                }
             }
-
+            
             .mostRecentThree {
                 flex: display;
                 flex-direction: column;
@@ -187,7 +235,7 @@
             }
 
             .personalContainer {
-
+                
 
                 .questionaireContainer {
                     p {
@@ -208,7 +256,7 @@
                     border-radius: 20px;
                     background-color: $maximumBluePurple-color;
                     width: fit-content;
-                    padding: 0 20px;
+                    padding: 0 10px;
                     margin: 20px auto;
                 }
 

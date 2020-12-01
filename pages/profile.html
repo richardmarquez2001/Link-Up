@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Profile</title>
   </head>
-  <body >
+  <body class="contentB">
     <nav class="sideNavBar">
       <ul class="navLinksProfile">
         <li class="link">
@@ -105,7 +105,7 @@
           <img class="pfp" src="../images/profilep1.jpg">
         </div>
         <div class="item">
-          <h1>Welcome @<span id="profile-username">toyvan<span>!</span></h1>
+          <h1 class="welcomeTitle">Welcome @<span id="profile-username">toyvan<span>!</span></h1>
           <hr>
         </div>
         <div class="item">
@@ -122,7 +122,7 @@
       <section class= "rightBox">
         <div class="rightBoxContainer">
           <div class="item linksPosition">
-            <p>Most Reccent Links</p>
+            <h1 class="linksTitle">Most Reccent Links</h1>
             <section class="mostRecentThree">
               <div> 
                 <p class="left"><b>Name: </b> <span class="mr31name">Deandra</span></p>
@@ -140,8 +140,8 @@
           </div>
           <div class="item">
             <div class="personalContainerNav">
-              <div class="itemN" id="qProfile">Questionare</div>
-              <div class="itemN" id="sProfile">Social Media</div>
+              <div class="itemN" id="qProfile"><h1>Questionare</h1></div>
+              <div class="itemN" id="sProfile"><h1>Social Media</h1></div>
             </div>
             <div class="personalContainer">
                 <div class="questionaireContainer">
@@ -156,14 +156,39 @@
                   <p><b>What's your favourite music genre: </b><span id="profileQ9a"><br>Question 9 aNSWER</span></p>
                 </div>
                 <div class="socialMediaContainer" hidden>
+                  <div class="row">
+                    <div class="column">
+                  <div class = "item">
                   <div class="media">Tiktok</div>
-                  <span class="userTiktok">@tiktok</span>
+                  <span class="userTiktok hideSocial">@tiktok</span>
+                </div>
+                </div>
+                <div class="column">
+                  <div class = "item">
                   <div class="media">Twitter</div>
-                  <span class="userTwitter">@tweet</span>
-                  <div class="media">Instgram</div>
-                  <span class="userTiktok">@instagram</span>
+                  <span class="userTwitter hideSocial">@tweet</span>
+                  </div>
+                 </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="column">
+
+                  <div class = "item">
+                    <div class="media">Instgram</div>
+                    <span class="userInstagram hideSocial">@instagram</span>
+                   </div>
+                  </div>
+                  <div class="column">
+
+                  <div class = "item">
                   <div class="media">Snapchat</div>
-                  <span class="userSnapchat"> @snapchat</span>
+                  <span class="userSnapchat hideSocial "> @snapchat</span>
+                </div>
+                  </div>
+
+                </div>
+
                 </div>
             </div>
         </div>

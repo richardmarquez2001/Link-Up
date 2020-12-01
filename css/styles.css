@@ -1400,6 +1400,14 @@
   }
 }
 
+.contentB {
+  font-size: 20px;
+  background-color: #FFFAFF;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  margin-top: 120px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -1472,6 +1480,10 @@
   padding: 0;
 }
 
+.profileContent .leftBox .leftBoxContainer .item .welcomeTitle {
+  font-size: 1.9em;
+}
+
 .profileContent .leftBox .leftBoxContainer .item .pfp {
   width: 150px;
   padding: 10px;
@@ -1537,8 +1549,69 @@
   border-left: 1px solid;
 }
 
+.profileContent .rightBox .rightBoxContainer .socialMediaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+  width: 80%;
+}
+
+.profileContent .rightBox .rightBoxContainer .socialMediaContainer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.profileContent .rightBox .rightBoxContainer .socialMediaContainer .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.profileContent .rightBox .rightBoxContainer .socialMediaContainer .item {
+  margin: 10px;
+  background-color: #EAEAEA;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.profileContent .rightBox .rightBoxContainer .socialMediaContainer .hideSocial {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.profileContent .rightBox .rightBoxContainer .socialMediaContainer .hideSocial:hover {
+  opacity: 1;
+}
+
 .profileContent .rightBox .rightBoxContainer .linksPosition {
   height: 245px;
+}
+
+.profileContent .rightBox .rightBoxContainer .linksPosition .linksTitle {
+  text-align: left;
 }
 
 .profileContent .rightBox .rightBoxContainer .mostRecentThree {
@@ -1624,7 +1697,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 20px auto;
 }
 
