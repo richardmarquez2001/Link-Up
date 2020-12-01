@@ -1551,6 +1551,14 @@
   margin: auto;
 }
 
+.profileContent .rightBox .rightBoxContainer .socialMediaContainer .row img, .profileContent .rightBox .rightBoxContainer .socialMediaContainer .column img {
+  width: 40px;
+}
+
+.profileContent .rightBox .rightBoxContainer .socialMediaContainer .row .media, .profileContent .rightBox .rightBoxContainer .socialMediaContainer .column .media {
+  background-color: #EAEAEA;
+}
+
 .profileContent .rightBox .rightBoxContainer .socialMediaContainer .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1574,26 +1582,13 @@
           flex-direction: column;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .profileContent .rightBox .rightBoxContainer .socialMediaContainer .item {
   margin: 10px;
   background-color: #EAEAEA;
-  width: 200px;
+  width: 80%;
   border-radius: 20px;
-}
-
-.profileContent .rightBox .rightBoxContainer .socialMediaContainer .hideSocial {
-  opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
-.profileContent .rightBox .rightBoxContainer .socialMediaContainer .hideSocial:hover {
-  opacity: 1;
 }
 
 .profileContent .rightBox .rightBoxContainer .linksPosition {
@@ -1790,7 +1785,7 @@ svg {
   height: 2.5em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .profileContent {
     display: None;
   }
@@ -1826,6 +1821,7 @@ svg {
   .profileMobileView .item {
     padding: 10px;
     margin: 10px auto;
+    text-align: center;
   }
 }
 

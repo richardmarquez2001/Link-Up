@@ -140,6 +140,15 @@
                 margin: 10px;
                 width: 80%;
                 margin:auto;
+
+                .row,.column{
+                    img{
+                        width: 40px;
+                    }
+                    .media{
+                        background-color: $platinum-color;
+                    }
+                }
                 .row {
                     display: flex;
                     flex-direction: row;
@@ -151,24 +160,17 @@
                     display: flex;
                     flex-direction: column;
                     flex-basis: 100%;
-                    flex: 1;
+                    // flex: 1;
                     
                   }
                 .item{
                     margin: 10px;
                     background-color:$platinum-color;
-                    width:200px;
+                    width:80%;
                     border-radius: 20px;
                 
                 }
-                .hideSocial{
-                    opacity:0;
-                    transition: opacity 1s;
-                }
-                .hideSocial:hover{
-                    opacity:1;
-                }
-
+               
               
             }
             .linksPosition{
@@ -369,10 +371,16 @@ svg {
 
     // @media screen and (max-width: 800px) {
     
-
+    //     .item{
+    //         margin: 10px;
+    //         background-color:$platinum-color;
+    //         width:100px;
+    //         border-radius: 20px;
+        
+    //     }
     // }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .profileContent{
         display:None;
     }
@@ -408,6 +416,7 @@ svg {
         .item{
             padding:10px;
             margin: 10px auto;
+            text-align: center;
         }
         
         
