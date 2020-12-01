@@ -1476,6 +1476,11 @@
   border-radius: 20px;
 }
 
+.profileContent .leftBox .leftBoxContainer .item p {
+  text-align: center;
+  font-size: 1.3em;
+}
+
 .profileContent .leftBox .leftBoxContainer .item h1 {
   padding: 0;
 }
@@ -1485,31 +1490,16 @@
 }
 
 .profileContent .leftBox .leftBoxContainer .item .pfp {
-  width: 150px;
+  width: 225px;
   padding: 10px;
   margin: 0;
   border-radius: 50%;
   border: solid 1px;
 }
 
-.profileContent .leftBox .leftBoxContainer .item p {
-  text-align: center;
-}
-
-.profileContent .leftBox .leftBoxContainer .item .Title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  vertical-align: center;
-}
-
 .profileContent .leftBox .leftBoxContainer .item .Title .item {
   padding: 0;
-  margin: 0;
+  margin: auto;
   width: 60px;
   height: 60px;
 }
@@ -1519,16 +1509,15 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0 30px 0 40px;
+  padding: 10px 50px;
   border-radius: 20px;
-  margin-left: -30px;
-  margin-top: 20px;
+  font-size: 1.3em;
+  text-align: center;
 }
 
 .profileContent .leftBox .leftBoxContainer .item .Title .linksIcon {
   background-color: #EAEAEA;
   border-radius: 50%;
-  z-index: 1;
 }
 
 .profileContent .rightBox {
@@ -1559,6 +1548,7 @@
           flex-direction: row;
   margin: 10px;
   width: 80%;
+  margin: auto;
 }
 
 .profileContent .rightBox .rightBoxContainer .socialMediaContainer .row {
@@ -1592,7 +1582,7 @@
 .profileContent .rightBox .rightBoxContainer .socialMediaContainer .item {
   margin: 10px;
   background-color: #EAEAEA;
-  width: 100px;
+  width: 200px;
   border-radius: 20px;
 }
 
@@ -1689,6 +1679,7 @@
   width: 80%;
   padding: 10px 5px;
   font-size: 0.8em;
+  margin: 10px auto;
 }
 
 .profileContent .rightBox .rightBoxContainer .personalContainer .media {
@@ -1818,7 +1809,7 @@ svg {
     margin: 10px auto;
   }
   .profileMobileView .pfp {
-    width: 150px;
+    width: 120px;
   }
   .profileMobileView .linksIcon {
     width: 50px;
