@@ -2,31 +2,27 @@
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
-    height:20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    // border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    // background:$blueJean-color; 
-    border:2px solid rgb(156, 161, 163);
-    // border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $jet-color;
-  }
-
-.content{
-    margin-top:0;
-    
+    height: 20px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    // border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    // background:$blueJean-color; 
+    border: 2px solid rgb(156, 161, 163);
+    // border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $jet-color;
+}
+
 
 .sideNavBar {
     width: 60px;
@@ -40,16 +36,202 @@
 }
 
 .profileContent {
-    margin: 60px;
+    margin-left: 60px;
     padding: 0px 10px;
     text-align: center;
     height: 270px;
-   }
+
+    .leftBox,.rightBox{
+        margin:20px auto;
+    }
+
+    .leftBox {
+    
+        float: left;
+        width: 40%;
+        .leftBoxContainer {
+           padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+
+            .item {
+                width: 75%;
+                margin: 10px auto;
+                padding: 10px;
+                background-color: $magnoliaWhite-color;
+                border-radius: 20px;
+                h1{
+                    padding:0;
+                }
+                // height:185px;
+                // padding:20px;
+                .pfp {
+                    width: 150px;
+                    padding: 10px;
+                    margin: 0;
+                    border-radius: 50%;
+                    border: solid 1px;
+                }
+
+                p {
+                    text-align: center;
+                }
+                .Title {
+                    display: flex;
+                    flex-direction: row;
+                    
+
+                    .item {
+                        padding: 0;
+                        margin: 0;
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .links {
+                        background-color: $platinum-color;
+                        height: fit-content;
+                        padding: 0 30px 0 40px;
+                        border-radius: 20px;
+                        margin-left: -30px;
+                        margin-top: 20px;
+                    }
+
+                    .linksIcon {
+                        background-color: $platinum-color;
+                        border-radius: 50%;
+                        z-index: 1;
+                        // padding:10px;
+                        // vertical-align: center;
+                    }
+
+                    vertical-align: center;
+                }
+            }
+        }
+
+    }
+
+    .rightBox {
+        // background-color: red;
+        float: right;
+        width: 60%;
+        height: 100vh;
+
+        .rightBoxContainer {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid;
+            
+            .linksPosition{
+                height:245px;
+                // margin:20px 0;
+            }
+
+            .mostRecentThree {
+                flex: display;
+                flex-direction: column;
+                border: 1px solid;
+
+                div {
+                    margin: 10px;
+                    padding: 10px;
+
+                    span,
+                    p {
+                        display: inline-block;
+                        padding: 0;
+                        margin: 0;
+
+                    }
+
+                    .left {
+                        float: left;
+                    }
+
+                    .right {
+                        float: right;
+                    }
+                }
+
+                div:hover {
+                    box-shadow: 0 2px 4px $platinum-color;
+
+
+                }
+            }
+
+
+            .personalContainerNav {
+                display: flex;
+                flex-direction: row;
+                // background-color: pink;
+                justify-content: flex-start;
+                margin: 0;
+                padding: 0;
+                border-bottom: solid 2px;
+
+                .itemN {
+                    // background-color: blue;
+                    width: 30%;
+                    padding: 10px 10px;
+                    margin: 0;
+                    border-bottom: solid 2px $magnoliaWhite-color;
+                }
+
+                .itemN:hover {
+                    border-bottom: solid 2px $jet-color;
+                }
+            }
+
+            .personalContainer {
+
+
+                .questionaireContainer {
+                    p {
+                        border: 2px solid $blueJean-color;
+                        border-radius: 20px;
+                        width: 80%;
+                        padding: 10px 5px;
+                        font-size: 0.8em;
+                    }
+
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                 height:350px;
+                    
+                }
+
+                .media {
+                    border-radius: 20px;
+                    background-color: $maximumBluePurple-color;
+                    width: fit-content;
+                    padding: 0 20px;
+                    margin: 20px auto;
+                }
+
+            }
+
+            .item {
+                width: 75%;
+                margin: 5px auto;
+                // background-color: orange;
+                padding: 10px;
+                // height:350px;
+                // overflow-x:scroll;
+               
+
+            }
+        }
+    }
+}
 
 .profileInfo {
     display: flex;
     flex-direction: row;
-  }
+}
 
 .profileImage {
     width: 30%;
@@ -59,14 +241,15 @@
     border-radius: 20px;
     width: 225px;
     border: solid $platinum-color;
-    border-radius:50%;
+    border-radius: 50%;
     vertical-align: center;
-    padding:10px;
-    border:2px solid;
+    padding: 10px;
+    border: 2px solid;
 }
 
 .aboutMe {
-    margin-bottom:30px;
+    margin-bottom: 30px;
+
     h1 {
         padding: 0;
         margin: 20px 5px 5px 5px;
@@ -77,8 +260,6 @@
         padding: 0;
         margin: 10px 0;
         font-size: 1.5em;
-        
-
     }
 
     span {
@@ -140,24 +321,26 @@ svg {
 
 @media screen and (max-width: 800px) {
     .profileContent {
-        width:90%;
+        width: 90%;
 
-        .profileImage{
-            margin:0;
-            padding:18px;
-            .pfp{
-                border-radius:50%;
+        .profileImage {
+            margin: 0;
+            padding: 18px;
+
+            .pfp {
+                border-radius: 50%;
             }
         }
+
         .aboutMe {
             padding: 0;
             flex-direction: row;
-            margin-left:90px;
+            margin-left: 90px;
 
             h1 {
                 text-align: left;
                 font-size: 30px;
-                margin:5px;
+                margin: 5px;
             }
 
             h3 {
@@ -171,45 +354,49 @@ svg {
 
 @media screen and (max-width: 600px) {
 
-    .profileContent{
+    .profileContent {
         .profileInfo {
             flex-direction: column;
             // margin:10px;
-            width:100%;
+            width: 100%;
+
             .item {
                 width: 100%;
             }
-            img{
-                display:block;
-                margin:10px auto;
+
+            img {
+                display: block;
+                margin: 10px auto;
                 width: 200px;
-                border-radius:50%;
-                   
+                border-radius: 50%;
+
             }
         }
-    .aboutMe {
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        margin:15px;
 
-        .item {
+        .aboutMe {
             width: 100%;
-        }
-        
-        h1 {
+            flex-direction: column;
             text-align: center;
-            font-size: 30px;
-            margin:5px;
-        }
+            margin: 15px;
 
-        h3 {
-            text-align: center;
-            font-size: 20px;
-            margin-bottom:10px;
-        }
+            .item {
+                width: 100%;
+            }
 
-    }}
+            h1 {
+                text-align: center;
+                font-size: 30px;
+                margin: 5px;
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
 }
 
 .contentContainer {
@@ -217,9 +404,9 @@ svg {
     .Title {
         display: flex;
         font-size: 1.5em;
-        
-    
-       
+
+
+
 
         p {
             font-family: $quicksand-font;
@@ -261,14 +448,14 @@ svg {
             border: solid 10px $magicMint-color;
             border-radius: 20px;
             background-color: $magnoliaWhite-color;
-            box-shadow: 0 2px 4px $platinum-color;
-            font-size:1.3em;
+            font-size: 1.3em;
 
-            p{
-                padding:5px 5px;
+            p {
+                padding: 5px 5px;
             }
 
         }
+
 
     }
 
@@ -278,12 +465,12 @@ svg {
     }
 
     @media screen and (max-width: 800px) {
-        .contentContainer{
-        .mostRecentThree {
-            flex-direction: row;
+        .contentContainer {
+            .mostRecentThree {
+                flex-direction: row;
 
+            }
         }
-    }
 
     }
 
@@ -292,7 +479,7 @@ svg {
             width: 100%;
             flex-direction: column;
             text-align: center;
-            margin:0;
+            margin: 0;
 
             .item {
                 width: 95%;
@@ -311,7 +498,7 @@ svg {
     img,
     p {
         display: inline-block;
-        width:90%;
+        width: 90%;
 
     }
 
@@ -353,13 +540,15 @@ svg {
         margin: 10px;
         padding: 5px;
     }
-    .questionaireContainer{
-        p{
+
+    .questionaireContainer {
+        p {
             border: 4px solid $blueJean-color;
-            border-radius:20px;
-            width:90%;
-            padding:10px 5px;
+            border-radius: 20px;
+            width: 90%;
+            padding: 10px 5px;
         }
+
         overflow-y: scroll;
         overflow-x: hidden;
         height:500px;
