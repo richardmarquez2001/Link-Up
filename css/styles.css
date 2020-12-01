@@ -1406,7 +1406,7 @@
   background-color: #FFFAFF;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  margin-top: 120px;
+  margin-top: 30px;
 }
 
 /* width */
@@ -1488,6 +1488,7 @@
 
 .profileContent .leftBox .leftBoxContainer .item .welcomeTitle {
   font-size: 1.9em;
+  margin-top: 0;
 }
 
 .profileContent .leftBox .leftBoxContainer .item .pfp {
@@ -1809,7 +1810,7 @@ svg {
   height: 2.5em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .profileContent {
     display: None;
   }
