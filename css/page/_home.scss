@@ -1,129 +1,84 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    // background-color: $polishedPine-color;
-}
 
-html {
-    scroll-behavior: smooth;
-}
-
-.logo {
-    width: 10%;
-}
-
-.welcome-description {
-    font-size: 1.5em;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: white;
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 30%
-}
-
-.nav-links li {
-    list-style: none;
-}
-
-.nav-links a {
-    color: #7ea9a4;
-    text-decoration: none;
-    letter-spacing: 4px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.welcome {
-    text-align: center;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-}
-
-h1 {
-    margin-top: 100px;
-    margin-bottom: 10px;
-    font-size: 50px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-.button {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.btn {
-    border: 1px solid black;
-    background: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn1,
-.btn2 {
-    color: black;
-}
-
-.btn1:hover,
-.btn2:hover {
-    color: white;
-}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: black;
-    z-index: -1;
-    transition: 0.8s;
-}
-
-.btn1::before,
-.btn2::before {
-    top: 0;
-    border-radius: 0 0 50% 50%;
-}
-
-.btn1:hover::before,
-.btn2:hover::before {
-    height: 180%;
+.home-html {
+    height: 100vh;
 }
 
 .home-body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     overflow: hidden;
-    .vector {
-        width: 40%;
-        z-index: 4;
-        margin-top: 200px;
-        background: none;
+    background-image: url("../images/Group 11.svg") ;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    z-index: -100;
+    height: 100vh;
+    font-family: $quicksand-font;
+
+    .home-container {
+        position: relative;
     }
-    .bg {
-        height: 80%;
-        width: 1100px;
-        float: right;
+
+    .text {
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 40px;
+        color: black;
+        font-size: 35px;
+
+        .button {
+            text-align: center;
+            margin-top: 30px;
+            background: none;
+        }
+        
+        .btn {
+            border: 1px solid black;
+            background: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.8s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn1,
+        .btn2 {
+            color: black;
+        }
+        
+        .btn1:hover,
+        .btn2:hover {
+            color: white;
+        }
+        
+        .btn::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: black;
+            z-index: -1;
+            transition: 0.8s;
+        }
+        
+        .btn1::before,
+        .btn2::before {
+            top: 0;
+            border-radius: 0 0 50% 50%;
+        }
+        
+        .btn1:hover::before,
+        .btn2:hover::before {
+            height: 180%;
+        }
     }
+
 }
 
 .header {
@@ -153,7 +108,7 @@ h2 {
 .header .logo {
     display: block;
     float: left;
-    padding: 10px 100px;
+    padding: 10px 40px;
     text-decoration: none;
     img {
         width: 150px;
@@ -237,9 +192,7 @@ h2 {
 }
 
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
+@media (min-width: 800px) {
     .header li {
         float: left;
         // margin: 50px;
@@ -260,6 +213,18 @@ h2 {
 
 @media (max-width: 800px) {
     .header .logo {
-        // display: none;
+        display: none;
     }
+
+    .home-body {
+        background-color: #FDB9A9;
+        background-image: none;
+    }
+
+
+    .menu {
+        border-top: solid 2px white;
+        border-bottom: solid 2px white;
+    }
+
 }

@@ -9,8 +9,8 @@
         background-color: white;
         height: 40px;
         font-size: 20px;
-        border-radius: 30px;
-        border: none;
+        border-radius: 10px;
+        border: 1px solid black;
         margin: 20px;
         width: fit-content;
     }
@@ -34,17 +34,26 @@
         height: 40px;
         font-size: $navBartext-fontsize;
         border-radius: 10px;
-        border: none;
         margin: 10px;
         margin-bottom: 20px;
         text-align: center;
+
     }
 
     &__link{
         text-decoration: none;
-        color:white;
+        color: black;
         &:hover{
-            color: black;
+            color: white;
+        }
+    }
+
+    &__forgot{
+        font-size: 20px;
+        color: black;
+        &-link{
+            text-decoration: none;
+            color: $orangeYellowCrayola-color;
         }
     }
 
