@@ -33,7 +33,7 @@
 
 .sideNavBar {
     width: 60px;
-    background-color: $orangeYellowCrayola-color;
+    background-color: $pinkCoral-color;
     position: fixed;
     left: 0;
     top: 0;
@@ -114,6 +114,8 @@
                         border-radius: 50%;
                      
                     }
+
+
 
                 }
             }
@@ -327,7 +329,7 @@
 }
 
 .profileButtons {
-    background-color: $orangeYellowCrayola-color;
+    background-color: $pinkCoral-color;
     border: none;
     // width:50%;
     margin: auto;
@@ -344,6 +346,30 @@
 .navLinksProfile {
     margin: 0;
     padding: 0;
+
+    .tooltip {
+        margin-left: 10px;
+    }
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 150px;
+        background-color: $pinkCoral-color;
+        color: black;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+      
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 20px;
+        left: 80px;
+
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
 }
 
 .profile-but,
@@ -352,13 +378,13 @@
 .matches-but,
 .instruction-but {
     // color:white;
-    background-color: $orangeYellowCrayola-color;
+    background-color: $pinkCoral-color;
     padding: 20px 0;
 }
 
 .settings-but {
     display: block;
-    background-color: $orangeYellowCrayola-color;
+    background-color: $pinkCoral-color;
     bottom: 0;
     top: 0;
 }

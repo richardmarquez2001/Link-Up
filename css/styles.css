@@ -15,7 +15,7 @@
 
 .headerOther .header {
   left: 0;
-  background-color: #F2CD5D;
+  background-color: #FDB9A9;
   margin: 0;
   top: 0;
   position: absolute;
@@ -23,7 +23,7 @@
 }
 
 .headerOther .header ul {
-  background-color: #F2CD5D;
+  background-color: #FDB9A9;
 }
 
 .headerOther .header .logo {
@@ -1433,7 +1433,7 @@
 
 .sideNavBar {
   width: 60px;
-  background-color: #F2CD5D;
+  background-color: #FDB9A9;
   position: fixed;
   left: 0;
   top: 0;
@@ -1747,7 +1747,7 @@
 }
 
 .profileButtons {
-  background-color: #F2CD5D;
+  background-color: #FDB9A9;
   border: none;
   margin: auto;
 }
@@ -1765,18 +1765,41 @@
   padding: 0;
 }
 
+.navLinksProfile .tooltip {
+  margin-left: 10px;
+}
+
+.navLinksProfile .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #FDB9A9;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 80px;
+}
+
+.navLinksProfile .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .profile-but,
 .home-but,
 .settings-but,
 .matches-but,
 .instruction-but {
-  background-color: #F2CD5D;
+  background-color: #FDB9A9;
   padding: 20px 0;
 }
 
 .settings-but {
   display: block;
-  background-color: #F2CD5D;
+  background-color: #FDB9A9;
   bottom: 0;
   top: 0;
 }
