@@ -1,69 +1,119 @@
-.main{display: inline;}
+.main {
+    display: inline;
+}
 
-.featureContents{
-    display:flex;
-    flex-wrap:wrap;
-    padding:20px;
-    width:90%;
-    margin:auto;
-    justify-content:center;
-    p{
+.featureContents {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+
+    p {
         position: absolute;
         margin-bottom: 170px;
         margin-left: 150px;
         transform: translate(-50%, -50%);
     }
-    .item{
+
+    .teamInfoText {
+        display: flex;
+        flex-direction: row;
+
+        a {
+            text-decoration: none;
+            color: $jet-color;
+            font-style: italic;
+            transition: border-bottom 2s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid;
+            transition: 2s;
+        }
+
+
+        .itemf1 {
+            padding: 0;
+            margin: 0;
+            width: 50%;
+        }
+    }
+
+    .itemf2 {
+        width: 90%;
+        padding: 20px 0;
+        margin: auto;
+    }
+
+    .item {
         text-align: center;
         position: relative;
         width: 400px;
-        height: 450px;
-
-        margin:20px;
+        height: 525px;
+        margin: 20px;
         border-radius: 20px;
-        padding:10px;
+        padding: 20px;
         border: 1px solid $jet-color;
         text-align: center;
-        img{
-            width:100%;
-            border-radius: 20px;
-            box-shadow:0 2px 5px $jet-color;
+
+        img {
+            width: 60%;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px $jet-color;
+            padding: 8px;
+            border: 2px solid;
             // border: 1px solid $jet-color;
         }
-    .ft{
-        top:200px;
-        left:-50px;
-        font-size:1.2em;
-        font-weight: bold;
-        padding:5px 10px;
-        background-color: $platinum-color;
-        border-radius:20px;    
+
+        .teamIcons {
+            width: 40px;
+            margin: 10px;
+            padding: 0;
+            border: none;
+            display: inline;
+            vertical-align: middle;
+        }
+
+        .ft {
+            top: 245px;
+            left: 60px;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: $platinum-color;
+            border-radius: 20px;
+            width: 60%;
+
+        }
     }
+
+    .item:hover {
+        box-shadow: 2px 2px 10px $jet-color;
     }
-    .item:hover{
-        box-shadow:2px 2px 10px $jet-color;
-    }
-    }
+}
 
 .featureContainer {
     display: flex;
     flex-direction: row;
     margin: 50px auto;
-    padding:20px;
+    padding: 20px;
     width: 70%;
     background-color: $magnoliaWhite-color;
     box-shadow: 0 3px 5px $jet-color;
     border-radius: 20px;
 }
-.MobileView{
-    display:None;
+
+.MobileView {
+    display: None;
 }
 
 @keyframes FadeIn {
     0% {
         opacity: 0;
     }
-   
+
     100% {
         opacity: 1;
     }
@@ -127,74 +177,88 @@
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-    .main{
-        display:none;
-    }
-    .MobileView{display:block}
-    .item{
-        width:90%;
-        padding:0;
-        margin:10px auto;
-        text-align: center;
-    }
-    .title{
-        margin:40px;
-        padding:20px;
-    }
-    .featureContainer {
-        flex-direction: column;
-        width:90%;
-        margin:20px auto;
-        .featureInfo {
-            width: 90%;
-        }
-        .item{
-            width:90%;
-        }
-    }
-
-    .buttonContainer{
-        display:None;
-    }
-
-}
 
 @media screen and (max-width: 600px) {
-    .main{
-        display:none;
+    hr{
+        margin: 40px auto;
     }
-   
-    .item{
-        width:90%;
-        padding:0;
-        margin:10px auto;
+    .main {
+        display: none;
+    }
+
+
+    .item {
+        width: 90%;
+        padding: 0;
+        margin: 10px auto;
         text-align: center;
     }
-    .MobileView{
-        margin:10px;
-        display:block}
-    .title{
-        padding:10px;
+
+    .MobileView {
+        margin: 10px;
+        display: block;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px $jet-color;
+            padding: 8px;
+            border: 2px solid;
+        }
+
+        .ft {
+            position: block;
+            margin: 10px auto;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: $platinum-color;
+            border-radius: 20px;
+            width: 60%;
+        }
+
+        .teamIcons {
+            display: block;
+            width: 40px;
+            margin: 10px 25px;
+            padding: 10px;
+            border: none;
+            display: inline;
+        }
+        .teamIcons:hover{
+           border:solid;
+        }
+
+        .teamInfoText {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .title {
+        padding: 10px;
         text-align: center;
         font-size: 40px;
     }
+
     .featureContainer {
         flex-direction: column;
-        width:90%;
+        width: 90%;
         box-shadow: none;
+
         .featureInfo {
             width: 100%;
-            margin:0;
+            margin: 0;
         }
-        .item{
-            width:100%;
-            margin:0;
-            padding:10px;
+
+        .item {
+            width: 100%;
+            margin: 0;
+            padding: 10px;
         }
     }
 
-    .buttonContainer{
-       display: none;
+    .buttonContainer {
+        display: none;
     }
 }

@@ -9,6 +9,7 @@ button {
 }
 
 .question-body {
+
     background-color: white;
     h2{
         color: $polishedPine-color;
@@ -51,7 +52,8 @@ button {
     margin-right: auto;
     border-radius: 20px;
     padding: 50px;
-    overflow: scroll;
+    // overflow: hidden;
+    
 
     .question-text {
         font-size: 35px;
@@ -61,15 +63,18 @@ button {
 
     .question-sm-text {
         font-size: 25px;
-        margin-bottom: 70px;
+        margin-bottom: 100px;
         color: white;
     }
 
     .question-back-btn, .question-btn {
-        height: 40px;
-        font-size: 20px;
+        height: 60px;
+        font-size: 25px;
         border-radius: 30px;
         border: none;
+        font-family: $quicksand-font;
+        font-weight: 500;
+        margin: 20px;
     }
     .question-back-btn {
         width: 150px;
@@ -79,6 +84,15 @@ button {
         width: 300px;
         background-color: $orangeYellowCrayola-color;
     }
+
+
+}
+
+@media (max-width: 800px) {
+    .question-container {
+        height: auto;
+    }
+
 }
 
 .question2-container{
