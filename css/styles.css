@@ -1058,7 +1058,8 @@
 .login-bg {
   background-image: url(../images/authentication.png);
   background-size: 50%;
-  background-position: right center;
+  background-repeat: no-repeat;
+  background-position: 50vw;
 }
 
 .login-body {
@@ -1067,12 +1068,12 @@
   font-family: "Quicksand", sans-serif;
   color: white;
   background-color: #70a288;
-  width: 50%;
+  width: 40%;
   float: left;
   height: 70%;
   border-radius: 20px;
-  margin-top: 150px;
-  margin-left: 40px;
+  margin-top: 120px;
+  margin-left: 70px;
   padding: 10px;
 }
 
