@@ -1,0 +1,56 @@
+$("#choicePassword").hide();
+$("#choiceSocials").hide();
+$("#choiceInterests").hide();
+$("#choiceRemoveLink").hide();
+$("#choiceDelete").hide();
+$("#choiceUsername").hide();
+
+$("#_username").click(function(){
+    $("#choiceUsername").fadeIn(1000);
+    $("#choicePassword").hide();
+    $("#choiceSocials").hide();
+    $("#choiceInterests").hide();
+    $("#choiceRemoveLink").hide();
+    $("#choiceDelete").hide();
+});
+$("#_password").click(function(){
+    $("#choicePassword").fadeIn(1000);
+    $("#choiceUsername").hide();
+    $("#choiceSocials").hide();
+    $("#choiceInterests").hide();
+    $("#choiceRemoveLink").hide();
+    $("#choiceDelete").hide();
+});
+$("#_socials").click(function(){
+    $("#choiceSocials").fadeIn(1000);
+    $("#choiceUsername").hide();
+    $("#choicePassword").hide();
+    $("#choiceInterests").hide();
+    $("#choiceRemoveLink").hide();
+    $("#choiceDelete").hide();
+});
+$("#Interests_bio_name").click(function(){
+    $("#choiceInterests").fadeIn(1000);
+    $("#choiceUsername").hide();
+    $("#choicePassword").hide();
+    $("#choiceSocials").hide();
+    $("#choiceRemoveLink").hide();
+    $("#choiceDelete").hide();
+});
+$("#_remove").click(function(){
+    $("#choiceRemoveLink").fadeIn(1000);
+    $("#choiceUsername").hide();
+    $("#choicePassword").hide();
+    $("#choiceSocials").hide();
+    $("#choiceInterests").hide();
+    $("#choiceDelete").hide();
+});
+$("#_deleteAccount").click(function(){
+    $("#choiceDelete").fadeIn(1000);
+    $("#choiceUsername").hide();
+    $("#choicePassword").hide();
+    $("#choiceSocials").hide();
+    $("#choiceRemoveLink").hide();
+    $("#choiceInterests").hide();
+
+});

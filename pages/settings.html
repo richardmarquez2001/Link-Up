@@ -1,111 +1,410 @@
-<html>
-<!-- TODO: add rest of pages from settings-forms, work on styling/responsiveness on this -->
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: add rest of pages from settings-forms, work on styling/responsiveness on this -->
+  <head>
+    <title>Settings</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
 
-<body class="settings">
+  <body class="settings">
     <nav class="sideNavBar">
-        <ul class="navLinksProfile">
-  
-  
-          <div class="tooltip">        <li class="link">
+      <ul class="navLinksProfile">
+        <div class="tooltip">
+          <li class="link">
             <span class="tooltiptext">Home</span>
-            <a href="../pages/home.html">        <button class="profileButtons" type="button">
-              <svg
-                class="home-but"
-                viewBox="0 0 16 16"
-                class="bi bi-house-fill"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
-                />
-              </svg>
-            </button>
+            <a href="../pages/home.html">
+              <button class="profileButtons" type="button">
+                <svg
+                  class="home-but"
+                  viewBox="0 0 16 16"
+                  class="bi bi-house-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                  />
+                </svg>
+              </button>
             </a>
-          </li></div>
-  
-          <div class="tooltip">
-            <li class="link">
-              <span class="tooltiptext">Results</span>
-              <a href="../pages/result.html">
-                <button class="profileButtons"  type="button">
-                  <svg
-                    class="matches-but"
-                    viewBox="0 0 16 16"
-                    class="bi bi-person-check-fill"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
-                    />
-                  </svg>
-                  </button></a>
-    
-    
-            </li>
-          </div>
-          <div class="tooltip">
-            <li class="link">
-              <span class="tooltiptext">Settings</span>
-              <a href="../pages/settings.html">
-                <button class="profileButtons" type="button">
-                  <svg
-                    class="settings-but"
-                    viewBox="0 0 16 16"
-                    class="bi bi-gear-fill"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"
-                    />
-                  </svg>
-                    </button>
-              </a>
-            </li>
-          </div>
-          <div class="tooltip">
-            <li class="link">
-              <span class="tooltiptext">Log Out</span>
-              <a href="../backend/logout.php">
-                <button class="profileButtons pbBottom" type="button">
-                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-open-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2v13h1V2.5a.5.5 0 0 0-.5-.5H11zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
-                  </svg>
-                    </button>
-              </a>
-            </li>
-          </div>
-        </ul>
-      </nav>
-    <div class="s-container">
-        <div class="settings">
-            <div class="settings-iframe-1">
-                <button class="settings-iframe-1__button">Change username</button>
-                <button class="settings-iframe-1__button">Change password</button>
-                <button class="settings-iframe-1__button">Change Update Social Medias</button>
-                <button class="settings-iframe-1__button">Change Interests, Bio, Name</button>
-                <button class="settings-iframe-1__button">Change Remove a Link</button>
-                <button class="settings-iframe-1__button">Delete Account</button>
-            </div>
-            <div class="settings-iframe-2">
-                <iframe src = "../settings-forms/change_username.html"></iframe>
-            </div>
+          </li>
         </div>
-    </div>
-</body>
 
+        <div class="tooltip">
+          <li class="link">
+            <span class="tooltiptext">Results</span>
+            <a href="../pages/result.html">
+              <button class="profileButtons" type="button">
+                <svg
+                  class="matches-but"
+                  viewBox="0 0 16 16"
+                  class="bi bi-person-check-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg></button
+            ></a>
+          </li>
+        </div>
+        <div class="tooltip">
+          <li class="link">
+            <span class="tooltiptext">Settings</span>
+            <a href="../pages/settings.html">
+              <button class="profileButtons" type="button">
+                <svg
+                  class="settings-but"
+                  viewBox="0 0 16 16"
+                  class="bi bi-gear-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"
+                  />
+                </svg>
+              </button>
+            </a>
+          </li>
+        </div>
+        <div class="tooltip">
+          <li class="link">
+            <span class="tooltiptext">Log Out</span>
+            <a href="../backend/logout.php">
+              <button class="profileButtons pbBottom" type="button">
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-door-open-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2v13h1V2.5a.5.5 0 0 0-.5-.5H11zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"
+                  />
+                </svg>
+              </button>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <article class="s-container">
+      <div>
+        <section id="options">
+          <div class="buttons itemO">
+            <button id="_username" class="item" type="button">
+              Change Username
+            </button>
+          </div>
+            <div class="box" id="choiceUsername">
+              <h1>Changing Username</h1>
+              <div class="inputPosition">
+                <label  class="item">Username </label>
+                <input class="item2" id="old_username" /><br />
+              </div>
+              <div class="inputPosition">
+                <label class="item">New Username </label>
+                <input class="item2" id="new_username" />
+              </div>
+              <button class="item" type="button" id="change">CHANGE</button>
+            </div>
+          <div class="buttons itemO">
+            <span class="color" id="b2"> </span>
+            <button id="_password" type="button">Change Password</button>
+          </div>
+          <div class="box" id="choicePassword">
+            <h1>Change Password</h1>
+            <div class="inputPosition">
+              <label class="item">Password </label>
+              <input class="item2" id="old_password" type="password" /><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">New password </label>
+              <input class="item2" id="new_password" />
+            </div>
+            <button class="item" type="button" id="change">CHANGE</button>
+          </div>
+          <div class="buttons itemO">
+            <span class="color" id="b3"> </span>
+            <button id="_socials" type="button">Update Social Media</button>
+          </div>
+          <div class="box" id="choiceSocials">
+            <h1>Update Social Media</h1>
+            <div class="inputPosition">
+              <label class="item">Tiktok </label>
+              <input class="item2" id="change_tiktok"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Instagram </label>
+              <input class="item2" id="change_instagram"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Twitter </label>
+              <input class="item2" id="change_twitter"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Snapchat </label>
+              <input class="item2" id="change_snapchat"/><br />
+            </div>
+            <button class="item" type="button" id="change">CHANGE</button>
+          </div>
+          <div class="buttons itemO">
+            <span class="color" id="b4"> </span>
+            <button id="Interests_bio_name" type="button">
+              About You
+            </button>
+          </div>
+          <div class="box" id="choiceInterests">
+            <h1>Information</h1>
+            <div class="inputPosition">
+              <label class="item">Name</label>
+              <input class="item2" id="change_Name"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Interests </label>
+              <input class="item2" id="change_interest"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">About </label>
+              <input class="item2" id="change_bio"/><br />
+            </div>
+            <button class="item" type="button" id="change">CHANGE</button>
+          </div> 
+          <div class="buttons itemO">
+            <span class="color" id="b5"> </span>
+            <button id="_remove" type="button">Remove a link</button>
+          </div>
+          <div class="box" id="choiceRemoveLink">
+            <h1>Removing a Match</h1>
+            <div class="removeLink" >
+              <label>Enter the link's username </label><br>
+              <input id="match_removal"/>
+            </div>
+            <button class="item" type="button" id="change">REMOVE</button>
+          </div>
+          <div class="buttons itemO">
+            <span class="color" id="b6"> </span>
+            <button id="_deleteAccount" type="button">Delete Account</button>
+          </div>
+          <div class="box" id="choiceDelete">
+            <h1>Delete Account</h1>
+            <div class="removeLink">
+              <label>Please type in your password</label><br>
+              <input id="delete_account" type="password"/>
+            </div>
+            <button class="item" type="button" id="change">DELETE</button>
+          </div>
+        </section>
+      </div>
+      <!-- <div class="item2" hidden>
+  
+          <div class="box" id="choiceUsername">
+            <h1>Changing Username</h1>
+            <div class="inputPosition">
+              <label  class="item">Username </label>
+              <input class="item2" id="old_username" /><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">New Username </label>
+              <input class="item2" id="new_username" />
+            </div>
+            <button class="item" type="button" id="change">CHANGE</button>
+          </div>
+          <div class="box" id="choicePassword">
+            <h1>Change Password</h1>
+            <div class="inputPosition">
+              <label class="item">Password </label>
+              <input class="item2" id="old_password" type="password" /><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">New password </label>
+              <input class="item2" id="new_password" />
+            </div>
+            <button class="item" type="button" id="change">CHANGE</button>
+          </div>
+          <div class="box" id="choiceSocials">
+            <h1>Update Social Media</h1>
+            <div class="inputPosition">
+              <label class="item">Tiktok </label>
+              <input class="item2" id="change_tiktok"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Instagram </label>
+              <input class="item2" id="change_instagram"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Twitter </label>
+              <input class="item2" id="change_twitter"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Snapchat </label>
+              <input class="item2" id="change_snapchat"/><br />
+            </div>
+            <button class="item" type="button" id="change">CHANGE</button>
+          </div>
+          <div class="box" id="choiceInterests">
+            <h1>Information</h1>
+            <div class="inputPosition">
+              <label class="item">Name</label>
+              <input class="item2" id="change_Name"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Interests </label>
+              <input class="item2" id="change_interest"/><br />
+            </div>
+            <div class="inputPosition">
+              <label class="item">Bio </label>
+              <input class="item2" id="change_bio"/><br />
+            </div>
+            <button class="item" type="button" id="change">CHANGE</button>
+          </div>
+          <div class="box" id="choiceRemoveLink">
+            <h1>Removing a Match</h1>
+            <div class="removeLink" >
+              <label>Enter the link's username </label><br>
+              <input id="match_removal"/>
+            </div>
+            <button class="item" type="button" id="change">REMOVE</button>
+          </div>
+          <div class="box" id="choiceDelete">
+            <h1>Delete Account</h1>
+            <div class="removeLink">
+              <label>Please type in your password</label><br>
+              <input id="delete_account" type="password"/>
+            </div>
+            <button class="item" type="button" id="change">DELETE</button>
+          </div>
+        </div> -->
+        <!-- <article class="MobileViewSettings" >
+          <section id="options">
+              <div>
+              <button id="_username" type="button">
+                Change Username
+                <span class="iconify" data-inline="false" data-icon="ic:round-expand-more" style="color: #000;"></span>
+              </button>
+              <div class="click">
+                <div class="inputPosition">
+                  <label  class="item">Username </label><br>
+                  <input class="item2" id="old_username" /><br />
+                </div>
+                <div class="inputPosition">
+                  <label class="item">New Username </label>
+                  <input class="item2" id="new_username" />
+                </div>
+                <button class="item" type="button" id="change">CHANGE</button>
+
+              </div>
+            </div>
+            <div>
+              <button id="_password" type="button">Change Password
+                <span class="iconify" data-inline="false" data-icon="ic:round-expand-more" style="color: #000;"></span>
+              </button>
+              <div class="click">
+                <div class="inputPosition">
+                  <label  class="item">Password </label><br>
+                  <input class="item2" id="old_pssword" type="password"  /><br />
+                </div>
+                <div class="inputPosition">
+                  <label class="item">New Password </label>
+                  <input class="item2" id="new_password" type="password" />
+                </div>
+                <button class="item" type="button" id="change">CHANGE</button>
+              </div>
+            </div>
+            <div>
+              <button id="_socials" type="button">Update Social Media   
+                <span class="iconify" data-inline="false" data-icon="ic:round-expand-more" style="color: #000;"></span>
+              </button>
+              <div class="click">
+              <div class="inputPosition">
+                <label class="item">Tiktok </label>
+                <input class="item2" id="change_tiktok"/><br />
+              </div>
+              <div class="inputPosition">
+                <label class="item">Instagram </label>
+                <input class="item2" id="change_instagram"/><br />
+              </div>
+              <div class="inputPosition">
+                <label class="item">Twitter </label>
+                <input class="item2" id="change_twitter"/><br />
+              </div>
+              <div class="inputPosition">
+                <label class="item">Snapchat </label>
+                <input class="item2" id="change_snapchat"/><br />
+              </div>
+              <button class="item" type="button" id="change">CHANGE</button>
+            </div>
+            </div>
+    
+            <div>
+              <button id="Interests_bio_name" type="button">
+                About You
+                <span class="iconify" data-inline="false" data-icon="ic:round-expand-more" style="color: #000;"></span>
+              </button>
+              <div class="click">
+                <div class="inputPosition">
+                  <label class="item">Name</label>
+                  <input class="item2" id="change_Name"/><br />
+                </div>
+                <div class="inputPosition">
+                  <label class="item">Interests </label>
+                  <input class="item2" id="change_interest"/><br />
+                </div>
+                <div class="inputPosition">
+                  <label class="item">Bio </label>
+                  <input class="item2" id="change_bio"/><br />
+                </div>
+                <button class="item" type="button" id="change">CHANGE</button>
+              </div>
+              </div>
+            </div>
+            <div>
+              <button id="_remove" type="button">Remove a link              
+                <span class="iconify" data-inline="false" data-icon="ic:round-expand-more" style="color: #000;"></span>
+              </button>
+                <div class="click">
+                  <div class="removeLink" >
+                    <label>Enter the link's username </label><br>
+                    <input id="match_removal"/>
+                  </div>
+                  <button class="item" type="button" id="change">REMOVE</button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button id="_deleteAccount" type="button">Delete Account   
+                 <span class="iconify" data-inline="false" data-icon="ic:round-expand-more" style="color: #000;"></span>
+              </button>
+              <div class="click">
+                <div class="removeLink">
+                  <label>Please type in your password</label><br>
+                  <input id="delete_account" type="password"/>
+                </div>
+                <button class="item" type="button" id="change">DELETE</button>
+              </div>
+              </div>
+            </div>
+          </section>
+        </article> -->
+
+    </article>
+    <script src="../scripts/settings.js"></script>
+  </body>
 </html>
