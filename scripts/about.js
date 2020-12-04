@@ -38,7 +38,14 @@ let info_title = [
     "/Link-Up/images/aboutp3.jpeg",
     "/Link-Up/images/aboutp5.jpg",
   ];
-  
+  let alt_images =[
+    "Girl searching for people using magnifying glass",
+    "People chatting in a coffee shop setting as well as texting",
+    "Two people sitting back to back on their phones",
+    "Earth with links to location, social media, and money",
+    "Four people at a party"
+
+  ]
 
 function slideLeft() {
   console.log("left");
@@ -50,6 +57,7 @@ function slideLeft() {
   text.innerHTML = info_text[position];
   title.innerHTML = info_title[position];
   image.setAttribute("src", src_images[position]);
+  image.setAttribute("alt",alt_images[position]);
 }
 
 function slideRight() {
@@ -62,6 +70,8 @@ function slideRight() {
   text.innerHTML = info_text[position];
   title.innerHTML = info_title[position];
   image.setAttribute("src", src_images[position]);
+  image.setAttribute("alt",alt_images[position]);
+
 }
 
 function test() {
