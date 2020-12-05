@@ -1,3 +1,4 @@
+// Shows correct precedures when an option is clicked on
 $("#choicePassword").hide();
 $("#choiceSocials").hide();
 $("#choiceInterests").hide();

@@ -60,8 +60,8 @@ function slideLeft() {
   image.setAttribute("alt",alt_images[position]);
 }
 
-function slideRight() {
 
+function slideRight() {
   position += 1;
   if (position == 5) {
     position = 0;
@@ -74,21 +74,7 @@ function slideRight() {
 
 }
 
-function test() {
-  document.getElementById("p6").style =
-    "animation:bounce_1; animation duration: 5s;";
-}
-
-function clearAnimation() {
-  b1.classList.remove("animate");
-  b2.classList.remove("animate");
-  b3.classList.remove("animate");
-  b4.classList.remove("animate");
-  b5.classList.remove("animate");
-  b6.classList.remove("animate");
-  b7.classList.remove("animate");
-}
-
+//Change colors of bubbles as the user views its decription
 function changeColor(position) {
   switch (position) {
     case 0:
