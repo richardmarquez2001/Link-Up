@@ -2644,4 +2644,25 @@ button {
 .register-form #register-body-username {
   width: 435px;
 }
+
+.error-content .errorImage {
+  z-index: -1;
+  display: block;
+  margin: 100px  auto;
+  width: 65%;
+}
+
+@media screen and (max-width: 800px) {
+  .error-content {
+    margin: 250px  auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .error-content {
+    margin: 450px 10px;
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
