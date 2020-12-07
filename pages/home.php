@@ -36,7 +36,7 @@ $isLoggedIn = (isset($_SESSION["username"]) ? 'true' : 'false');
     
             <div class="text">
                 <img class="home-left-logo" src="../images/linkup_smlogo.png" alt="">
-                <h1 class="title animateFadein">Wanna Link Up?</h1>
+                <h1>Wanna Link Up?</h1>
             </div>
 
             <?php
