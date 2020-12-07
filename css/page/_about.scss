@@ -1,9 +1,3 @@
-.about-body {
-    font-family: $quicksand-font;
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-}
 .content {
     font-size: $navBartext-fontsize;
     background-color: $magnoliaWhite-color;
@@ -189,7 +183,7 @@
     border-radius: 20px;
     width: 70%;
     margin-top: 30px;
-    margin: 50px auto 80px auto;
+    margin: 50px auto 50px auto;
     padding: 20px;
 
     .infoContainer {

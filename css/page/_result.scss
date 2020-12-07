@@ -6,17 +6,20 @@
         text-align: center;
     }
     .results-container {
-        height: 420px;
+        height: 450px;
         background-color: #F2CD5D;
         border-radius: 20px;
         margin-right: 40px;
         margin-left: 100px;
+        padding: 10px;
     }
     h2 {
         font-size: 30px;
         margin: auto;
         color: black;
         height: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .container {
         max-height: 400px;
