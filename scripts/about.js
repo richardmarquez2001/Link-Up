@@ -29,7 +29,7 @@ let info_title = [
     "Don't worry about long sign up processes or a limited about of searches per day. Get access with in minutes and match with people who have the same interest as you.",
     "Make friends at the same rate you could offline. Answer a few carefully selected questions and be matched with people instantly.",
     "Get comfortable learning how to use Link Up within a matter of seconds. Our interface is straightforward and leaves no room for you to get confused!",
-    "If you come across",
+    "If you come across someone that isn't a good match for you, you have the option to remove them in settings.",
   ];
   let src_images = [
     "../images/aboutp1.jpeg",
