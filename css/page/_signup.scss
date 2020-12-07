@@ -2,11 +2,35 @@
     overflow-x: hidden;
 }
 
+.register-bg {
+    background-image: url(../images/password.png);
+    background-size: 50%;
+    // background-position: right;
+    background-repeat: no-repeat;
+    background-position: 50vw 15vh;
+}
+
+.register-container {
+    text-align: center;
+    font-family: $quicksand-font;
+    color: white;
+    background-color: $polishedPine-color;
+    width: 40%;
+    // margin-left: auto;
+    // margin-right: auto;
+    float: left;
+    height: 70%;
+    border-radius: 20px;
+    margin-top: 120px;
+    margin-left: 70px;
+    padding: 10px;
+}
+
 .register-body {
     text-align: center;
-    color: black;
+    color: white;
     font-family: $quicksand-font;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .register-form {
@@ -44,9 +68,20 @@
         width: 435px;
     }
     #register-body-email {
-        width: 435px;
+        width: 58%;
     }
     #register-body-username {
-        width: 435px;
+        width: 58%;
+    }
+}
+
+@media(max-width: 800px) {
+    .register-bg {
+        background: none;
+    }
+    .register-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
     }
 }
