@@ -1,3 +1,5 @@
+$(".socialMediaContainer").hide();
+
 $("#qProfile").click(function(){
     $(".socialMediaContainer").hide();
     $(".questionaireContainer").show();

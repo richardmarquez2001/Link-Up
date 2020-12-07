@@ -7,95 +7,89 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Profile</title>
   </head>
-  <body >
+  <body class="contentB">
     <nav class="sideNavBar">
       <ul class="navLinksProfile">
-        <li class="link">
-        <button class="profileButtons"  type="button">
-          <svg
-            class="profile-but"
-            viewBox="0 0 16 16"
-            class="bi bi-person-circle"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"
-            />
-            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-            <path
-              fill-rule="evenodd"
-              d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"
-            />
-          </svg>
-        </button>
-        </li>
-        <li class="link">
-        <button class="profileButtons" type="button">
-          <svg
-            class="home-but"
-            viewBox="0 0 16 16"
-            class="bi bi-house-fill"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
-            />
-          </svg>
-        </button>
-        </li>
-      
-        <li class="link">
-            <button class="profileButtons"  type="button">
-          <svg
-            class="matches-but"
-            viewBox="0 0 16 16"
-            class="bi bi-person-check-fill"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
-            />
-          </svg>
-          </button>
 
-        </li>
-        <li class="link">
-          <button class="profileButtons" type="button">
-            <svg class="instruction-but" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
-              </svg>
+
+        <div class="tooltip">        <li class="link">
+          <span class="tooltiptext">Home</span>
+          <a href="../pages/home.html">        <button class="profileButtons" type="button">
+            <svg
+              class="home-but"
+              viewBox="0 0 16 16"
+              class="bi bi-house-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 fill-rule="evenodd"
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"
+                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
               />
             </svg>
           </button>
-        </li>  
-        <li class="link">
-        <button class="profileButtons pbBottom" type="button">
-          <svg
-            class="settings-but"
-            viewBox="0 0 16 16"
-            class="bi bi-gear-fill"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"
-            />
-          </svg>
-            </button>
-        </li>
+          </a>
+        </li></div>
+
+        <div class="tooltip">
+          <li class="link">
+            <span class="tooltiptext">Results</span>
+            <a href="../pages/result.html">
+              <button class="profileButtons"  type="button">
+                <svg
+                  class="matches-but"
+                  viewBox="0 0 16 16"
+                  class="bi bi-person-check-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9.854-2.854a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+                </button></a>
+  
+  
+          </li>
+        </div>
+        <div class="tooltip">
+          <li class="link">
+            <span class="tooltiptext">Settings</span>
+            <a href="../pages/settings.html">
+              <button class="profileButtons" type="button">
+                <svg
+                  class="settings-but"
+                  viewBox="0 0 16 16"
+                  class="bi bi-gear-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"
+                  />
+                </svg>
+                  </button>
+            </a>
+          </li>
+        </div>
+        <div class="tooltip">
+          <li class="link">
+            <span class="tooltiptext">Log Out</span>
+            <a href="../backend/logout.php">
+              <button class="profileButtons pbBottom" type="button">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-open-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2v13h1V2.5a.5.5 0 0 0-.5-.5H11zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                </svg>
+                  </button>
+            </a>
+          </li>
+        </div>
       </ul>
     </nav>
     <section class="profileContent">
@@ -105,7 +99,7 @@
           <img class="pfp" src="../images/profilep1.jpg">
         </div>
         <div class="item">
-          <h1>Welcome @<span id="profile-username">toyvan<span>!</span></h1>
+          <h1 class="welcomeTitle">Welcome @<span id="profile-username">toyvan<span>!</span></h1>
           <hr>
         </div>
         <div class="item">
@@ -114,7 +108,7 @@
           <p><b>Bio: </b><span class="profile-bio">Did you know that i’ma design God! </span></p>
           <section class="Title">
             <img class="item linksIcon" src="../icons/linkspfp.png"/>
-              <p class="item links"> Links | <span class="numOfLinks">-</span></p>  
+              <p class="links"> Links | <span class="numOfLinks">-</span></p>  
           </section>
         </div>
       </div>
@@ -122,7 +116,7 @@
       <section class= "rightBox">
         <div class="rightBoxContainer">
           <div class="item linksPosition">
-            <p>Most Reccent Links</p>
+            <h1 class="linksTitle">Most Recent Links</h1>
             <section class="mostRecentThree">
               <div> 
                 <p class="left"><b>Name: </b> <span class="mr31name">Deandra</span></p>
@@ -140,8 +134,8 @@
           </div>
           <div class="item">
             <div class="personalContainerNav">
-              <div class="itemN" id="qProfile">Questionare</div>
-              <div class="itemN" id="sProfile">Social Media</div>
+              <div class="itemN" id="qProfile"><h1>Questionnaire</h1></div>
+              <div class="itemN" id="sProfile"><h1>Social Media</h1></div>
             </div>
             <div class="personalContainer">
                 <div class="questionaireContainer">
@@ -156,14 +150,39 @@
                   <p><b>What's your favourite music genre: </b><span id="profileQ9a"><br>Question 9 aNSWER</span></p>
                 </div>
                 <div class="socialMediaContainer" hidden>
-                  <div class="media">Tiktok</div>
-                  <span class="userTiktok">@tiktok</span>
-                  <div class="media">Twitter</div>
-                  <span class="userTwitter">@tweet</span>
-                  <div class="media">Instgram</div>
-                  <span class="userTiktok">@instagram</span>
-                  <div class="media">Snapchat</div>
-                  <span class="userSnapchat"> @snapchat</span>
+                  <div class="row">
+                    <div class="column">
+                  <div class = "item">
+                    <div class="media"><img src="../icons/tiktok.png"></div>
+                    <span class="userTiktok">@tiktok</span>
+                </div>
+                </div>
+                <div class="column">
+                  <div class = "item">
+                    <div class="media"><img src="../icons/twitter.png"></div>
+                    <span class="userTwitter">@tweet</span>
+                  </div>
+                 </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="column">
+
+                  <div class = "item">
+                    <div class="media"><img src="../icons/instagram.png"></div>
+                    <span class="userInstagram">@instagram</span>
+                   </div>
+                  </div>
+                  <div class="column">
+
+                  <div class = "item">
+                    <div class="media"><img src="../icons/snapchat.png"></div>
+                    <span class="userSnapchat"> @snapchat</span>
+                </div>
+                  </div>
+
+                </div>
+
                 </div>
             </div>
         </div>
@@ -171,89 +190,52 @@
       </section>
 
 
-
-
-        <!-- <div class="profileInfo">
-            <div class="profileImage item">
-                <img class= "pfp" src="../images/profilep1.jpg"/>
-            </div>
-            <div class="aboutMe item">
-                <h1 class="profile-username">
-                   Welcome @tovyan
-                </h1>
-                <h3>Name: <span class="profile-name">Vanessa</span></h3>
-                <h3>My Interests: <span class="profile-interests">Fashion, Coding, Design</span></h3>
-                <h3>Bio: <span class="profile-bio">Did you know that i’ma design God! </span></h3>
-            </div>
-        </div>
-        <section class ="contentContainer">
-          
-          <section class="Title">
-            <img class = "item titleIcon" src="../icons/linkspfp.png"/>
-
-              <p clas="item"> Links | <span class="numOfLinks">-</span></p>
-
-          </section>
-          <section class="mostRecentThree">
-          <div class="item"> 
-            <p><b>Name: </b> <span class="mr31name">Deandra</span><br>
-            <p><b>Bio: </b> <span class="mr31bio">Goat Team</span><br><br>
-            <b><span class="mr31username">@mdesxo</span></b>
-            </p>
-          </div>
-          <div class="item">
-             <p><b>Name: </b> <span class="mr32name">Richard</span><br>
-              <p><b>Bio: </b> <span class="mr32bio">YEOOO </span><br><br>
-              <b><span class="mr32bio">@ric</span></b>
-          </div>
-          <div class="item"> 
-            <p><b>Name: </b> <span class="mr33name">Ethan</span><br>
-              <p><b>Bio: </b> <span class="mr33bio">Only call me yk </span><br><br>
-              <b><span class="mr33bio">@yk</span></b>
-          </div>
-          </section>
-        
-        </section>
-        <section class ="BottomContainer">
-
-        <div class="itemB hideQuestionaire">
-          <div class="placement">
-            <p class="qTitles">Questionaire Results</p> 
-          </div>
-          <div class="questionaireContainer">
-            <p><b>Sunset or Sunrise: </b><span id="profileQ1a"><br>Question 1 aNSWER</span></p>
-            <p><b>Early Bird or Night owl: </b><span id="profileQ2a"><br>Question 2 aNSWER</span></p>
-            <p><b>Netflix or Youtube: </b><span id="profileQ3a"><br>Question 3 aNSWER</span></p>
-            <p><b>Introvert or Extrovert </b><span id="profileQ4a"><br>Question 4 aNSWER</span></p>
-            <p><b>City or Nature: </b><span id="profileQ5a"><br>Question 5 aNSWER</span></p>
-            <p><b>If you could live anywhere, where would you live: </b><span id="profileQ6a"><br>Question 6 aNSWER</span></p>
-            <p><b>Which best describes your fashion style: </b><span id="profileQ7a"><br>Question 7 aNSWER</span></p>
-            <p><b>What is your favorite social media: </b><span id="profileQ8a"><br>Question 8 aNSWER</span></p>
-            <p><b>What's your favourite music genre: </b><span id="profileQ9a"><br>Question 9 aNSWER</span></p>
-          
-
-          </div>
-          <div>
-          </div>
-
-      </div>
-      <div class="itemB">
-        <div class="placement">
-          <p class="qTitles">Social Media</p>
-          </div>
-          <div class="socialMediaContainer">
-            <div class="media">Tiktok</div>
-            <span class="userTiktok">@tiktok</span>
-            <div class="media">Twitter</div>
-            <span class="userTwitter">@tweet</span>
-            <div class="media">Instgram</div>
-            <span class="userTiktok">@instagram</span>
-            <div class="media">Snapchat</div>
-            <span class="userSnapchat"> @snapchat</span>
-          </div>
-      </div>
-    </section> -->
   </section>
+    <section class="profileMobileView" hidden>
+      <div class="leftBoxContainer">
+        <div class="item">
+          <img class="pfp" src="../images/profilep1.jpg">
+        </div>
+        <div class="item">
+          <h1 class="welcomeTitle">Welcome @<span id="profile-username">toyvan<span>!</span></h1>
+          <hr>
+        </div>
+        <div class="item">
+          <p><b>Name: </b> <span class="profile-name">Vanessa</span></p>
+          <p><b>My Interests: </b> <span class="profile-interests">Fashion, Coding, Design</span></p>
+          <p><b>Bio: </b><span class="profile-bio">Did you know that i’ma design God! </span></p>
+          <section class="Title">
+            <img class="item linksIcon" src="../icons/linkspfp.png"/>
+              <p class="item links"> Links | <span class="numOfLinks">-</span></p>  
+          </section>
+        </div>
+        <hr>   
+        <h1>Social Media</h1>
+        <div class = "item">
+          <div class="media">Tiktok</div>
+          <span class="userTiktok hideSocial">@tiktok</span>
+        </div>
+        <div class = "item">
+          <div class="media">Twitter</div>
+          <span class="userTwitter hideSocial">@tweet</span>
+         </div>
+          <div class = "item">
+            <div class="media">Instgram</div>
+            <span class="userInstagram hideSocial">@instagram</span>
+           </div>
+         
+          <div class = "item">
+          <div class="media">Snapchat</div>
+          <span class="userSnapchat hideSocial "> @snapchat</span>
+        </div>
+
+        </div>
+
+        </div>
+      </div>  
+      </section>
+        
+      </section>
   <script src="../scripts/profile.js"/></script>
 
   </body>
