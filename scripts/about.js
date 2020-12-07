@@ -29,7 +29,7 @@ let info_title = [
     "Don't worry about long sign up processes or a limited about of searches per day. Get access with in minutes and match with people who have the same interest as you.",
     "Make friends at the same rate you could offline. Answer a few carefully selected questions and be matched with people instantly.",
     "Get comfortable learning how to use Link Up within a matter of seconds. Our interface is straightforward and leaves no room for you to get confused!",
-    "If you come across",
+    "If you come across someone that isn't a good match for you, you have the option to remove them in settings.",
   ];
   let src_images = [
     "/Link-Up/images/aboutp1.jpeg",
@@ -38,7 +38,14 @@ let info_title = [
     "/Link-Up/images/aboutp3.jpeg",
     "/Link-Up/images/aboutp5.jpg",
   ];
-  
+  let alt_images =[
+    "Girl searching for people using magnifying glass",
+    "People chatting in a coffee shop setting as well as texting",
+    "Two people sitting back to back on their phones",
+    "Earth with links to location, social media, and money",
+    "Four people at a party"
+
+  ]
 
 function slideLeft() {
   console.log("left");
@@ -50,10 +57,11 @@ function slideLeft() {
   text.innerHTML = info_text[position];
   title.innerHTML = info_title[position];
   image.setAttribute("src", src_images[position]);
+  image.setAttribute("alt",alt_images[position]);
 }
 
-function slideRight() {
 
+function slideRight() {
   position += 1;
   if (position == 5) {
     position = 0;
@@ -62,23 +70,11 @@ function slideRight() {
   text.innerHTML = info_text[position];
   title.innerHTML = info_title[position];
   image.setAttribute("src", src_images[position]);
+  image.setAttribute("alt",alt_images[position]);
+
 }
 
-function test() {
-  document.getElementById("p6").style =
-    "animation:bounce_1; animation duration: 5s;";
-}
-
-function clearAnimation() {
-  b1.classList.remove("animate");
-  b2.classList.remove("animate");
-  b3.classList.remove("animate");
-  b4.classList.remove("animate");
-  b5.classList.remove("animate");
-  b6.classList.remove("animate");
-  b7.classList.remove("animate");
-}
-
+//Change colors of bubbles as the user views its decription
 function changeColor(position) {
   switch (position) {
     case 0:

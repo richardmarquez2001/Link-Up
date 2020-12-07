@@ -7,12 +7,12 @@
     <title>Why Link-Up</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body class="about-body">
+    <!-- Navigation Bar-->
     <nav class="headerOther">
       <header class="header ">
         <a href="./home.html" class="logo"
-          ><img src="../images/logoG2.png" alt=""
-        /></a>
+          ><img src="../images/logoG2.png" alt="logo"/></a>
 
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"
@@ -27,13 +27,14 @@
         </ul>
       </header>
   </nav>
-
+    <!-- Main Content on Page-->
     <main class="content">
     <h1 class="title">Why Link Up</h1>
     <p class="mission">
       Our goal is to ease the struggles of <br />making friends in an online
       environment during the pandemic.
     </p>
+    <!-- Container for Bubbles-->
     <div class="bubblesContainer animate">
       <span class="bubble b3 p6" id="p6">Free</span>
       <span class="bubble b1 p1" id="p1">Fast</span>
@@ -41,6 +42,8 @@
       <span class="bubble b1 p2" id="p2">Simple</span>
       <span class="bubble b3 p4" id="p4">Safe</span>
     </div>
+
+    <!-- Container for Holding information about us-->
     <div class="infoContents mainA">
       <div class="infoContainer">
         <div class="infoText item">
@@ -55,7 +58,7 @@
             class="aboutImages"
             id="infoImage"
             src="/Link-Up/images/aboutp1.jpeg"
-            alt="Test"
+            alt="Girl searching for people using magnifying glass"
           />
         </div>
       </div>
@@ -77,7 +80,10 @@
         </button>
       </span>
     </div>
+    <!-- Mobile View-->
     <section class="MobileViewAbout">
+          <!-- Contains each page for the 5 reasons you should Link Up-->
+
       <div class="mitem">
         <div class="b3 infoContents">
           <div class="infoContainer">
@@ -92,7 +98,7 @@
               <img
                 class="aboutImages"
                 src="/Link-Up/images/aboutp1.jpeg"
-                alt="Test"
+                alt="Girl searching for people using magnifying glass"
               />
             </div>
           </div>
@@ -113,7 +119,7 @@
               <img
                 class="aboutImages"
                 src="/Link-Up/images/aboutp4.jpg"
-                alt="Test"
+                alt= "People chatting in a coffee shop setting as well as texting"
               />
             </div>
           </div>
@@ -135,7 +141,7 @@
               <img
                 class="aboutImages"
                 src="/Link-Up/images/aboutp2.jpg"
-                alt="Test"
+                alt="Two people sitting back to back on their phones"
               />
             </div>
           </div>
@@ -156,7 +162,7 @@
               <img
                 class="aboutImages"
                 src="/Link-Up/images/aboutp3.jpeg"
-                alt="Test"
+                alt="Earth with links to location, social media, and money"
               />
             </div>
           </div>
@@ -178,7 +184,7 @@
               <img
                 class="aboutImages"
                 src="/Link-Up/images/aboutp5.jpg"
-                alt="Test"
+                alt="Four people at a party"
               />
             </div>
           </div>
@@ -187,5 +193,31 @@
     </section>
   </main>
     <script src="../scripts/about.js"></script>
+
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <p>LINKUP</p>
+    </div>
+    <div class="footer-flex">
+      <div class="footer-item">
+        <ul class="menu">
+          <li class="link"><a href="./home.html" class="link">Home</a></li>
+          <li class="link"><a href="./about.html" class="link">About</a></li>
+          <li class="link"><a href="./features.html" class="link">Team</a></li>
+          <li class="link"><a href="./contact.html" class="link">Contact</a></li>
+          <li class="link"><a href="./login.html" class="link">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-item2">
+        <p class="footer-title">Attributions: <a href="https://storyset.com/online">Illustrations by Freepik Storyset</a></p>
+      </div>
+
+    </div>
+    <hr>
+    <div class="footer-copyright">
+      <p>Copyright &copy 2020 by LinkUp. All rights reserved.</p>
+    </div>
+  </footer>
   </body>
 </html>

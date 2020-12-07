@@ -8,9 +8,9 @@
     <title>Profile</title>
   </head>
   <body class="contentB">
+    <!--Navigation Bar-->
     <nav class="sideNavBar">
       <ul class="navLinksProfile">
-
 
         <div class="tooltip">        <li class="link">
           <span class="tooltiptext">Home</span>
@@ -92,11 +92,14 @@
         </div>
       </ul>
     </nav>
+    <!--Content for Profile Page Split into two Columns-->
     <section class="profileContent">
+    <!--Column One-->
       <section class= "leftBox">
+      <!--Contains information about the user (name, interests, bio, number of links)-->
       <div class="leftBoxContainer">
         <div class="item">
-          <img class="pfp" src="../images/profilep1.jpg">
+          <img class="pfp" src="../images/profilep1.jpg" alt="Profile picture">
         </div>
         <div class="item">
           <h1 class="welcomeTitle">Welcome @<span id="profile-username">toyvan<span>!</span></h1>
@@ -107,14 +110,16 @@
           <p><b>My Interests: </b> <span class="profile-interests">Fashion, Coding, Design</span></p>
           <p><b>Bio: </b><span class="profile-bio">Did you know that i’ma design God! </span></p>
           <section class="Title">
-            <img class="item linksIcon" src="../icons/linkspfp.png"/>
+            <img class="item linksIcon" src="../icons/linkspfp.png" alt="links icon (two people hugging)"/>
               <p class="links"> Links | <span class="numOfLinks">-</span></p>  
           </section>
         </div>
       </div>
       </section>
+      <!--Column 2 -->
       <section class= "rightBox">
         <div class="rightBoxContainer">
+          <!--Shows three most reccent links -->
           <div class="item linksPosition">
             <h1 class="linksTitle">Most Recent Links</h1>
             <section class="mostRecentThree">
@@ -132,12 +137,15 @@
               </div>
               </section>
           </div>
+          <!--Container showing questionaire results and social media for user-->
           <div class="item">
+            
             <div class="personalContainerNav">
               <div class="itemN" id="qProfile"><h1>Questionnaire</h1></div>
               <div class="itemN" id="sProfile"><h1>Social Media</h1></div>
             </div>
             <div class="personalContainer">
+                <!--Questionnaire Results -->
                 <div class="questionaireContainer">
                   <p><b>Sunset or Sunrise: </b><span id="profileQ1a"><br>Question 1 aNSWER</span></p>
                   <p><b>Early Bird or Night owl: </b><span id="profileQ2a"><br>Question 2 aNSWER</span></p>
@@ -149,17 +157,18 @@
                   <p><b>What is your favorite social media: </b><span id="profileQ8a"><br>Question 8 aNSWER</span></p>
                   <p><b>What's your favourite music genre: </b><span id="profileQ9a"><br>Question 9 aNSWER</span></p>
                 </div>
+                <!--Social Media Container Results -->
                 <div class="socialMediaContainer" hidden>
                   <div class="row">
                     <div class="column">
                   <div class = "item">
-                    <div class="media"><img src="../icons/tiktok.png"></div>
+                    <div class="media"><img src="../icons/tiktok.png" alt="Tiktok logo"></div>
                     <span class="userTiktok">@tiktok</span>
                 </div>
                 </div>
                 <div class="column">
                   <div class = "item">
-                    <div class="media"><img src="../icons/twitter.png"></div>
+                    <div class="media"><img src="../icons/twitter.png"  alt="Twitter logo"></div>
                     <span class="userTwitter">@tweet</span>
                   </div>
                  </div>
@@ -167,34 +176,32 @@
                   </div>
                   <div class="row">
                     <div class="column">
-
                   <div class = "item">
-                    <div class="media"><img src="../icons/instagram.png"></div>
+                    <div class="media"><img src="../icons/instagram.png"  alt="Instagram logo"></div>
                     <span class="userInstagram">@instagram</span>
                    </div>
                   </div>
                   <div class="column">
-
                   <div class = "item">
-                    <div class="media"><img src="../icons/snapchat.png"></div>
+                    <div class="media"><img src="../icons/snapchat.png" alt="Snapchat logo"></div>
                     <span class="userSnapchat"> @snapchat</span>
                 </div>
                   </div>
-
                 </div>
-
                 </div>
             </div>
         </div>
-
       </section>
 
 
   </section>
+    <!--Mobile View -->
     <section class="profileMobileView" hidden>
+      <!--All content is one column -->
       <div class="leftBoxContainer">
+        <!--About the user (name, interests, bio, links) -->
         <div class="item">
-          <img class="pfp" src="../images/profilep1.jpg">
+          <img class="pfp" src="../images/profilep1.jpg" alt="Profile image">
         </div>
         <div class="item">
           <h1 class="welcomeTitle">Welcome @<span id="profile-username">toyvan<span>!</span></h1>
@@ -205,32 +212,31 @@
           <p><b>My Interests: </b> <span class="profile-interests">Fashion, Coding, Design</span></p>
           <p><b>Bio: </b><span class="profile-bio">Did you know that i’ma design God! </span></p>
           <section class="Title">
-            <img class="item linksIcon" src="../icons/linkspfp.png"/>
+            <img class="item linksIcon" src="../icons/linkspfp.png"/ alt="Links icon (Two people hugging)">
               <p class="item links"> Links | <span class="numOfLinks">-</span></p>  
           </section>
         </div>
         <hr>   
+        <!--Social Media handles (Questionaire results are hidden -->
         <h1>Social Media</h1>
         <div class = "item">
           <div class="media">Tiktok</div>
-          <span class="userTiktok hideSocial">@tiktok</span>
+          <span class="userTiktok ">@tiktok</span>
         </div>
         <div class = "item">
           <div class="media">Twitter</div>
-          <span class="userTwitter hideSocial">@tweet</span>
+          <span class="userTwitter">@tweet</span>
          </div>
           <div class = "item">
             <div class="media">Instgram</div>
-            <span class="userInstagram hideSocial">@instagram</span>
+            <span class="userInstagram ">@instagram</span>
            </div>
          
           <div class = "item">
           <div class="media">Snapchat</div>
-          <span class="userSnapchat hideSocial "> @snapchat</span>
+          <span class="userSnapchat "> @snapchat</span>
         </div>
-
-        </div>
-
+      </div>
         </div>
       </div>  
       </section>
