@@ -1,43 +1,38 @@
 <?php
+
 session_start();
-if(isset($_SESSION["username"])){
-  header('location: ./profile.php');
-} 
-?>
-<html class="login-html">
+$loggedinUsername = (isset($_SESSION["username"]) ? $_SESSION["username"] : ', wrong username given');
 
-<head>
+$olduname = $_POST["olduname"];
+$newuname = $_POST["newuname"];
+require_once('connect.php');
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/styles.css" />
-        <title>Login</title>
-    </head>
-</head>
-
-<body class="login-bg">
-<?php require_once('../backend/navbar_login.php'); ?>
-
-    <!-- <div class="login-img">
-    <img src="../images/authen-ication.png">
-  </div> -->
-    <div class="login-body">
-        <img class="login-body__image" src="../images/linkup_smlogo.png" alt="Link-Up logo small format.">
-        <form action="../backend/login.php" method="post">
-
-            <input class="login-body__info" type="text" placeholder="Enter Username" name="uname" required>
-            <br>
-
-            <input class="login-body__info" type="password" placeholder="Enter Password" name="psw" required>
-            <br>
-            <button class="login-body__button" type="submit"><a class="login-body__link" href="login.php">Login</a></button>
-            <!-- <button class="login-body__button" type="submit"><a class="login-body__link" href="signup.html">Register</a></button> -->
-            <p class="login-body__forgot">Don't have an account? <a class="login-body__forgot-link" href="../pages/signup.php">Click here to register.</a></p>
-        </form>
-                            
-    </div>
+$sql="SELECT * FROM `user_data` WHERE user='$newuname'";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
     
-</body>
+if($result->num_rows > 0){
+    header("location: ../pages/settings.php");
+}
+else{
+        // checks if username matches session data (which is currently logged in user)
+    if ($loggedinUsername === $olduname){
+        $sql = "UPDATE user_data
+                SET user = '$newuname'
+                WHERE user= '$olduname'"; 
+    
+        if ($conn->query($sql) === FALSE) {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        } else{
+            $_SESSION["username"] = $newuname;  // updates session data to be the new username
+            header('location: ../pages/settings.php');
+        }
+    }else{
+        header('location: ../pages/error.php');
+}
+}
 
-</html>
+
+
+
+?>
