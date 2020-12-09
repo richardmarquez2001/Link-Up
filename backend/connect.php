@@ -1,5 +1,6 @@
 <?php
 // config file to connect to database. used everywhere
+// Test this at home! Use a local db software such as XAMPP and run a mysql instance, replace the username and password variables.
 $_username = "root";
 $_password = "";
 $_db = "testdb";
